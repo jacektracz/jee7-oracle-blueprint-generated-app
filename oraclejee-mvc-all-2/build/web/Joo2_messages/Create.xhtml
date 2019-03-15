@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Create:Joo2_messages"></h:outputText>
+</ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+<h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+<h:panelGrid columns="2">
+                        <h:outputLabel  value="epgen_message_id" for="epgen_message_id" />
+                        <h:inputText id="epgen_message_id" value="#{joo2_messagesController.selected.epgen_message_id}" title="epgen_message_id" required="false" requiredMessage="Field[0]Joo2_messages.epgen_message_id is Required"/>
+                        <h:outputLabel  value="epgen_user_id_from" for="epgen_user_id_from" />
+                        <h:inputText id="epgen_user_id_from" value="#{joo2_messagesController.selected.epgen_user_id_from}" title="epgen_user_id_from" required="false" requiredMessage="Field[1]Joo2_messages.epgen_user_id_from is Required"/>
+                        <h:outputLabel  value="epgen_user_id_to" for="epgen_user_id_to" />
+                        <h:inputText id="epgen_user_id_to" value="#{joo2_messagesController.selected.epgen_user_id_to}" title="epgen_user_id_to" required="false" requiredMessage="Field[2]Joo2_messages.epgen_user_id_to is Required"/>
+                        <h:outputLabel  value="epgen_folder_id" for="epgen_folder_id" />
+                        <h:inputText id="epgen_folder_id" value="#{joo2_messagesController.selected.epgen_folder_id}" title="epgen_folder_id" required="false" requiredMessage="Field[3]Joo2_messages.epgen_folder_id is Required"/>
+                        <h:outputLabel  value="epgen_date_time" for="epgen_date_time" />
+                        <h:inputText id="epgen_date_time" value="#{joo2_messagesController.selected.epgen_date_time}" title="epgen_date_time" required="false" requiredMessage="Field[4]Joo2_messages.epgen_date_time is Required"/>
+                        <h:outputLabel  value="epgen_state" for="epgen_state" />
+                        <h:inputText id="epgen_state" value="#{joo2_messagesController.selected.epgen_state}" title="epgen_state" required="false" requiredMessage="Field[5]Joo2_messages.epgen_state is Required"/>
+                        <h:outputLabel  value="epgen_priority" for="epgen_priority" />
+                        <h:inputText id="epgen_priority" value="#{joo2_messagesController.selected.epgen_priority}" title="epgen_priority" required="false" requiredMessage="Field[6]Joo2_messages.epgen_priority is Required"/>
+                        <h:outputLabel  value="epgen_subject" for="epgen_subject" />
+                        <h:inputText id="epgen_subject" value="#{joo2_messagesController.selected.epgen_subject}" title="epgen_subject" required="false" requiredMessage="Field[7]Joo2_messages.epgen_subject is Required"/>
+                        <h:outputLabel  value="epgen_message" for="epgen_message" />
+                        <h:inputText id="epgen_message" value="#{joo2_messagesController.selected.epgen_message}" title="epgen_message" required="false" requiredMessage="Field[8]Joo2_messages.epgen_message is Required"/>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{joo2_messagesController.create}" value="Save" />
+<br />
+                <br />
+                <h:commandLink  action="#{joo2_messagesController.prepareList}" value=" list" immediate="true"/>
+<br />
+                <br />
+                <h:link outcome="/index" value="Main page"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

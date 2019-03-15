@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Joo2_virtuemart_rating_votes"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:form styleClass="jsfcrud_list_form">
+                <h:panelGroup id="messagePanel" layout="block">
+                    <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+                </h:panelGroup>
+                <h:outputText escape="false" value="Empty}" rendered="#{joo2_virtuemart_rating_votesController.items.rowCount == 0}"/>
+                <h:panelGroup rendered="#{joo2_virtuemart_rating_votesController.items.rowCount > 0}">
+                    <h:outputText value="#{joo2_virtuemart_rating_votesController.pagination.pageFirstItem + 1}..#{joo2_virtuemart_rating_votesController.pagination.pageLastItem + 1}/#{joo2_virtuemart_rating_votesController.pagination.itemsCount}"/>&nbsp;
+                    <h:commandLink action="#{joo2_virtuemart_rating_votesController.previous}" value="{Previous} #{joo2_virtuemart_rating_votesController.pagination.pageSize}" rendered="#{joo2_virtuemart_rating_votesController.pagination.hasPreviousPage}"/>&nbsp;
+                    <h:commandLink action="#{joo2_virtuemart_rating_votesController.next}" value="{Next} #{joo2_virtuemart_rating_votesController.pagination.pageSize}" rendered="#{joo2_virtuemart_rating_votesController.pagination.hasNextPage}"/>&nbsp;
+                    <h:dataTable value="#{joo2_virtuemart_rating_votesController.items}" var="item" border="0" cellpadding="2" cellspacing="0" rowClasses="jsfcrud_odd_row,jsfcrud_even_row" rules="all" style="border:solid 1px">
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_virtuemart_rating_vote_id"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_virtuemart_rating_vote_id}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_virtuemart_product_id"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_virtuemart_product_id}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_vote"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_vote}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_lastip"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_lastip}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_created_on"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_created_on}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_created_by"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_created_by}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_modified_on"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_modified_on}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_modified_by"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_modified_by}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="&nbsp;"/>
+                            </f:facet>
+                            <h:commandLink action="#{joo2_virtuemart_rating_votesController.prepareView}" value="View"/>
+                            <h:outputText value=" "/>
+                            <h:commandLink action="#{joo2_virtuemart_rating_votesController.prepareEdit}" value="Edit"/>
+                            <h:outputText value=" "/>
+                            <h:commandLink action="#{joo2_virtuemart_rating_votesController.destroy}" value="Delete"/>
+                        </h:column>
+                    </h:dataTable>
+                </h:panelGroup>
+                <br />
+                <h:commandLink action="#{joo2_virtuemart_rating_votesController.prepareCreate}" value="Joo2_virtuemart_rating_votesCreate"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="Return"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+    </html>

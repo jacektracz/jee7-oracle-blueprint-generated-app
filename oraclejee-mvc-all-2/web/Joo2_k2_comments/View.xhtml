@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Edit: Joo2_k2_comments"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                        <h:outputLabel value="epgen_id" for="epgen_id" />
+                        <h:inputText id="epgen_id" value="#{joo2_k2_commentsController.selected.epgen_id}" title="epgen_id" required="false" requiredMessage="{FieldJoo2_k2_commentsepgen_idis Required}"/>
+                        <h:outputLabel value="epgen_itemID" for="epgen_itemID" />
+                        <h:inputText id="epgen_itemID" value="#{joo2_k2_commentsController.selected.epgen_itemID}" title="epgen_itemID" required="false" requiredMessage="{FieldJoo2_k2_commentsepgen_itemIDis Required}"/>
+                        <h:outputLabel value="epgen_userID" for="epgen_userID" />
+                        <h:inputText id="epgen_userID" value="#{joo2_k2_commentsController.selected.epgen_userID}" title="epgen_userID" required="false" requiredMessage="{FieldJoo2_k2_commentsepgen_userIDis Required}"/>
+                        <h:outputLabel value="epgen_userName" for="epgen_userName" />
+                        <h:inputText id="epgen_userName" value="#{joo2_k2_commentsController.selected.epgen_userName}" title="epgen_userName" required="false" requiredMessage="{FieldJoo2_k2_commentsepgen_userNameis Required}"/>
+                        <h:outputLabel value="epgen_commentDate" for="epgen_commentDate" />
+                        <h:inputText id="epgen_commentDate" value="#{joo2_k2_commentsController.selected.epgen_commentDate}" title="epgen_commentDate" required="false" requiredMessage="{FieldJoo2_k2_commentsepgen_commentDateis Required}"/>
+                        <h:outputLabel value="epgen_commentText" for="epgen_commentText" />
+                        <h:inputText id="epgen_commentText" value="#{joo2_k2_commentsController.selected.epgen_commentText}" title="epgen_commentText" required="false" requiredMessage="{FieldJoo2_k2_commentsepgen_commentTextis Required}"/>
+                        <h:outputLabel value="epgen_commentEmail" for="epgen_commentEmail" />
+                        <h:inputText id="epgen_commentEmail" value="#{joo2_k2_commentsController.selected.epgen_commentEmail}" title="epgen_commentEmail" required="false" requiredMessage="{FieldJoo2_k2_commentsepgen_commentEmailis Required}"/>
+                        <h:outputLabel value="epgen_commentURL" for="epgen_commentURL" />
+                        <h:inputText id="epgen_commentURL" value="#{joo2_k2_commentsController.selected.epgen_commentURL}" title="epgen_commentURL" required="false" requiredMessage="{FieldJoo2_k2_commentsepgen_commentURLis Required}"/>
+                        <h:outputLabel value="epgen_published" for="epgen_published" />
+                        <h:inputText id="epgen_published" value="#{joo2_k2_commentsController.selected.epgen_published}" title="epgen_published" required="false" requiredMessage="{FieldJoo2_k2_commentsepgen_publishedis Required}"/>
+</h:panelGrid>
+                <h:commandLink  action="#{joo2_k2_commentsController.update}" value="Save"/>
+<br />
+                <br />
+                <h:link  outcome="View" value="View"/>
+<br />
+                <h:commandLink  action="#{joo2_k2_commentsController.prepareList}" value="List Joo2_k2_comments" immediate="true"/>
+<br />
+                <br />
+                <h:link  outcome="/index" value="Return to  main" />
+</h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Joo2_virtuemart_vendors"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:form styleClass="jsfcrud_list_form">
+                <h:panelGroup id="messagePanel" layout="block">
+                    <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+                </h:panelGroup>
+                <h:outputText escape="false" value="Empty}" rendered="#{joo2_virtuemart_vendorsController.items.rowCount == 0}"/>
+                <h:panelGroup rendered="#{joo2_virtuemart_vendorsController.items.rowCount > 0}">
+                    <h:outputText value="#{joo2_virtuemart_vendorsController.pagination.pageFirstItem + 1}..#{joo2_virtuemart_vendorsController.pagination.pageLastItem + 1}/#{joo2_virtuemart_vendorsController.pagination.itemsCount}"/>&nbsp;
+                    <h:commandLink action="#{joo2_virtuemart_vendorsController.previous}" value="{Previous} #{joo2_virtuemart_vendorsController.pagination.pageSize}" rendered="#{joo2_virtuemart_vendorsController.pagination.hasPreviousPage}"/>&nbsp;
+                    <h:commandLink action="#{joo2_virtuemart_vendorsController.next}" value="{Next} #{joo2_virtuemart_vendorsController.pagination.pageSize}" rendered="#{joo2_virtuemart_vendorsController.pagination.hasNextPage}"/>&nbsp;
+                    <h:dataTable value="#{joo2_virtuemart_vendorsController.items}" var="item" border="0" cellpadding="2" cellspacing="0" rowClasses="jsfcrud_odd_row,jsfcrud_even_row" rules="all" style="border:solid 1px">
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_virtuemart_vendor_id"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_virtuemart_vendor_id}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_vendor_name"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_vendor_name}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_vendor_phone"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_vendor_phone}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_vendor_store_name"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_vendor_store_name}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_vendor_store_desc"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_vendor_store_desc}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_vendor_currency"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_vendor_currency}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_vendor_image_path"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_vendor_image_path}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_vendor_terms_of_service"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_vendor_terms_of_service}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_vendor_url"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_vendor_url}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_vendor_min_pov"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_vendor_min_pov}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_vendor_freeshipping"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_vendor_freeshipping}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_vendor_accepted_currencies"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_vendor_accepted_currencies}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_vendor_address_format"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_vendor_address_format}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_vendor_date_format"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_vendor_date_format}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_config"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_config}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_created_on"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_created_on}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_created_by"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_created_by}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_modified_on"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_modified_on}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_modified_by"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_modified_by}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_locked_on"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_locked_on}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_locked_by"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_locked_by}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="&nbsp;"/>
+                            </f:facet>
+                            <h:commandLink action="#{joo2_virtuemart_vendorsController.prepareView}" value="View"/>
+                            <h:outputText value=" "/>
+                            <h:commandLink action="#{joo2_virtuemart_vendorsController.prepareEdit}" value="Edit"/>
+                            <h:outputText value=" "/>
+                            <h:commandLink action="#{joo2_virtuemart_vendorsController.destroy}" value="Delete"/>
+                        </h:column>
+                    </h:dataTable>
+                </h:panelGroup>
+                <br />
+                <h:commandLink action="#{joo2_virtuemart_vendorsController.prepareCreate}" value="Joo2_virtuemart_vendorsCreate"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="Return"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+    </html>

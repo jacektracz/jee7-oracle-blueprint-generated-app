@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Edit: Joo2_phocagallery_tags_ref"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                        <h:outputLabel value="epgen_id" for="epgen_id" />
+                        <h:inputText id="epgen_id" value="#{joo2_phocagallery_tags_refController.selected.epgen_id}" title="epgen_id" required="false" requiredMessage="{FieldJoo2_phocagallery_tags_refepgen_idis Required}"/>
+                        <h:outputLabel value="epgen_imgid" for="epgen_imgid" />
+                        <h:inputText id="epgen_imgid" value="#{joo2_phocagallery_tags_refController.selected.epgen_imgid}" title="epgen_imgid" required="false" requiredMessage="{FieldJoo2_phocagallery_tags_refepgen_imgidis Required}"/>
+                        <h:outputLabel value="epgen_tagid" for="epgen_tagid" />
+                        <h:inputText id="epgen_tagid" value="#{joo2_phocagallery_tags_refController.selected.epgen_tagid}" title="epgen_tagid" required="false" requiredMessage="{FieldJoo2_phocagallery_tags_refepgen_tagidis Required}"/>
+</h:panelGrid>
+                <h:commandLink  action="#{joo2_phocagallery_tags_refController.update}" value="Save"/>
+<br />
+                <br />
+                <h:link  outcome="View" value="View"/>
+<br />
+                <h:commandLink  action="#{joo2_phocagallery_tags_refController.prepareList}" value="List Joo2_phocagallery_tags_ref" immediate="true"/>
+<br />
+                <br />
+                <h:link  outcome="/index" value="Return to  main" />
+</h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

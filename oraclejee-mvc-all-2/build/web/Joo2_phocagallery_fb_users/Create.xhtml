@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Create:Joo2_phocagallery_fb_users"></h:outputText>
+</ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+<h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+<h:panelGrid columns="2">
+                        <h:outputLabel  value="epgen_id" for="epgen_id" />
+                        <h:inputText id="epgen_id" value="#{joo2_phocagallery_fb_usersController.selected.epgen_id}" title="epgen_id" required="false" requiredMessage="Field[0]Joo2_phocagallery_fb_users.epgen_id is Required"/>
+                        <h:outputLabel  value="epgen_appid" for="epgen_appid" />
+                        <h:inputText id="epgen_appid" value="#{joo2_phocagallery_fb_usersController.selected.epgen_appid}" title="epgen_appid" required="false" requiredMessage="Field[1]Joo2_phocagallery_fb_users.epgen_appid is Required"/>
+                        <h:outputLabel  value="epgen_appsid" for="epgen_appsid" />
+                        <h:inputText id="epgen_appsid" value="#{joo2_phocagallery_fb_usersController.selected.epgen_appsid}" title="epgen_appsid" required="false" requiredMessage="Field[2]Joo2_phocagallery_fb_users.epgen_appsid is Required"/>
+                        <h:outputLabel  value="epgen_uid" for="epgen_uid" />
+                        <h:inputText id="epgen_uid" value="#{joo2_phocagallery_fb_usersController.selected.epgen_uid}" title="epgen_uid" required="false" requiredMessage="Field[3]Joo2_phocagallery_fb_users.epgen_uid is Required"/>
+                        <h:outputLabel  value="epgen_name" for="epgen_name" />
+                        <h:inputText id="epgen_name" value="#{joo2_phocagallery_fb_usersController.selected.epgen_name}" title="epgen_name" required="false" requiredMessage="Field[4]Joo2_phocagallery_fb_users.epgen_name is Required"/>
+                        <h:outputLabel  value="epgen_link" for="epgen_link" />
+                        <h:inputText id="epgen_link" value="#{joo2_phocagallery_fb_usersController.selected.epgen_link}" title="epgen_link" required="false" requiredMessage="Field[5]Joo2_phocagallery_fb_users.epgen_link is Required"/>
+                        <h:outputLabel  value="epgen_secret" for="epgen_secret" />
+                        <h:inputText id="epgen_secret" value="#{joo2_phocagallery_fb_usersController.selected.epgen_secret}" title="epgen_secret" required="false" requiredMessage="Field[6]Joo2_phocagallery_fb_users.epgen_secret is Required"/>
+                        <h:outputLabel  value="epgen_base_domain" for="epgen_base_domain" />
+                        <h:inputText id="epgen_base_domain" value="#{joo2_phocagallery_fb_usersController.selected.epgen_base_domain}" title="epgen_base_domain" required="false" requiredMessage="Field[7]Joo2_phocagallery_fb_users.epgen_base_domain is Required"/>
+                        <h:outputLabel  value="epgen_expires" for="epgen_expires" />
+                        <h:inputText id="epgen_expires" value="#{joo2_phocagallery_fb_usersController.selected.epgen_expires}" title="epgen_expires" required="false" requiredMessage="Field[8]Joo2_phocagallery_fb_users.epgen_expires is Required"/>
+                        <h:outputLabel  value="epgen_session_key" for="epgen_session_key" />
+                        <h:inputText id="epgen_session_key" value="#{joo2_phocagallery_fb_usersController.selected.epgen_session_key}" title="epgen_session_key" required="false" requiredMessage="Field[9]Joo2_phocagallery_fb_users.epgen_session_key is Required"/>
+                        <h:outputLabel  value="epgen_access_token" for="epgen_access_token" />
+                        <h:inputText id="epgen_access_token" value="#{joo2_phocagallery_fb_usersController.selected.epgen_access_token}" title="epgen_access_token" required="false" requiredMessage="Field[10]Joo2_phocagallery_fb_users.epgen_access_token is Required"/>
+                        <h:outputLabel  value="epgen_sig" for="epgen_sig" />
+                        <h:inputText id="epgen_sig" value="#{joo2_phocagallery_fb_usersController.selected.epgen_sig}" title="epgen_sig" required="false" requiredMessage="Field[11]Joo2_phocagallery_fb_users.epgen_sig is Required"/>
+                        <h:outputLabel  value="epgen_fanpageid" for="epgen_fanpageid" />
+                        <h:inputText id="epgen_fanpageid" value="#{joo2_phocagallery_fb_usersController.selected.epgen_fanpageid}" title="epgen_fanpageid" required="false" requiredMessage="Field[12]Joo2_phocagallery_fb_users.epgen_fanpageid is Required"/>
+                        <h:outputLabel  value="epgen_published" for="epgen_published" />
+                        <h:inputText id="epgen_published" value="#{joo2_phocagallery_fb_usersController.selected.epgen_published}" title="epgen_published" required="false" requiredMessage="Field[13]Joo2_phocagallery_fb_users.epgen_published is Required"/>
+                        <h:outputLabel  value="epgen_checked_out" for="epgen_checked_out" />
+                        <h:inputText id="epgen_checked_out" value="#{joo2_phocagallery_fb_usersController.selected.epgen_checked_out}" title="epgen_checked_out" required="false" requiredMessage="Field[14]Joo2_phocagallery_fb_users.epgen_checked_out is Required"/>
+                        <h:outputLabel  value="epgen_checked_out_time" for="epgen_checked_out_time" />
+                        <h:inputText id="epgen_checked_out_time" value="#{joo2_phocagallery_fb_usersController.selected.epgen_checked_out_time}" title="epgen_checked_out_time" required="false" requiredMessage="Field[15]Joo2_phocagallery_fb_users.epgen_checked_out_time is Required"/>
+                        <h:outputLabel  value="epgen_ordering" for="epgen_ordering" />
+                        <h:inputText id="epgen_ordering" value="#{joo2_phocagallery_fb_usersController.selected.epgen_ordering}" title="epgen_ordering" required="false" requiredMessage="Field[16]Joo2_phocagallery_fb_users.epgen_ordering is Required"/>
+                        <h:outputLabel  value="epgen_comments" for="epgen_comments" />
+                        <h:inputText id="epgen_comments" value="#{joo2_phocagallery_fb_usersController.selected.epgen_comments}" title="epgen_comments" required="false" requiredMessage="Field[17]Joo2_phocagallery_fb_users.epgen_comments is Required"/>
+                        <h:outputLabel  value="epgen_params" for="epgen_params" />
+                        <h:inputText id="epgen_params" value="#{joo2_phocagallery_fb_usersController.selected.epgen_params}" title="epgen_params" required="false" requiredMessage="Field[18]Joo2_phocagallery_fb_users.epgen_params is Required"/>
+                        <h:outputLabel  value="epgen_language" for="epgen_language" />
+                        <h:inputText id="epgen_language" value="#{joo2_phocagallery_fb_usersController.selected.epgen_language}" title="epgen_language" required="false" requiredMessage="Field[19]Joo2_phocagallery_fb_users.epgen_language is Required"/>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{joo2_phocagallery_fb_usersController.create}" value="Save" />
+<br />
+                <br />
+                <h:commandLink  action="#{joo2_phocagallery_fb_usersController.prepareList}" value=" list" immediate="true"/>
+<br />
+                <br />
+                <h:link outcome="/index" value="Main page"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

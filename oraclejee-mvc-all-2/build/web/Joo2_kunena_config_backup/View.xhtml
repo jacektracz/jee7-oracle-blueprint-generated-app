@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Edit: Joo2_kunena_config_backup"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                        <h:outputLabel value="epgen_id" for="epgen_id" />
+                        <h:inputText id="epgen_id" value="#{joo2_kunena_config_backupController.selected.epgen_id}" title="epgen_id" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_idis Required}"/>
+                        <h:outputLabel value="epgen_board_title" for="epgen_board_title" />
+                        <h:inputText id="epgen_board_title" value="#{joo2_kunena_config_backupController.selected.epgen_board_title}" title="epgen_board_title" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_board_titleis Required}"/>
+                        <h:outputLabel value="epgen_email" for="epgen_email" />
+                        <h:inputText id="epgen_email" value="#{joo2_kunena_config_backupController.selected.epgen_email}" title="epgen_email" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_emailis Required}"/>
+                        <h:outputLabel value="epgen_board_offline" for="epgen_board_offline" />
+                        <h:inputText id="epgen_board_offline" value="#{joo2_kunena_config_backupController.selected.epgen_board_offline}" title="epgen_board_offline" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_board_offlineis Required}"/>
+                        <h:outputLabel value="epgen_board_ofset" for="epgen_board_ofset" />
+                        <h:inputText id="epgen_board_ofset" value="#{joo2_kunena_config_backupController.selected.epgen_board_ofset}" title="epgen_board_ofset" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_board_ofsetis Required}"/>
+                        <h:outputLabel value="epgen_offline_message" for="epgen_offline_message" />
+                        <h:inputText id="epgen_offline_message" value="#{joo2_kunena_config_backupController.selected.epgen_offline_message}" title="epgen_offline_message" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_offline_messageis Required}"/>
+                        <h:outputLabel value="epgen_enablerss" for="epgen_enablerss" />
+                        <h:inputText id="epgen_enablerss" value="#{joo2_kunena_config_backupController.selected.epgen_enablerss}" title="epgen_enablerss" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_enablerssis Required}"/>
+                        <h:outputLabel value="epgen_enablepdf" for="epgen_enablepdf" />
+                        <h:inputText id="epgen_enablepdf" value="#{joo2_kunena_config_backupController.selected.epgen_enablepdf}" title="epgen_enablepdf" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_enablepdfis Required}"/>
+                        <h:outputLabel value="epgen_threads_per_page" for="epgen_threads_per_page" />
+                        <h:inputText id="epgen_threads_per_page" value="#{joo2_kunena_config_backupController.selected.epgen_threads_per_page}" title="epgen_threads_per_page" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_threads_per_pageis Required}"/>
+                        <h:outputLabel value="epgen_messages_per_page" for="epgen_messages_per_page" />
+                        <h:inputText id="epgen_messages_per_page" value="#{joo2_kunena_config_backupController.selected.epgen_messages_per_page}" title="epgen_messages_per_page" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_messages_per_pageis Required}"/>
+                        <h:outputLabel value="epgen_messages_per_page_search" for="epgen_messages_per_page_search" />
+                        <h:inputText id="epgen_messages_per_page_search" value="#{joo2_kunena_config_backupController.selected.epgen_messages_per_page_search}" title="epgen_messages_per_page_search" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_messages_per_page_searchis Required}"/>
+                        <h:outputLabel value="epgen_showhistory" for="epgen_showhistory" />
+                        <h:inputText id="epgen_showhistory" value="#{joo2_kunena_config_backupController.selected.epgen_showhistory}" title="epgen_showhistory" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_showhistoryis Required}"/>
+                        <h:outputLabel value="epgen_historylimit" for="epgen_historylimit" />
+                        <h:inputText id="epgen_historylimit" value="#{joo2_kunena_config_backupController.selected.epgen_historylimit}" title="epgen_historylimit" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_historylimitis Required}"/>
+                        <h:outputLabel value="epgen_shownew" for="epgen_shownew" />
+                        <h:inputText id="epgen_shownew" value="#{joo2_kunena_config_backupController.selected.epgen_shownew}" title="epgen_shownew" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_shownewis Required}"/>
+                        <h:outputLabel value="epgen_jmambot" for="epgen_jmambot" />
+                        <h:inputText id="epgen_jmambot" value="#{joo2_kunena_config_backupController.selected.epgen_jmambot}" title="epgen_jmambot" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_jmambotis Required}"/>
+                        <h:outputLabel value="epgen_disemoticons" for="epgen_disemoticons" />
+                        <h:inputText id="epgen_disemoticons" value="#{joo2_kunena_config_backupController.selected.epgen_disemoticons}" title="epgen_disemoticons" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_disemoticonsis Required}"/>
+                        <h:outputLabel value="epgen_template" for="epgen_template" />
+                        <h:inputText id="epgen_template" value="#{joo2_kunena_config_backupController.selected.epgen_template}" title="epgen_template" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_templateis Required}"/>
+                        <h:outputLabel value="epgen_showannouncement" for="epgen_showannouncement" />
+                        <h:inputText id="epgen_showannouncement" value="#{joo2_kunena_config_backupController.selected.epgen_showannouncement}" title="epgen_showannouncement" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_showannouncementis Required}"/>
+                        <h:outputLabel value="epgen_avataroncat" for="epgen_avataroncat" />
+                        <h:inputText id="epgen_avataroncat" value="#{joo2_kunena_config_backupController.selected.epgen_avataroncat}" title="epgen_avataroncat" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_avataroncatis Required}"/>
+                        <h:outputLabel value="epgen_catimagepath" for="epgen_catimagepath" />
+                        <h:inputText id="epgen_catimagepath" value="#{joo2_kunena_config_backupController.selected.epgen_catimagepath}" title="epgen_catimagepath" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_catimagepathis Required}"/>
+                        <h:outputLabel value="epgen_showchildcaticon" for="epgen_showchildcaticon" />
+                        <h:inputText id="epgen_showchildcaticon" value="#{joo2_kunena_config_backupController.selected.epgen_showchildcaticon}" title="epgen_showchildcaticon" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_showchildcaticonis Required}"/>
+                        <h:outputLabel value="epgen_annmodid" for="epgen_annmodid" />
+                        <h:inputText id="epgen_annmodid" value="#{joo2_kunena_config_backupController.selected.epgen_annmodid}" title="epgen_annmodid" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_annmodidis Required}"/>
+                        <h:outputLabel value="epgen_rtewidth" for="epgen_rtewidth" />
+                        <h:inputText id="epgen_rtewidth" value="#{joo2_kunena_config_backupController.selected.epgen_rtewidth}" title="epgen_rtewidth" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_rtewidthis Required}"/>
+                        <h:outputLabel value="epgen_rteheight" for="epgen_rteheight" />
+                        <h:inputText id="epgen_rteheight" value="#{joo2_kunena_config_backupController.selected.epgen_rteheight}" title="epgen_rteheight" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_rteheightis Required}"/>
+                        <h:outputLabel value="epgen_enableforumjump" for="epgen_enableforumjump" />
+                        <h:inputText id="epgen_enableforumjump" value="#{joo2_kunena_config_backupController.selected.epgen_enableforumjump}" title="epgen_enableforumjump" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_enableforumjumpis Required}"/>
+                        <h:outputLabel value="epgen_reportmsg" for="epgen_reportmsg" />
+                        <h:inputText id="epgen_reportmsg" value="#{joo2_kunena_config_backupController.selected.epgen_reportmsg}" title="epgen_reportmsg" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_reportmsgis Required}"/>
+                        <h:outputLabel value="epgen_username" for="epgen_username" />
+                        <h:inputText id="epgen_username" value="#{joo2_kunena_config_backupController.selected.epgen_username}" title="epgen_username" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_usernameis Required}"/>
+                        <h:outputLabel value="epgen_askemail" for="epgen_askemail" />
+                        <h:inputText id="epgen_askemail" value="#{joo2_kunena_config_backupController.selected.epgen_askemail}" title="epgen_askemail" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_askemailis Required}"/>
+                        <h:outputLabel value="epgen_showemail" for="epgen_showemail" />
+                        <h:inputText id="epgen_showemail" value="#{joo2_kunena_config_backupController.selected.epgen_showemail}" title="epgen_showemail" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_showemailis Required}"/>
+                        <h:outputLabel value="epgen_showuserstats" for="epgen_showuserstats" />
+                        <h:inputText id="epgen_showuserstats" value="#{joo2_kunena_config_backupController.selected.epgen_showuserstats}" title="epgen_showuserstats" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_showuserstatsis Required}"/>
+                        <h:outputLabel value="epgen_showkarma" for="epgen_showkarma" />
+                        <h:inputText id="epgen_showkarma" value="#{joo2_kunena_config_backupController.selected.epgen_showkarma}" title="epgen_showkarma" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_showkarmais Required}"/>
+                        <h:outputLabel value="epgen_useredit" for="epgen_useredit" />
+                        <h:inputText id="epgen_useredit" value="#{joo2_kunena_config_backupController.selected.epgen_useredit}" title="epgen_useredit" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_usereditis Required}"/>
+                        <h:outputLabel value="epgen_useredittime" for="epgen_useredittime" />
+                        <h:inputText id="epgen_useredittime" value="#{joo2_kunena_config_backupController.selected.epgen_useredittime}" title="epgen_useredittime" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_useredittimeis Required}"/>
+                        <h:outputLabel value="epgen_useredittimegrace" for="epgen_useredittimegrace" />
+                        <h:inputText id="epgen_useredittimegrace" value="#{joo2_kunena_config_backupController.selected.epgen_useredittimegrace}" title="epgen_useredittimegrace" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_useredittimegraceis Required}"/>
+                        <h:outputLabel value="epgen_editmarkup" for="epgen_editmarkup" />
+                        <h:inputText id="epgen_editmarkup" value="#{joo2_kunena_config_backupController.selected.epgen_editmarkup}" title="epgen_editmarkup" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_editmarkupis Required}"/>
+                        <h:outputLabel value="epgen_allowsubscriptions" for="epgen_allowsubscriptions" />
+                        <h:inputText id="epgen_allowsubscriptions" value="#{joo2_kunena_config_backupController.selected.epgen_allowsubscriptions}" title="epgen_allowsubscriptions" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_allowsubscriptionsis Required}"/>
+                        <h:outputLabel value="epgen_subscriptionschecked" for="epgen_subscriptionschecked" />
+                        <h:inputText id="epgen_subscriptionschecked" value="#{joo2_kunena_config_backupController.selected.epgen_subscriptionschecked}" title="epgen_subscriptionschecked" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_subscriptionscheckedis Required}"/>
+                        <h:outputLabel value="epgen_allowfavorites" for="epgen_allowfavorites" />
+                        <h:inputText id="epgen_allowfavorites" value="#{joo2_kunena_config_backupController.selected.epgen_allowfavorites}" title="epgen_allowfavorites" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_allowfavoritesis Required}"/>
+                        <h:outputLabel value="epgen_maxsubject" for="epgen_maxsubject" />
+                        <h:inputText id="epgen_maxsubject" value="#{joo2_kunena_config_backupController.selected.epgen_maxsubject}" title="epgen_maxsubject" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_maxsubjectis Required}"/>
+                        <h:outputLabel value="epgen_maxsig" for="epgen_maxsig" />
+                        <h:inputText id="epgen_maxsig" value="#{joo2_kunena_config_backupController.selected.epgen_maxsig}" title="epgen_maxsig" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_maxsigis Required}"/>
+                        <h:outputLabel value="epgen_regonly" for="epgen_regonly" />
+                        <h:inputText id="epgen_regonly" value="#{joo2_kunena_config_backupController.selected.epgen_regonly}" title="epgen_regonly" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_regonlyis Required}"/>
+                        <h:outputLabel value="epgen_changename" for="epgen_changename" />
+                        <h:inputText id="epgen_changename" value="#{joo2_kunena_config_backupController.selected.epgen_changename}" title="epgen_changename" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_changenameis Required}"/>
+                        <h:outputLabel value="epgen_pubwrite" for="epgen_pubwrite" />
+                        <h:inputText id="epgen_pubwrite" value="#{joo2_kunena_config_backupController.selected.epgen_pubwrite}" title="epgen_pubwrite" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_pubwriteis Required}"/>
+                        <h:outputLabel value="epgen_floodprotection" for="epgen_floodprotection" />
+                        <h:inputText id="epgen_floodprotection" value="#{joo2_kunena_config_backupController.selected.epgen_floodprotection}" title="epgen_floodprotection" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_floodprotectionis Required}"/>
+                        <h:outputLabel value="epgen_mailmod" for="epgen_mailmod" />
+                        <h:inputText id="epgen_mailmod" value="#{joo2_kunena_config_backupController.selected.epgen_mailmod}" title="epgen_mailmod" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_mailmodis Required}"/>
+                        <h:outputLabel value="epgen_mailadmin" for="epgen_mailadmin" />
+                        <h:inputText id="epgen_mailadmin" value="#{joo2_kunena_config_backupController.selected.epgen_mailadmin}" title="epgen_mailadmin" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_mailadminis Required}"/>
+                        <h:outputLabel value="epgen_captcha" for="epgen_captcha" />
+                        <h:inputText id="epgen_captcha" value="#{joo2_kunena_config_backupController.selected.epgen_captcha}" title="epgen_captcha" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_captchais Required}"/>
+                        <h:outputLabel value="epgen_mailfull" for="epgen_mailfull" />
+                        <h:inputText id="epgen_mailfull" value="#{joo2_kunena_config_backupController.selected.epgen_mailfull}" title="epgen_mailfull" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_mailfullis Required}"/>
+                        <h:outputLabel value="epgen_allowavatar" for="epgen_allowavatar" />
+                        <h:inputText id="epgen_allowavatar" value="#{joo2_kunena_config_backupController.selected.epgen_allowavatar}" title="epgen_allowavatar" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_allowavataris Required}"/>
+                        <h:outputLabel value="epgen_allowavatarupload" for="epgen_allowavatarupload" />
+                        <h:inputText id="epgen_allowavatarupload" value="#{joo2_kunena_config_backupController.selected.epgen_allowavatarupload}" title="epgen_allowavatarupload" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_allowavataruploadis Required}"/>
+                        <h:outputLabel value="epgen_allowavatargallery" for="epgen_allowavatargallery" />
+                        <h:inputText id="epgen_allowavatargallery" value="#{joo2_kunena_config_backupController.selected.epgen_allowavatargallery}" title="epgen_allowavatargallery" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_allowavatargalleryis Required}"/>
+                        <h:outputLabel value="epgen_avatarquality" for="epgen_avatarquality" />
+                        <h:inputText id="epgen_avatarquality" value="#{joo2_kunena_config_backupController.selected.epgen_avatarquality}" title="epgen_avatarquality" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_avatarqualityis Required}"/>
+                        <h:outputLabel value="epgen_avatarsize" for="epgen_avatarsize" />
+                        <h:inputText id="epgen_avatarsize" value="#{joo2_kunena_config_backupController.selected.epgen_avatarsize}" title="epgen_avatarsize" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_avatarsizeis Required}"/>
+                        <h:outputLabel value="epgen_allowimageupload" for="epgen_allowimageupload" />
+                        <h:inputText id="epgen_allowimageupload" value="#{joo2_kunena_config_backupController.selected.epgen_allowimageupload}" title="epgen_allowimageupload" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_allowimageuploadis Required}"/>
+                        <h:outputLabel value="epgen_allowimageregupload" for="epgen_allowimageregupload" />
+                        <h:inputText id="epgen_allowimageregupload" value="#{joo2_kunena_config_backupController.selected.epgen_allowimageregupload}" title="epgen_allowimageregupload" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_allowimagereguploadis Required}"/>
+                        <h:outputLabel value="epgen_imageheight" for="epgen_imageheight" />
+                        <h:inputText id="epgen_imageheight" value="#{joo2_kunena_config_backupController.selected.epgen_imageheight}" title="epgen_imageheight" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_imageheightis Required}"/>
+                        <h:outputLabel value="epgen_imagewidth" for="epgen_imagewidth" />
+                        <h:inputText id="epgen_imagewidth" value="#{joo2_kunena_config_backupController.selected.epgen_imagewidth}" title="epgen_imagewidth" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_imagewidthis Required}"/>
+                        <h:outputLabel value="epgen_imagesize" for="epgen_imagesize" />
+                        <h:inputText id="epgen_imagesize" value="#{joo2_kunena_config_backupController.selected.epgen_imagesize}" title="epgen_imagesize" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_imagesizeis Required}"/>
+                        <h:outputLabel value="epgen_allowfileupload" for="epgen_allowfileupload" />
+                        <h:inputText id="epgen_allowfileupload" value="#{joo2_kunena_config_backupController.selected.epgen_allowfileupload}" title="epgen_allowfileupload" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_allowfileuploadis Required}"/>
+                        <h:outputLabel value="epgen_allowfileregupload" for="epgen_allowfileregupload" />
+                        <h:inputText id="epgen_allowfileregupload" value="#{joo2_kunena_config_backupController.selected.epgen_allowfileregupload}" title="epgen_allowfileregupload" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_allowfilereguploadis Required}"/>
+                        <h:outputLabel value="epgen_filetypes" for="epgen_filetypes" />
+                        <h:inputText id="epgen_filetypes" value="#{joo2_kunena_config_backupController.selected.epgen_filetypes}" title="epgen_filetypes" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_filetypesis Required}"/>
+                        <h:outputLabel value="epgen_filesize" for="epgen_filesize" />
+                        <h:inputText id="epgen_filesize" value="#{joo2_kunena_config_backupController.selected.epgen_filesize}" title="epgen_filesize" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_filesizeis Required}"/>
+                        <h:outputLabel value="epgen_showranking" for="epgen_showranking" />
+                        <h:inputText id="epgen_showranking" value="#{joo2_kunena_config_backupController.selected.epgen_showranking}" title="epgen_showranking" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_showrankingis Required}"/>
+                        <h:outputLabel value="epgen_rankimages" for="epgen_rankimages" />
+                        <h:inputText id="epgen_rankimages" value="#{joo2_kunena_config_backupController.selected.epgen_rankimages}" title="epgen_rankimages" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_rankimagesis Required}"/>
+                        <h:outputLabel value="epgen_avatar_src" for="epgen_avatar_src" />
+                        <h:inputText id="epgen_avatar_src" value="#{joo2_kunena_config_backupController.selected.epgen_avatar_src}" title="epgen_avatar_src" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_avatar_srcis Required}"/>
+                        <h:outputLabel value="epgen_fb_profile" for="epgen_fb_profile" />
+                        <h:inputText id="epgen_fb_profile" value="#{joo2_kunena_config_backupController.selected.epgen_fb_profile}" title="epgen_fb_profile" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_fb_profileis Required}"/>
+                        <h:outputLabel value="epgen_pm_component" for="epgen_pm_component" />
+                        <h:inputText id="epgen_pm_component" value="#{joo2_kunena_config_backupController.selected.epgen_pm_component}" title="epgen_pm_component" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_pm_componentis Required}"/>
+                        <h:outputLabel value="epgen_userlist_rows" for="epgen_userlist_rows" />
+                        <h:inputText id="epgen_userlist_rows" value="#{joo2_kunena_config_backupController.selected.epgen_userlist_rows}" title="epgen_userlist_rows" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_userlist_rowsis Required}"/>
+                        <h:outputLabel value="epgen_userlist_online" for="epgen_userlist_online" />
+                        <h:inputText id="epgen_userlist_online" value="#{joo2_kunena_config_backupController.selected.epgen_userlist_online}" title="epgen_userlist_online" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_userlist_onlineis Required}"/>
+                        <h:outputLabel value="epgen_userlist_avatar" for="epgen_userlist_avatar" />
+                        <h:inputText id="epgen_userlist_avatar" value="#{joo2_kunena_config_backupController.selected.epgen_userlist_avatar}" title="epgen_userlist_avatar" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_userlist_avataris Required}"/>
+                        <h:outputLabel value="epgen_userlist_name" for="epgen_userlist_name" />
+                        <h:inputText id="epgen_userlist_name" value="#{joo2_kunena_config_backupController.selected.epgen_userlist_name}" title="epgen_userlist_name" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_userlist_nameis Required}"/>
+                        <h:outputLabel value="epgen_userlist_username" for="epgen_userlist_username" />
+                        <h:inputText id="epgen_userlist_username" value="#{joo2_kunena_config_backupController.selected.epgen_userlist_username}" title="epgen_userlist_username" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_userlist_usernameis Required}"/>
+                        <h:outputLabel value="epgen_userlist_posts" for="epgen_userlist_posts" />
+                        <h:inputText id="epgen_userlist_posts" value="#{joo2_kunena_config_backupController.selected.epgen_userlist_posts}" title="epgen_userlist_posts" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_userlist_postsis Required}"/>
+                        <h:outputLabel value="epgen_userlist_karma" for="epgen_userlist_karma" />
+                        <h:inputText id="epgen_userlist_karma" value="#{joo2_kunena_config_backupController.selected.epgen_userlist_karma}" title="epgen_userlist_karma" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_userlist_karmais Required}"/>
+                        <h:outputLabel value="epgen_userlist_email" for="epgen_userlist_email" />
+                        <h:inputText id="epgen_userlist_email" value="#{joo2_kunena_config_backupController.selected.epgen_userlist_email}" title="epgen_userlist_email" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_userlist_emailis Required}"/>
+                        <h:outputLabel value="epgen_userlist_usertype" for="epgen_userlist_usertype" />
+                        <h:inputText id="epgen_userlist_usertype" value="#{joo2_kunena_config_backupController.selected.epgen_userlist_usertype}" title="epgen_userlist_usertype" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_userlist_usertypeis Required}"/>
+                        <h:outputLabel value="epgen_userlist_joindate" for="epgen_userlist_joindate" />
+                        <h:inputText id="epgen_userlist_joindate" value="#{joo2_kunena_config_backupController.selected.epgen_userlist_joindate}" title="epgen_userlist_joindate" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_userlist_joindateis Required}"/>
+                        <h:outputLabel value="epgen_userlist_lastvisitdate" for="epgen_userlist_lastvisitdate" />
+                        <h:inputText id="epgen_userlist_lastvisitdate" value="#{joo2_kunena_config_backupController.selected.epgen_userlist_lastvisitdate}" title="epgen_userlist_lastvisitdate" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_userlist_lastvisitdateis Required}"/>
+                        <h:outputLabel value="epgen_userlist_userhits" for="epgen_userlist_userhits" />
+                        <h:inputText id="epgen_userlist_userhits" value="#{joo2_kunena_config_backupController.selected.epgen_userlist_userhits}" title="epgen_userlist_userhits" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_userlist_userhitsis Required}"/>
+                        <h:outputLabel value="epgen_latestcategory" for="epgen_latestcategory" />
+                        <h:inputText id="epgen_latestcategory" value="#{joo2_kunena_config_backupController.selected.epgen_latestcategory}" title="epgen_latestcategory" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_latestcategoryis Required}"/>
+                        <h:outputLabel value="epgen_showstats" for="epgen_showstats" />
+                        <h:inputText id="epgen_showstats" value="#{joo2_kunena_config_backupController.selected.epgen_showstats}" title="epgen_showstats" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_showstatsis Required}"/>
+                        <h:outputLabel value="epgen_showwhoisonline" for="epgen_showwhoisonline" />
+                        <h:inputText id="epgen_showwhoisonline" value="#{joo2_kunena_config_backupController.selected.epgen_showwhoisonline}" title="epgen_showwhoisonline" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_showwhoisonlineis Required}"/>
+                        <h:outputLabel value="epgen_showgenstats" for="epgen_showgenstats" />
+                        <h:inputText id="epgen_showgenstats" value="#{joo2_kunena_config_backupController.selected.epgen_showgenstats}" title="epgen_showgenstats" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_showgenstatsis Required}"/>
+                        <h:outputLabel value="epgen_showpopuserstats" for="epgen_showpopuserstats" />
+                        <h:inputText id="epgen_showpopuserstats" value="#{joo2_kunena_config_backupController.selected.epgen_showpopuserstats}" title="epgen_showpopuserstats" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_showpopuserstatsis Required}"/>
+                        <h:outputLabel value="epgen_popusercount" for="epgen_popusercount" />
+                        <h:inputText id="epgen_popusercount" value="#{joo2_kunena_config_backupController.selected.epgen_popusercount}" title="epgen_popusercount" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_popusercountis Required}"/>
+                        <h:outputLabel value="epgen_showpopsubjectstats" for="epgen_showpopsubjectstats" />
+                        <h:inputText id="epgen_showpopsubjectstats" value="#{joo2_kunena_config_backupController.selected.epgen_showpopsubjectstats}" title="epgen_showpopsubjectstats" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_showpopsubjectstatsis Required}"/>
+                        <h:outputLabel value="epgen_popsubjectcount" for="epgen_popsubjectcount" />
+                        <h:inputText id="epgen_popsubjectcount" value="#{joo2_kunena_config_backupController.selected.epgen_popsubjectcount}" title="epgen_popsubjectcount" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_popsubjectcountis Required}"/>
+                        <h:outputLabel value="epgen_usernamechange" for="epgen_usernamechange" />
+                        <h:inputText id="epgen_usernamechange" value="#{joo2_kunena_config_backupController.selected.epgen_usernamechange}" title="epgen_usernamechange" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_usernamechangeis Required}"/>
+                        <h:outputLabel value="epgen_rules_infb" for="epgen_rules_infb" />
+                        <h:inputText id="epgen_rules_infb" value="#{joo2_kunena_config_backupController.selected.epgen_rules_infb}" title="epgen_rules_infb" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_rules_infbis Required}"/>
+                        <h:outputLabel value="epgen_rules_cid" for="epgen_rules_cid" />
+                        <h:inputText id="epgen_rules_cid" value="#{joo2_kunena_config_backupController.selected.epgen_rules_cid}" title="epgen_rules_cid" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_rules_cidis Required}"/>
+                        <h:outputLabel value="epgen_help_infb" for="epgen_help_infb" />
+                        <h:inputText id="epgen_help_infb" value="#{joo2_kunena_config_backupController.selected.epgen_help_infb}" title="epgen_help_infb" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_help_infbis Required}"/>
+                        <h:outputLabel value="epgen_help_cid" for="epgen_help_cid" />
+                        <h:inputText id="epgen_help_cid" value="#{joo2_kunena_config_backupController.selected.epgen_help_cid}" title="epgen_help_cid" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_help_cidis Required}"/>
+                        <h:outputLabel value="epgen_showspoilertag" for="epgen_showspoilertag" />
+                        <h:inputText id="epgen_showspoilertag" value="#{joo2_kunena_config_backupController.selected.epgen_showspoilertag}" title="epgen_showspoilertag" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_showspoilertagis Required}"/>
+                        <h:outputLabel value="epgen_showvideotag" for="epgen_showvideotag" />
+                        <h:inputText id="epgen_showvideotag" value="#{joo2_kunena_config_backupController.selected.epgen_showvideotag}" title="epgen_showvideotag" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_showvideotagis Required}"/>
+                        <h:outputLabel value="epgen_showebaytag" for="epgen_showebaytag" />
+                        <h:inputText id="epgen_showebaytag" value="#{joo2_kunena_config_backupController.selected.epgen_showebaytag}" title="epgen_showebaytag" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_showebaytagis Required}"/>
+                        <h:outputLabel value="epgen_trimlongurls" for="epgen_trimlongurls" />
+                        <h:inputText id="epgen_trimlongurls" value="#{joo2_kunena_config_backupController.selected.epgen_trimlongurls}" title="epgen_trimlongurls" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_trimlongurlsis Required}"/>
+                        <h:outputLabel value="epgen_trimlongurlsfront" for="epgen_trimlongurlsfront" />
+                        <h:inputText id="epgen_trimlongurlsfront" value="#{joo2_kunena_config_backupController.selected.epgen_trimlongurlsfront}" title="epgen_trimlongurlsfront" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_trimlongurlsfrontis Required}"/>
+                        <h:outputLabel value="epgen_trimlongurlsback" for="epgen_trimlongurlsback" />
+                        <h:inputText id="epgen_trimlongurlsback" value="#{joo2_kunena_config_backupController.selected.epgen_trimlongurlsback}" title="epgen_trimlongurlsback" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_trimlongurlsbackis Required}"/>
+                        <h:outputLabel value="epgen_autoembedyoutube" for="epgen_autoembedyoutube" />
+                        <h:inputText id="epgen_autoembedyoutube" value="#{joo2_kunena_config_backupController.selected.epgen_autoembedyoutube}" title="epgen_autoembedyoutube" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_autoembedyoutubeis Required}"/>
+                        <h:outputLabel value="epgen_autoembedebay" for="epgen_autoembedebay" />
+                        <h:inputText id="epgen_autoembedebay" value="#{joo2_kunena_config_backupController.selected.epgen_autoembedebay}" title="epgen_autoembedebay" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_autoembedebayis Required}"/>
+                        <h:outputLabel value="epgen_ebaylanguagecode" for="epgen_ebaylanguagecode" />
+                        <h:inputText id="epgen_ebaylanguagecode" value="#{joo2_kunena_config_backupController.selected.epgen_ebaylanguagecode}" title="epgen_ebaylanguagecode" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_ebaylanguagecodeis Required}"/>
+                        <h:outputLabel value="epgen_fbsessiontimeout" for="epgen_fbsessiontimeout" />
+                        <h:inputText id="epgen_fbsessiontimeout" value="#{joo2_kunena_config_backupController.selected.epgen_fbsessiontimeout}" title="epgen_fbsessiontimeout" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_fbsessiontimeoutis Required}"/>
+                        <h:outputLabel value="epgen_highlightcode" for="epgen_highlightcode" />
+                        <h:inputText id="epgen_highlightcode" value="#{joo2_kunena_config_backupController.selected.epgen_highlightcode}" title="epgen_highlightcode" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_highlightcodeis Required}"/>
+                        <h:outputLabel value="epgen_rss_type" for="epgen_rss_type" />
+                        <h:inputText id="epgen_rss_type" value="#{joo2_kunena_config_backupController.selected.epgen_rss_type}" title="epgen_rss_type" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_rss_typeis Required}"/>
+                        <h:outputLabel value="epgen_rss_timelimit" for="epgen_rss_timelimit" />
+                        <h:inputText id="epgen_rss_timelimit" value="#{joo2_kunena_config_backupController.selected.epgen_rss_timelimit}" title="epgen_rss_timelimit" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_rss_timelimitis Required}"/>
+                        <h:outputLabel value="epgen_rss_limit" for="epgen_rss_limit" />
+                        <h:inputText id="epgen_rss_limit" value="#{joo2_kunena_config_backupController.selected.epgen_rss_limit}" title="epgen_rss_limit" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_rss_limitis Required}"/>
+                        <h:outputLabel value="epgen_rss_included_categories" for="epgen_rss_included_categories" />
+                        <h:inputText id="epgen_rss_included_categories" value="#{joo2_kunena_config_backupController.selected.epgen_rss_included_categories}" title="epgen_rss_included_categories" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_rss_included_categoriesis Required}"/>
+                        <h:outputLabel value="epgen_rss_excluded_categories" for="epgen_rss_excluded_categories" />
+                        <h:inputText id="epgen_rss_excluded_categories" value="#{joo2_kunena_config_backupController.selected.epgen_rss_excluded_categories}" title="epgen_rss_excluded_categories" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_rss_excluded_categoriesis Required}"/>
+                        <h:outputLabel value="epgen_rss_specification" for="epgen_rss_specification" />
+                        <h:inputText id="epgen_rss_specification" value="#{joo2_kunena_config_backupController.selected.epgen_rss_specification}" title="epgen_rss_specification" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_rss_specificationis Required}"/>
+                        <h:outputLabel value="epgen_rss_allow_html" for="epgen_rss_allow_html" />
+                        <h:inputText id="epgen_rss_allow_html" value="#{joo2_kunena_config_backupController.selected.epgen_rss_allow_html}" title="epgen_rss_allow_html" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_rss_allow_htmlis Required}"/>
+                        <h:outputLabel value="epgen_rss_author_format" for="epgen_rss_author_format" />
+                        <h:inputText id="epgen_rss_author_format" value="#{joo2_kunena_config_backupController.selected.epgen_rss_author_format}" title="epgen_rss_author_format" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_rss_author_formatis Required}"/>
+                        <h:outputLabel value="epgen_rss_author_in_title" for="epgen_rss_author_in_title" />
+                        <h:inputText id="epgen_rss_author_in_title" value="#{joo2_kunena_config_backupController.selected.epgen_rss_author_in_title}" title="epgen_rss_author_in_title" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_rss_author_in_titleis Required}"/>
+                        <h:outputLabel value="epgen_rss_word_count" for="epgen_rss_word_count" />
+                        <h:inputText id="epgen_rss_word_count" value="#{joo2_kunena_config_backupController.selected.epgen_rss_word_count}" title="epgen_rss_word_count" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_rss_word_countis Required}"/>
+                        <h:outputLabel value="epgen_rss_old_titles" for="epgen_rss_old_titles" />
+                        <h:inputText id="epgen_rss_old_titles" value="#{joo2_kunena_config_backupController.selected.epgen_rss_old_titles}" title="epgen_rss_old_titles" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_rss_old_titlesis Required}"/>
+                        <h:outputLabel value="epgen_rss_cache" for="epgen_rss_cache" />
+                        <h:inputText id="epgen_rss_cache" value="#{joo2_kunena_config_backupController.selected.epgen_rss_cache}" title="epgen_rss_cache" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_rss_cacheis Required}"/>
+                        <h:outputLabel value="epgen_fbdefaultpage" for="epgen_fbdefaultpage" />
+                        <h:inputText id="epgen_fbdefaultpage" value="#{joo2_kunena_config_backupController.selected.epgen_fbdefaultpage}" title="epgen_fbdefaultpage" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_fbdefaultpageis Required}"/>
+                        <h:outputLabel value="epgen_default_sort" for="epgen_default_sort" />
+                        <h:inputText id="epgen_default_sort" value="#{joo2_kunena_config_backupController.selected.epgen_default_sort}" title="epgen_default_sort" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_default_sortis Required}"/>
+                        <h:outputLabel value="epgen_alphauserpointsnumchars" for="epgen_alphauserpointsnumchars" />
+                        <h:inputText id="epgen_alphauserpointsnumchars" value="#{joo2_kunena_config_backupController.selected.epgen_alphauserpointsnumchars}" title="epgen_alphauserpointsnumchars" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_alphauserpointsnumcharsis Required}"/>
+                        <h:outputLabel value="epgen_sef" for="epgen_sef" />
+                        <h:inputText id="epgen_sef" value="#{joo2_kunena_config_backupController.selected.epgen_sef}" title="epgen_sef" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_sefis Required}"/>
+                        <h:outputLabel value="epgen_sefcats" for="epgen_sefcats" />
+                        <h:inputText id="epgen_sefcats" value="#{joo2_kunena_config_backupController.selected.epgen_sefcats}" title="epgen_sefcats" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_sefcatsis Required}"/>
+                        <h:outputLabel value="epgen_sefutf8" for="epgen_sefutf8" />
+                        <h:inputText id="epgen_sefutf8" value="#{joo2_kunena_config_backupController.selected.epgen_sefutf8}" title="epgen_sefutf8" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_sefutf8is Required}"/>
+                        <h:outputLabel value="epgen_showimgforguest" for="epgen_showimgforguest" />
+                        <h:inputText id="epgen_showimgforguest" value="#{joo2_kunena_config_backupController.selected.epgen_showimgforguest}" title="epgen_showimgforguest" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_showimgforguestis Required}"/>
+                        <h:outputLabel value="epgen_showfileforguest" for="epgen_showfileforguest" />
+                        <h:inputText id="epgen_showfileforguest" value="#{joo2_kunena_config_backupController.selected.epgen_showfileforguest}" title="epgen_showfileforguest" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_showfileforguestis Required}"/>
+                        <h:outputLabel value="epgen_pollnboptions" for="epgen_pollnboptions" />
+                        <h:inputText id="epgen_pollnboptions" value="#{joo2_kunena_config_backupController.selected.epgen_pollnboptions}" title="epgen_pollnboptions" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_pollnboptionsis Required}"/>
+                        <h:outputLabel value="epgen_pollallowvoteone" for="epgen_pollallowvoteone" />
+                        <h:inputText id="epgen_pollallowvoteone" value="#{joo2_kunena_config_backupController.selected.epgen_pollallowvoteone}" title="epgen_pollallowvoteone" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_pollallowvoteoneis Required}"/>
+                        <h:outputLabel value="epgen_pollenabled" for="epgen_pollenabled" />
+                        <h:inputText id="epgen_pollenabled" value="#{joo2_kunena_config_backupController.selected.epgen_pollenabled}" title="epgen_pollenabled" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_pollenabledis Required}"/>
+                        <h:outputLabel value="epgen_poppollscount" for="epgen_poppollscount" />
+                        <h:inputText id="epgen_poppollscount" value="#{joo2_kunena_config_backupController.selected.epgen_poppollscount}" title="epgen_poppollscount" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_poppollscountis Required}"/>
+                        <h:outputLabel value="epgen_showpoppollstats" for="epgen_showpoppollstats" />
+                        <h:inputText id="epgen_showpoppollstats" value="#{joo2_kunena_config_backupController.selected.epgen_showpoppollstats}" title="epgen_showpoppollstats" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_showpoppollstatsis Required}"/>
+                        <h:outputLabel value="epgen_polltimebtvotes" for="epgen_polltimebtvotes" />
+                        <h:inputText id="epgen_polltimebtvotes" value="#{joo2_kunena_config_backupController.selected.epgen_polltimebtvotes}" title="epgen_polltimebtvotes" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_polltimebtvotesis Required}"/>
+                        <h:outputLabel value="epgen_pollnbvotesbyuser" for="epgen_pollnbvotesbyuser" />
+                        <h:inputText id="epgen_pollnbvotesbyuser" value="#{joo2_kunena_config_backupController.selected.epgen_pollnbvotesbyuser}" title="epgen_pollnbvotesbyuser" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_pollnbvotesbyuseris Required}"/>
+                        <h:outputLabel value="epgen_pollresultsuserslist" for="epgen_pollresultsuserslist" />
+                        <h:inputText id="epgen_pollresultsuserslist" value="#{joo2_kunena_config_backupController.selected.epgen_pollresultsuserslist}" title="epgen_pollresultsuserslist" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_pollresultsuserslistis Required}"/>
+                        <h:outputLabel value="epgen_maxpersotext" for="epgen_maxpersotext" />
+                        <h:inputText id="epgen_maxpersotext" value="#{joo2_kunena_config_backupController.selected.epgen_maxpersotext}" title="epgen_maxpersotext" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_maxpersotextis Required}"/>
+                        <h:outputLabel value="epgen_ordering_system" for="epgen_ordering_system" />
+                        <h:inputText id="epgen_ordering_system" value="#{joo2_kunena_config_backupController.selected.epgen_ordering_system}" title="epgen_ordering_system" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_ordering_systemis Required}"/>
+                        <h:outputLabel value="epgen_post_dateformat" for="epgen_post_dateformat" />
+                        <h:inputText id="epgen_post_dateformat" value="#{joo2_kunena_config_backupController.selected.epgen_post_dateformat}" title="epgen_post_dateformat" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_post_dateformatis Required}"/>
+                        <h:outputLabel value="epgen_post_dateformat_hover" for="epgen_post_dateformat_hover" />
+                        <h:inputText id="epgen_post_dateformat_hover" value="#{joo2_kunena_config_backupController.selected.epgen_post_dateformat_hover}" title="epgen_post_dateformat_hover" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_post_dateformat_hoveris Required}"/>
+                        <h:outputLabel value="epgen_hide_ip" for="epgen_hide_ip" />
+                        <h:inputText id="epgen_hide_ip" value="#{joo2_kunena_config_backupController.selected.epgen_hide_ip}" title="epgen_hide_ip" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_hide_ipis Required}"/>
+                        <h:outputLabel value="epgen_js_actstr_integration" for="epgen_js_actstr_integration" />
+                        <h:inputText id="epgen_js_actstr_integration" value="#{joo2_kunena_config_backupController.selected.epgen_js_actstr_integration}" title="epgen_js_actstr_integration" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_js_actstr_integrationis Required}"/>
+                        <h:outputLabel value="epgen_imagetypes" for="epgen_imagetypes" />
+                        <h:inputText id="epgen_imagetypes" value="#{joo2_kunena_config_backupController.selected.epgen_imagetypes}" title="epgen_imagetypes" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_imagetypesis Required}"/>
+                        <h:outputLabel value="epgen_checkmimetypes" for="epgen_checkmimetypes" />
+                        <h:inputText id="epgen_checkmimetypes" value="#{joo2_kunena_config_backupController.selected.epgen_checkmimetypes}" title="epgen_checkmimetypes" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_checkmimetypesis Required}"/>
+                        <h:outputLabel value="epgen_imagemimetypes" for="epgen_imagemimetypes" />
+                        <h:inputText id="epgen_imagemimetypes" value="#{joo2_kunena_config_backupController.selected.epgen_imagemimetypes}" title="epgen_imagemimetypes" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_imagemimetypesis Required}"/>
+                        <h:outputLabel value="epgen_imagequality" for="epgen_imagequality" />
+                        <h:inputText id="epgen_imagequality" value="#{joo2_kunena_config_backupController.selected.epgen_imagequality}" title="epgen_imagequality" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_imagequalityis Required}"/>
+                        <h:outputLabel value="epgen_thumbheight" for="epgen_thumbheight" />
+                        <h:inputText id="epgen_thumbheight" value="#{joo2_kunena_config_backupController.selected.epgen_thumbheight}" title="epgen_thumbheight" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_thumbheightis Required}"/>
+                        <h:outputLabel value="epgen_thumbwidth" for="epgen_thumbwidth" />
+                        <h:inputText id="epgen_thumbwidth" value="#{joo2_kunena_config_backupController.selected.epgen_thumbwidth}" title="epgen_thumbwidth" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_thumbwidthis Required}"/>
+                        <h:outputLabel value="epgen_hideuserprofileinfo" for="epgen_hideuserprofileinfo" />
+                        <h:inputText id="epgen_hideuserprofileinfo" value="#{joo2_kunena_config_backupController.selected.epgen_hideuserprofileinfo}" title="epgen_hideuserprofileinfo" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_hideuserprofileinfois Required}"/>
+                        <h:outputLabel value="epgen_integration_access" for="epgen_integration_access" />
+                        <h:inputText id="epgen_integration_access" value="#{joo2_kunena_config_backupController.selected.epgen_integration_access}" title="epgen_integration_access" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_integration_accessis Required}"/>
+                        <h:outputLabel value="epgen_integration_login" for="epgen_integration_login" />
+                        <h:inputText id="epgen_integration_login" value="#{joo2_kunena_config_backupController.selected.epgen_integration_login}" title="epgen_integration_login" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_integration_loginis Required}"/>
+                        <h:outputLabel value="epgen_integration_avatar" for="epgen_integration_avatar" />
+                        <h:inputText id="epgen_integration_avatar" value="#{joo2_kunena_config_backupController.selected.epgen_integration_avatar}" title="epgen_integration_avatar" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_integration_avataris Required}"/>
+                        <h:outputLabel value="epgen_integration_profile" for="epgen_integration_profile" />
+                        <h:inputText id="epgen_integration_profile" value="#{joo2_kunena_config_backupController.selected.epgen_integration_profile}" title="epgen_integration_profile" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_integration_profileis Required}"/>
+                        <h:outputLabel value="epgen_integration_private" for="epgen_integration_private" />
+                        <h:inputText id="epgen_integration_private" value="#{joo2_kunena_config_backupController.selected.epgen_integration_private}" title="epgen_integration_private" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_integration_privateis Required}"/>
+                        <h:outputLabel value="epgen_integration_activity" for="epgen_integration_activity" />
+                        <h:inputText id="epgen_integration_activity" value="#{joo2_kunena_config_backupController.selected.epgen_integration_activity}" title="epgen_integration_activity" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_integration_activityis Required}"/>
+                        <h:outputLabel value="epgen_boxghostmessage" for="epgen_boxghostmessage" />
+                        <h:inputText id="epgen_boxghostmessage" value="#{joo2_kunena_config_backupController.selected.epgen_boxghostmessage}" title="epgen_boxghostmessage" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_boxghostmessageis Required}"/>
+                        <h:outputLabel value="epgen_userdeletetmessage" for="epgen_userdeletetmessage" />
+                        <h:inputText id="epgen_userdeletetmessage" value="#{joo2_kunena_config_backupController.selected.epgen_userdeletetmessage}" title="epgen_userdeletetmessage" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_userdeletetmessageis Required}"/>
+                        <h:outputLabel value="epgen_latestcategory_in" for="epgen_latestcategory_in" />
+                        <h:inputText id="epgen_latestcategory_in" value="#{joo2_kunena_config_backupController.selected.epgen_latestcategory_in}" title="epgen_latestcategory_in" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_latestcategory_inis Required}"/>
+                        <h:outputLabel value="epgen_topicicons" for="epgen_topicicons" />
+                        <h:inputText id="epgen_topicicons" value="#{joo2_kunena_config_backupController.selected.epgen_topicicons}" title="epgen_topicicons" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_topiciconsis Required}"/>
+                        <h:outputLabel value="epgen_onlineusers" for="epgen_onlineusers" />
+                        <h:inputText id="epgen_onlineusers" value="#{joo2_kunena_config_backupController.selected.epgen_onlineusers}" title="epgen_onlineusers" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_onlineusersis Required}"/>
+                        <h:outputLabel value="epgen_debug" for="epgen_debug" />
+                        <h:inputText id="epgen_debug" value="#{joo2_kunena_config_backupController.selected.epgen_debug}" title="epgen_debug" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_debugis Required}"/>
+                        <h:outputLabel value="epgen_catsautosubscribed" for="epgen_catsautosubscribed" />
+                        <h:inputText id="epgen_catsautosubscribed" value="#{joo2_kunena_config_backupController.selected.epgen_catsautosubscribed}" title="epgen_catsautosubscribed" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_catsautosubscribedis Required}"/>
+                        <h:outputLabel value="epgen_showbannedreason" for="epgen_showbannedreason" />
+                        <h:inputText id="epgen_showbannedreason" value="#{joo2_kunena_config_backupController.selected.epgen_showbannedreason}" title="epgen_showbannedreason" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_showbannedreasonis Required}"/>
+                        <h:outputLabel value="epgen_version_check" for="epgen_version_check" />
+                        <h:inputText id="epgen_version_check" value="#{joo2_kunena_config_backupController.selected.epgen_version_check}" title="epgen_version_check" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_version_checkis Required}"/>
+                        <h:outputLabel value="epgen_showthankyou" for="epgen_showthankyou" />
+                        <h:inputText id="epgen_showthankyou" value="#{joo2_kunena_config_backupController.selected.epgen_showthankyou}" title="epgen_showthankyou" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_showthankyouis Required}"/>
+                        <h:outputLabel value="epgen_showpopthankyoustats" for="epgen_showpopthankyoustats" />
+                        <h:inputText id="epgen_showpopthankyoustats" value="#{joo2_kunena_config_backupController.selected.epgen_showpopthankyoustats}" title="epgen_showpopthankyoustats" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_showpopthankyoustatsis Required}"/>
+                        <h:outputLabel value="epgen_popthankscount" for="epgen_popthankscount" />
+                        <h:inputText id="epgen_popthankscount" value="#{joo2_kunena_config_backupController.selected.epgen_popthankscount}" title="epgen_popthankscount" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_popthankscountis Required}"/>
+                        <h:outputLabel value="epgen_mod_see_deleted" for="epgen_mod_see_deleted" />
+                        <h:inputText id="epgen_mod_see_deleted" value="#{joo2_kunena_config_backupController.selected.epgen_mod_see_deleted}" title="epgen_mod_see_deleted" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_mod_see_deletedis Required}"/>
+                        <h:outputLabel value="epgen_bbcode_img_secure" for="epgen_bbcode_img_secure" />
+                        <h:inputText id="epgen_bbcode_img_secure" value="#{joo2_kunena_config_backupController.selected.epgen_bbcode_img_secure}" title="epgen_bbcode_img_secure" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_bbcode_img_secureis Required}"/>
+                        <h:outputLabel value="epgen_listcat_show_moderators" for="epgen_listcat_show_moderators" />
+                        <h:inputText id="epgen_listcat_show_moderators" value="#{joo2_kunena_config_backupController.selected.epgen_listcat_show_moderators}" title="epgen_listcat_show_moderators" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_listcat_show_moderatorsis Required}"/>
+                        <h:outputLabel value="epgen_lightbox" for="epgen_lightbox" />
+                        <h:inputText id="epgen_lightbox" value="#{joo2_kunena_config_backupController.selected.epgen_lightbox}" title="epgen_lightbox" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_lightboxis Required}"/>
+                        <h:outputLabel value="epgen_activity_limit" for="epgen_activity_limit" />
+                        <h:inputText id="epgen_activity_limit" value="#{joo2_kunena_config_backupController.selected.epgen_activity_limit}" title="epgen_activity_limit" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_activity_limitis Required}"/>
+                        <h:outputLabel value="epgen_show_list_time" for="epgen_show_list_time" />
+                        <h:inputText id="epgen_show_list_time" value="#{joo2_kunena_config_backupController.selected.epgen_show_list_time}" title="epgen_show_list_time" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_show_list_timeis Required}"/>
+                        <h:outputLabel value="epgen_show_session_type" for="epgen_show_session_type" />
+                        <h:inputText id="epgen_show_session_type" value="#{joo2_kunena_config_backupController.selected.epgen_show_session_type}" title="epgen_show_session_type" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_show_session_typeis Required}"/>
+                        <h:outputLabel value="epgen_show_session_starttime" for="epgen_show_session_starttime" />
+                        <h:inputText id="epgen_show_session_starttime" value="#{joo2_kunena_config_backupController.selected.epgen_show_session_starttime}" title="epgen_show_session_starttime" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_show_session_starttimeis Required}"/>
+                        <h:outputLabel value="epgen_userlist_allowed" for="epgen_userlist_allowed" />
+                        <h:inputText id="epgen_userlist_allowed" value="#{joo2_kunena_config_backupController.selected.epgen_userlist_allowed}" title="epgen_userlist_allowed" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_userlist_allowedis Required}"/>
+                        <h:outputLabel value="epgen_userlist_count_users" for="epgen_userlist_count_users" />
+                        <h:inputText id="epgen_userlist_count_users" value="#{joo2_kunena_config_backupController.selected.epgen_userlist_count_users}" title="epgen_userlist_count_users" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_userlist_count_usersis Required}"/>
+                        <h:outputLabel value="epgen_enable_threaded_layouts" for="epgen_enable_threaded_layouts" />
+                        <h:inputText id="epgen_enable_threaded_layouts" value="#{joo2_kunena_config_backupController.selected.epgen_enable_threaded_layouts}" title="epgen_enable_threaded_layouts" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_enable_threaded_layoutsis Required}"/>
+                        <h:outputLabel value="epgen_category_subscriptions" for="epgen_category_subscriptions" />
+                        <h:inputText id="epgen_category_subscriptions" value="#{joo2_kunena_config_backupController.selected.epgen_category_subscriptions}" title="epgen_category_subscriptions" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_category_subscriptionsis Required}"/>
+                        <h:outputLabel value="epgen_topic_subscriptions" for="epgen_topic_subscriptions" />
+                        <h:inputText id="epgen_topic_subscriptions" value="#{joo2_kunena_config_backupController.selected.epgen_topic_subscriptions}" title="epgen_topic_subscriptions" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_topic_subscriptionsis Required}"/>
+                        <h:outputLabel value="epgen_pubprofile" for="epgen_pubprofile" />
+                        <h:inputText id="epgen_pubprofile" value="#{joo2_kunena_config_backupController.selected.epgen_pubprofile}" title="epgen_pubprofile" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_pubprofileis Required}"/>
+                        <h:outputLabel value="epgen_thankyou_max" for="epgen_thankyou_max" />
+                        <h:inputText id="epgen_thankyou_max" value="#{joo2_kunena_config_backupController.selected.epgen_thankyou_max}" title="epgen_thankyou_max" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_thankyou_maxis Required}"/>
+                        <h:outputLabel value="epgen_email_recipient_count" for="epgen_email_recipient_count" />
+                        <h:inputText id="epgen_email_recipient_count" value="#{joo2_kunena_config_backupController.selected.epgen_email_recipient_count}" title="epgen_email_recipient_count" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_email_recipient_countis Required}"/>
+                        <h:outputLabel value="epgen_email_recipient_privacy" for="epgen_email_recipient_privacy" />
+                        <h:inputText id="epgen_email_recipient_privacy" value="#{joo2_kunena_config_backupController.selected.epgen_email_recipient_privacy}" title="epgen_email_recipient_privacy" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_email_recipient_privacyis Required}"/>
+                        <h:outputLabel value="epgen_email_visible_address" for="epgen_email_visible_address" />
+                        <h:inputText id="epgen_email_visible_address" value="#{joo2_kunena_config_backupController.selected.epgen_email_visible_address}" title="epgen_email_visible_address" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_email_visible_addressis Required}"/>
+                        <h:outputLabel value="epgen_captcha_post_limit" for="epgen_captcha_post_limit" />
+                        <h:inputText id="epgen_captcha_post_limit" value="#{joo2_kunena_config_backupController.selected.epgen_captcha_post_limit}" title="epgen_captcha_post_limit" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_captcha_post_limitis Required}"/>
+                        <h:outputLabel value="epgen_recaptcha_publickey" for="epgen_recaptcha_publickey" />
+                        <h:inputText id="epgen_recaptcha_publickey" value="#{joo2_kunena_config_backupController.selected.epgen_recaptcha_publickey}" title="epgen_recaptcha_publickey" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_recaptcha_publickeyis Required}"/>
+                        <h:outputLabel value="epgen_recaptcha_privatekey" for="epgen_recaptcha_privatekey" />
+                        <h:inputText id="epgen_recaptcha_privatekey" value="#{joo2_kunena_config_backupController.selected.epgen_recaptcha_privatekey}" title="epgen_recaptcha_privatekey" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_recaptcha_privatekeyis Required}"/>
+                        <h:outputLabel value="epgen_recaptcha_theme" for="epgen_recaptcha_theme" />
+                        <h:inputText id="epgen_recaptcha_theme" value="#{joo2_kunena_config_backupController.selected.epgen_recaptcha_theme}" title="epgen_recaptcha_theme" required="false" requiredMessage="{FieldJoo2_kunena_config_backupepgen_recaptcha_themeis Required}"/>
+</h:panelGrid>
+                <h:commandLink  action="#{joo2_kunena_config_backupController.update}" value="Save"/>
+<br />
+                <br />
+                <h:link  outcome="View" value="View"/>
+<br />
+                <h:commandLink  action="#{joo2_kunena_config_backupController.prepareList}" value="List Joo2_kunena_config_backup" immediate="true"/>
+<br />
+                <br />
+                <h:link  outcome="/index" value="Return to  main" />
+</h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

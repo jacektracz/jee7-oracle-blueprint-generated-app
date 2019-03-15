@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Edit: Joo2_virtuemart_currencies"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                        <h:outputLabel value="epgen_virtuemart_currency_id" for="epgen_virtuemart_currency_id" />
+                        <h:inputText id="epgen_virtuemart_currency_id" value="#{joo2_virtuemart_currenciesController.selected.epgen_virtuemart_currency_id}" title="epgen_virtuemart_currency_id" required="false" requiredMessage="{FieldJoo2_virtuemart_currenciesepgen_virtuemart_currency_idis Required}"/>
+                        <h:outputLabel value="epgen_virtuemart_vendor_id" for="epgen_virtuemart_vendor_id" />
+                        <h:inputText id="epgen_virtuemart_vendor_id" value="#{joo2_virtuemart_currenciesController.selected.epgen_virtuemart_vendor_id}" title="epgen_virtuemart_vendor_id" required="false" requiredMessage="{FieldJoo2_virtuemart_currenciesepgen_virtuemart_vendor_idis Required}"/>
+                        <h:outputLabel value="epgen_currency_name" for="epgen_currency_name" />
+                        <h:inputText id="epgen_currency_name" value="#{joo2_virtuemart_currenciesController.selected.epgen_currency_name}" title="epgen_currency_name" required="false" requiredMessage="{FieldJoo2_virtuemart_currenciesepgen_currency_nameis Required}"/>
+                        <h:outputLabel value="epgen_currency_code_2" for="epgen_currency_code_2" />
+                        <h:inputText id="epgen_currency_code_2" value="#{joo2_virtuemart_currenciesController.selected.epgen_currency_code_2}" title="epgen_currency_code_2" required="false" requiredMessage="{FieldJoo2_virtuemart_currenciesepgen_currency_code_2is Required}"/>
+                        <h:outputLabel value="epgen_currency_code_3" for="epgen_currency_code_3" />
+                        <h:inputText id="epgen_currency_code_3" value="#{joo2_virtuemart_currenciesController.selected.epgen_currency_code_3}" title="epgen_currency_code_3" required="false" requiredMessage="{FieldJoo2_virtuemart_currenciesepgen_currency_code_3is Required}"/>
+                        <h:outputLabel value="epgen_currency_numeric_code" for="epgen_currency_numeric_code" />
+                        <h:inputText id="epgen_currency_numeric_code" value="#{joo2_virtuemart_currenciesController.selected.epgen_currency_numeric_code}" title="epgen_currency_numeric_code" required="false" requiredMessage="{FieldJoo2_virtuemart_currenciesepgen_currency_numeric_codeis Required}"/>
+                        <h:outputLabel value="epgen_currency_symbol" for="epgen_currency_symbol" />
+                        <h:inputText id="epgen_currency_symbol" value="#{joo2_virtuemart_currenciesController.selected.epgen_currency_symbol}" title="epgen_currency_symbol" required="false" requiredMessage="{FieldJoo2_virtuemart_currenciesepgen_currency_symbolis Required}"/>
+                        <h:outputLabel value="epgen_currency_decimal_place" for="epgen_currency_decimal_place" />
+                        <h:inputText id="epgen_currency_decimal_place" value="#{joo2_virtuemart_currenciesController.selected.epgen_currency_decimal_place}" title="epgen_currency_decimal_place" required="false" requiredMessage="{FieldJoo2_virtuemart_currenciesepgen_currency_decimal_placeis Required}"/>
+                        <h:outputLabel value="epgen_currency_decimal_symbol" for="epgen_currency_decimal_symbol" />
+                        <h:inputText id="epgen_currency_decimal_symbol" value="#{joo2_virtuemart_currenciesController.selected.epgen_currency_decimal_symbol}" title="epgen_currency_decimal_symbol" required="false" requiredMessage="{FieldJoo2_virtuemart_currenciesepgen_currency_decimal_symbolis Required}"/>
+                        <h:outputLabel value="epgen_currency_thousands" for="epgen_currency_thousands" />
+                        <h:inputText id="epgen_currency_thousands" value="#{joo2_virtuemart_currenciesController.selected.epgen_currency_thousands}" title="epgen_currency_thousands" required="false" requiredMessage="{FieldJoo2_virtuemart_currenciesepgen_currency_thousandsis Required}"/>
+                        <h:outputLabel value="epgen_currency_positive_style" for="epgen_currency_positive_style" />
+                        <h:inputText id="epgen_currency_positive_style" value="#{joo2_virtuemart_currenciesController.selected.epgen_currency_positive_style}" title="epgen_currency_positive_style" required="false" requiredMessage="{FieldJoo2_virtuemart_currenciesepgen_currency_positive_styleis Required}"/>
+                        <h:outputLabel value="epgen_currency_negative_style" for="epgen_currency_negative_style" />
+                        <h:inputText id="epgen_currency_negative_style" value="#{joo2_virtuemart_currenciesController.selected.epgen_currency_negative_style}" title="epgen_currency_negative_style" required="false" requiredMessage="{FieldJoo2_virtuemart_currenciesepgen_currency_negative_styleis Required}"/>
+                        <h:outputLabel value="epgen_ordering" for="epgen_ordering" />
+                        <h:inputText id="epgen_ordering" value="#{joo2_virtuemart_currenciesController.selected.epgen_ordering}" title="epgen_ordering" required="false" requiredMessage="{FieldJoo2_virtuemart_currenciesepgen_orderingis Required}"/>
+                        <h:outputLabel value="epgen_shared" for="epgen_shared" />
+                        <h:inputText id="epgen_shared" value="#{joo2_virtuemart_currenciesController.selected.epgen_shared}" title="epgen_shared" required="false" requiredMessage="{FieldJoo2_virtuemart_currenciesepgen_sharedis Required}"/>
+                        <h:outputLabel value="epgen_published" for="epgen_published" />
+                        <h:inputText id="epgen_published" value="#{joo2_virtuemart_currenciesController.selected.epgen_published}" title="epgen_published" required="false" requiredMessage="{FieldJoo2_virtuemart_currenciesepgen_publishedis Required}"/>
+                        <h:outputLabel value="epgen_created_on" for="epgen_created_on" />
+                        <h:inputText id="epgen_created_on" value="#{joo2_virtuemart_currenciesController.selected.epgen_created_on}" title="epgen_created_on" required="false" requiredMessage="{FieldJoo2_virtuemart_currenciesepgen_created_onis Required}"/>
+                        <h:outputLabel value="epgen_created_by" for="epgen_created_by" />
+                        <h:inputText id="epgen_created_by" value="#{joo2_virtuemart_currenciesController.selected.epgen_created_by}" title="epgen_created_by" required="false" requiredMessage="{FieldJoo2_virtuemart_currenciesepgen_created_byis Required}"/>
+                        <h:outputLabel value="epgen_modified_on" for="epgen_modified_on" />
+                        <h:inputText id="epgen_modified_on" value="#{joo2_virtuemart_currenciesController.selected.epgen_modified_on}" title="epgen_modified_on" required="false" requiredMessage="{FieldJoo2_virtuemart_currenciesepgen_modified_onis Required}"/>
+                        <h:outputLabel value="epgen_modified_by" for="epgen_modified_by" />
+                        <h:inputText id="epgen_modified_by" value="#{joo2_virtuemart_currenciesController.selected.epgen_modified_by}" title="epgen_modified_by" required="false" requiredMessage="{FieldJoo2_virtuemart_currenciesepgen_modified_byis Required}"/>
+                        <h:outputLabel value="epgen_locked_on" for="epgen_locked_on" />
+                        <h:inputText id="epgen_locked_on" value="#{joo2_virtuemart_currenciesController.selected.epgen_locked_on}" title="epgen_locked_on" required="false" requiredMessage="{FieldJoo2_virtuemart_currenciesepgen_locked_onis Required}"/>
+                        <h:outputLabel value="epgen_locked_by" for="epgen_locked_by" />
+                        <h:inputText id="epgen_locked_by" value="#{joo2_virtuemart_currenciesController.selected.epgen_locked_by}" title="epgen_locked_by" required="false" requiredMessage="{FieldJoo2_virtuemart_currenciesepgen_locked_byis Required}"/>
+</h:panelGrid>
+                <h:commandLink  action="#{joo2_virtuemart_currenciesController.update}" value="Save"/>
+<br />
+                <br />
+                <h:link  outcome="View" value="View"/>
+<br />
+                <h:commandLink  action="#{joo2_virtuemart_currenciesController.prepareList}" value="List Joo2_virtuemart_currencies" immediate="true"/>
+<br />
+                <br />
+                <h:link  outcome="/index" value="Return to  main" />
+</h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

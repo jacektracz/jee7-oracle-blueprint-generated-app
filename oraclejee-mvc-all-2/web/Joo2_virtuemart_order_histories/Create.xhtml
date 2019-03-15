@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Create:Joo2_virtuemart_order_histories"></h:outputText>
+</ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+<h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+<h:panelGrid columns="2">
+                        <h:outputLabel  value="epgen_virtuemart_order_history_id" for="epgen_virtuemart_order_history_id" />
+                        <h:inputText id="epgen_virtuemart_order_history_id" value="#{joo2_virtuemart_order_historiesController.selected.epgen_virtuemart_order_history_id}" title="epgen_virtuemart_order_history_id" required="false" requiredMessage="Field[0]Joo2_virtuemart_order_histories.epgen_virtuemart_order_history_id is Required"/>
+                        <h:outputLabel  value="epgen_virtuemart_order_id" for="epgen_virtuemart_order_id" />
+                        <h:inputText id="epgen_virtuemart_order_id" value="#{joo2_virtuemart_order_historiesController.selected.epgen_virtuemart_order_id}" title="epgen_virtuemart_order_id" required="false" requiredMessage="Field[1]Joo2_virtuemart_order_histories.epgen_virtuemart_order_id is Required"/>
+                        <h:outputLabel  value="epgen_order_status_code" for="epgen_order_status_code" />
+                        <h:inputText id="epgen_order_status_code" value="#{joo2_virtuemart_order_historiesController.selected.epgen_order_status_code}" title="epgen_order_status_code" required="false" requiredMessage="Field[2]Joo2_virtuemart_order_histories.epgen_order_status_code is Required"/>
+                        <h:outputLabel  value="epgen_date_added" for="epgen_date_added" />
+                        <h:inputText id="epgen_date_added" value="#{joo2_virtuemart_order_historiesController.selected.epgen_date_added}" title="epgen_date_added" required="false" requiredMessage="Field[3]Joo2_virtuemart_order_histories.epgen_date_added is Required"/>
+                        <h:outputLabel  value="epgen_customer_notified" for="epgen_customer_notified" />
+                        <h:inputText id="epgen_customer_notified" value="#{joo2_virtuemart_order_historiesController.selected.epgen_customer_notified}" title="epgen_customer_notified" required="false" requiredMessage="Field[4]Joo2_virtuemart_order_histories.epgen_customer_notified is Required"/>
+                        <h:outputLabel  value="epgen_comments" for="epgen_comments" />
+                        <h:inputText id="epgen_comments" value="#{joo2_virtuemart_order_historiesController.selected.epgen_comments}" title="epgen_comments" required="false" requiredMessage="Field[5]Joo2_virtuemart_order_histories.epgen_comments is Required"/>
+                        <h:outputLabel  value="epgen_published" for="epgen_published" />
+                        <h:inputText id="epgen_published" value="#{joo2_virtuemart_order_historiesController.selected.epgen_published}" title="epgen_published" required="false" requiredMessage="Field[6]Joo2_virtuemart_order_histories.epgen_published is Required"/>
+                        <h:outputLabel  value="epgen_created_on" for="epgen_created_on" />
+                        <h:inputText id="epgen_created_on" value="#{joo2_virtuemart_order_historiesController.selected.epgen_created_on}" title="epgen_created_on" required="false" requiredMessage="Field[7]Joo2_virtuemart_order_histories.epgen_created_on is Required"/>
+                        <h:outputLabel  value="epgen_created_by" for="epgen_created_by" />
+                        <h:inputText id="epgen_created_by" value="#{joo2_virtuemart_order_historiesController.selected.epgen_created_by}" title="epgen_created_by" required="false" requiredMessage="Field[8]Joo2_virtuemart_order_histories.epgen_created_by is Required"/>
+                        <h:outputLabel  value="epgen_modified_on" for="epgen_modified_on" />
+                        <h:inputText id="epgen_modified_on" value="#{joo2_virtuemart_order_historiesController.selected.epgen_modified_on}" title="epgen_modified_on" required="false" requiredMessage="Field[9]Joo2_virtuemart_order_histories.epgen_modified_on is Required"/>
+                        <h:outputLabel  value="epgen_modified_by" for="epgen_modified_by" />
+                        <h:inputText id="epgen_modified_by" value="#{joo2_virtuemart_order_historiesController.selected.epgen_modified_by}" title="epgen_modified_by" required="false" requiredMessage="Field[10]Joo2_virtuemart_order_histories.epgen_modified_by is Required"/>
+                        <h:outputLabel  value="epgen_locked_on" for="epgen_locked_on" />
+                        <h:inputText id="epgen_locked_on" value="#{joo2_virtuemart_order_historiesController.selected.epgen_locked_on}" title="epgen_locked_on" required="false" requiredMessage="Field[11]Joo2_virtuemart_order_histories.epgen_locked_on is Required"/>
+                        <h:outputLabel  value="epgen_locked_by" for="epgen_locked_by" />
+                        <h:inputText id="epgen_locked_by" value="#{joo2_virtuemart_order_historiesController.selected.epgen_locked_by}" title="epgen_locked_by" required="false" requiredMessage="Field[12]Joo2_virtuemart_order_histories.epgen_locked_by is Required"/>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{joo2_virtuemart_order_historiesController.create}" value="Save" />
+<br />
+                <br />
+                <h:commandLink  action="#{joo2_virtuemart_order_historiesController.prepareList}" value=" list" immediate="true"/>
+<br />
+                <br />
+                <h:link outcome="/index" value="Main page"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

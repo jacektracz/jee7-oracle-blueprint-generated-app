@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Create:Joo2_template_styles"></h:outputText>
+</ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+<h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+<h:panelGrid columns="2">
+                        <h:outputLabel  value="epgen_id" for="epgen_id" />
+                        <h:inputText id="epgen_id" value="#{joo2_template_stylesController.selected.epgen_id}" title="epgen_id" required="false" requiredMessage="Field[0]Joo2_template_styles.epgen_id is Required"/>
+                        <h:outputLabel  value="epgen_template" for="epgen_template" />
+                        <h:inputText id="epgen_template" value="#{joo2_template_stylesController.selected.epgen_template}" title="epgen_template" required="false" requiredMessage="Field[1]Joo2_template_styles.epgen_template is Required"/>
+                        <h:outputLabel  value="epgen_client_id" for="epgen_client_id" />
+                        <h:inputText id="epgen_client_id" value="#{joo2_template_stylesController.selected.epgen_client_id}" title="epgen_client_id" required="false" requiredMessage="Field[2]Joo2_template_styles.epgen_client_id is Required"/>
+                        <h:outputLabel  value="epgen_home" for="epgen_home" />
+                        <h:inputText id="epgen_home" value="#{joo2_template_stylesController.selected.epgen_home}" title="epgen_home" required="false" requiredMessage="Field[3]Joo2_template_styles.epgen_home is Required"/>
+                        <h:outputLabel  value="epgen_title" for="epgen_title" />
+                        <h:inputText id="epgen_title" value="#{joo2_template_stylesController.selected.epgen_title}" title="epgen_title" required="false" requiredMessage="Field[4]Joo2_template_styles.epgen_title is Required"/>
+                        <h:outputLabel  value="epgen_params" for="epgen_params" />
+                        <h:inputText id="epgen_params" value="#{joo2_template_stylesController.selected.epgen_params}" title="epgen_params" required="false" requiredMessage="Field[5]Joo2_template_styles.epgen_params is Required"/>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{joo2_template_stylesController.create}" value="Save" />
+<br />
+                <br />
+                <h:commandLink  action="#{joo2_template_stylesController.prepareList}" value=" list" immediate="true"/>
+<br />
+                <br />
+                <h:link outcome="/index" value="Main page"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

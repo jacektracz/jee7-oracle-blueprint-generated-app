@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Create:Joo2_utxc"></h:outputText>
+</ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+<h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+<h:panelGrid columns="2">
+                        <h:outputLabel  value="epgen_m_uctxc_id" for="epgen_m_uctxc_id" />
+                        <h:inputText id="epgen_m_uctxc_id" value="#{joo2_utxcController.selected.epgen_m_uctxc_id}" title="epgen_m_uctxc_id" required="false" requiredMessage="Field[0]Joo2_utxc.epgen_m_uctxc_id is Required"/>
+                        <h:outputLabel  value="epgen_m_uctxc_cookie" for="epgen_m_uctxc_cookie" />
+                        <h:inputText id="epgen_m_uctxc_cookie" value="#{joo2_utxcController.selected.epgen_m_uctxc_cookie}" title="epgen_m_uctxc_cookie" required="false" requiredMessage="Field[1]Joo2_utxc.epgen_m_uctxc_cookie is Required"/>
+                        <h:outputLabel  value="epgen_m_uctxc_name" for="epgen_m_uctxc_name" />
+                        <h:inputText id="epgen_m_uctxc_name" value="#{joo2_utxcController.selected.epgen_m_uctxc_name}" title="epgen_m_uctxc_name" required="false" requiredMessage="Field[2]Joo2_utxc.epgen_m_uctxc_name is Required"/>
+                        <h:outputLabel  value="epgen_m_uctxc_title" for="epgen_m_uctxc_title" />
+                        <h:inputText id="epgen_m_uctxc_title" value="#{joo2_utxcController.selected.epgen_m_uctxc_title}" title="epgen_m_uctxc_title" required="false" requiredMessage="Field[3]Joo2_utxc.epgen_m_uctxc_title is Required"/>
+                        <h:outputLabel  value="epgen_m_uctxc_theme" for="epgen_m_uctxc_theme" />
+                        <h:inputText id="epgen_m_uctxc_theme" value="#{joo2_utxcController.selected.epgen_m_uctxc_theme}" title="epgen_m_uctxc_theme" required="false" requiredMessage="Field[4]Joo2_utxc.epgen_m_uctxc_theme is Required"/>
+                        <h:outputLabel  value="epgen_m_uctxc_generic_data" for="epgen_m_uctxc_generic_data" />
+                        <h:inputText id="epgen_m_uctxc_generic_data" value="#{joo2_utxcController.selected.epgen_m_uctxc_generic_data}" title="epgen_m_uctxc_generic_data" required="false" requiredMessage="Field[5]Joo2_utxc.epgen_m_uctxc_generic_data is Required"/>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{joo2_utxcController.create}" value="Save" />
+<br />
+                <br />
+                <h:commandLink  action="#{joo2_utxcController.prepareList}" value=" list" immediate="true"/>
+<br />
+                <br />
+                <h:link outcome="/index" value="Main page"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

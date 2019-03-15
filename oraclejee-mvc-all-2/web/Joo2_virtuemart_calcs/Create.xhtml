@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Create:Joo2_virtuemart_calcs"></h:outputText>
+</ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+<h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+<h:panelGrid columns="2">
+                        <h:outputLabel  value="epgen_virtuemart_calc_id" for="epgen_virtuemart_calc_id" />
+                        <h:inputText id="epgen_virtuemart_calc_id" value="#{joo2_virtuemart_calcsController.selected.epgen_virtuemart_calc_id}" title="epgen_virtuemart_calc_id" required="false" requiredMessage="Field[0]Joo2_virtuemart_calcs.epgen_virtuemart_calc_id is Required"/>
+                        <h:outputLabel  value="epgen_virtuemart_vendor_id" for="epgen_virtuemart_vendor_id" />
+                        <h:inputText id="epgen_virtuemart_vendor_id" value="#{joo2_virtuemart_calcsController.selected.epgen_virtuemart_vendor_id}" title="epgen_virtuemart_vendor_id" required="false" requiredMessage="Field[1]Joo2_virtuemart_calcs.epgen_virtuemart_vendor_id is Required"/>
+                        <h:outputLabel  value="epgen_calc_name" for="epgen_calc_name" />
+                        <h:inputText id="epgen_calc_name" value="#{joo2_virtuemart_calcsController.selected.epgen_calc_name}" title="epgen_calc_name" required="false" requiredMessage="Field[2]Joo2_virtuemart_calcs.epgen_calc_name is Required"/>
+                        <h:outputLabel  value="epgen_calc_descr" for="epgen_calc_descr" />
+                        <h:inputText id="epgen_calc_descr" value="#{joo2_virtuemart_calcsController.selected.epgen_calc_descr}" title="epgen_calc_descr" required="false" requiredMessage="Field[3]Joo2_virtuemart_calcs.epgen_calc_descr is Required"/>
+                        <h:outputLabel  value="epgen_calc_kind" for="epgen_calc_kind" />
+                        <h:inputText id="epgen_calc_kind" value="#{joo2_virtuemart_calcsController.selected.epgen_calc_kind}" title="epgen_calc_kind" required="false" requiredMessage="Field[4]Joo2_virtuemart_calcs.epgen_calc_kind is Required"/>
+                        <h:outputLabel  value="epgen_calc_value_mathop" for="epgen_calc_value_mathop" />
+                        <h:inputText id="epgen_calc_value_mathop" value="#{joo2_virtuemart_calcsController.selected.epgen_calc_value_mathop}" title="epgen_calc_value_mathop" required="false" requiredMessage="Field[5]Joo2_virtuemart_calcs.epgen_calc_value_mathop is Required"/>
+                        <h:outputLabel  value="epgen_calc_currency" for="epgen_calc_currency" />
+                        <h:inputText id="epgen_calc_currency" value="#{joo2_virtuemart_calcsController.selected.epgen_calc_currency}" title="epgen_calc_currency" required="false" requiredMessage="Field[6]Joo2_virtuemart_calcs.epgen_calc_currency is Required"/>
+                        <h:outputLabel  value="epgen_calc_shopper_published" for="epgen_calc_shopper_published" />
+                        <h:inputText id="epgen_calc_shopper_published" value="#{joo2_virtuemart_calcsController.selected.epgen_calc_shopper_published}" title="epgen_calc_shopper_published" required="false" requiredMessage="Field[7]Joo2_virtuemart_calcs.epgen_calc_shopper_published is Required"/>
+                        <h:outputLabel  value="epgen_calc_vendor_published" for="epgen_calc_vendor_published" />
+                        <h:inputText id="epgen_calc_vendor_published" value="#{joo2_virtuemart_calcsController.selected.epgen_calc_vendor_published}" title="epgen_calc_vendor_published" required="false" requiredMessage="Field[8]Joo2_virtuemart_calcs.epgen_calc_vendor_published is Required"/>
+                        <h:outputLabel  value="epgen_publish_up" for="epgen_publish_up" />
+                        <h:inputText id="epgen_publish_up" value="#{joo2_virtuemart_calcsController.selected.epgen_publish_up}" title="epgen_publish_up" required="false" requiredMessage="Field[9]Joo2_virtuemart_calcs.epgen_publish_up is Required"/>
+                        <h:outputLabel  value="epgen_publish_down" for="epgen_publish_down" />
+                        <h:inputText id="epgen_publish_down" value="#{joo2_virtuemart_calcsController.selected.epgen_publish_down}" title="epgen_publish_down" required="false" requiredMessage="Field[10]Joo2_virtuemart_calcs.epgen_publish_down is Required"/>
+                        <h:outputLabel  value="epgen_calc_qualify" for="epgen_calc_qualify" />
+                        <h:inputText id="epgen_calc_qualify" value="#{joo2_virtuemart_calcsController.selected.epgen_calc_qualify}" title="epgen_calc_qualify" required="false" requiredMessage="Field[11]Joo2_virtuemart_calcs.epgen_calc_qualify is Required"/>
+                        <h:outputLabel  value="epgen_calc_affected" for="epgen_calc_affected" />
+                        <h:inputText id="epgen_calc_affected" value="#{joo2_virtuemart_calcsController.selected.epgen_calc_affected}" title="epgen_calc_affected" required="false" requiredMessage="Field[12]Joo2_virtuemart_calcs.epgen_calc_affected is Required"/>
+                        <h:outputLabel  value="epgen_calc_amount_dimunit" for="epgen_calc_amount_dimunit" />
+                        <h:inputText id="epgen_calc_amount_dimunit" value="#{joo2_virtuemart_calcsController.selected.epgen_calc_amount_dimunit}" title="epgen_calc_amount_dimunit" required="false" requiredMessage="Field[13]Joo2_virtuemart_calcs.epgen_calc_amount_dimunit is Required"/>
+                        <h:outputLabel  value="epgen_for_override" for="epgen_for_override" />
+                        <h:inputText id="epgen_for_override" value="#{joo2_virtuemart_calcsController.selected.epgen_for_override}" title="epgen_for_override" required="false" requiredMessage="Field[14]Joo2_virtuemart_calcs.epgen_for_override is Required"/>
+                        <h:outputLabel  value="epgen_ordering" for="epgen_ordering" />
+                        <h:inputText id="epgen_ordering" value="#{joo2_virtuemart_calcsController.selected.epgen_ordering}" title="epgen_ordering" required="false" requiredMessage="Field[15]Joo2_virtuemart_calcs.epgen_ordering is Required"/>
+                        <h:outputLabel  value="epgen_shared" for="epgen_shared" />
+                        <h:inputText id="epgen_shared" value="#{joo2_virtuemart_calcsController.selected.epgen_shared}" title="epgen_shared" required="false" requiredMessage="Field[16]Joo2_virtuemart_calcs.epgen_shared is Required"/>
+                        <h:outputLabel  value="epgen_published" for="epgen_published" />
+                        <h:inputText id="epgen_published" value="#{joo2_virtuemart_calcsController.selected.epgen_published}" title="epgen_published" required="false" requiredMessage="Field[17]Joo2_virtuemart_calcs.epgen_published is Required"/>
+                        <h:outputLabel  value="epgen_created_on" for="epgen_created_on" />
+                        <h:inputText id="epgen_created_on" value="#{joo2_virtuemart_calcsController.selected.epgen_created_on}" title="epgen_created_on" required="false" requiredMessage="Field[18]Joo2_virtuemart_calcs.epgen_created_on is Required"/>
+                        <h:outputLabel  value="epgen_created_by" for="epgen_created_by" />
+                        <h:inputText id="epgen_created_by" value="#{joo2_virtuemart_calcsController.selected.epgen_created_by}" title="epgen_created_by" required="false" requiredMessage="Field[19]Joo2_virtuemart_calcs.epgen_created_by is Required"/>
+                        <h:outputLabel  value="epgen_modified_on" for="epgen_modified_on" />
+                        <h:inputText id="epgen_modified_on" value="#{joo2_virtuemart_calcsController.selected.epgen_modified_on}" title="epgen_modified_on" required="false" requiredMessage="Field[20]Joo2_virtuemart_calcs.epgen_modified_on is Required"/>
+                        <h:outputLabel  value="epgen_modified_by" for="epgen_modified_by" />
+                        <h:inputText id="epgen_modified_by" value="#{joo2_virtuemart_calcsController.selected.epgen_modified_by}" title="epgen_modified_by" required="false" requiredMessage="Field[21]Joo2_virtuemart_calcs.epgen_modified_by is Required"/>
+                        <h:outputLabel  value="epgen_locked_on" for="epgen_locked_on" />
+                        <h:inputText id="epgen_locked_on" value="#{joo2_virtuemart_calcsController.selected.epgen_locked_on}" title="epgen_locked_on" required="false" requiredMessage="Field[22]Joo2_virtuemart_calcs.epgen_locked_on is Required"/>
+                        <h:outputLabel  value="epgen_locked_by" for="epgen_locked_by" />
+                        <h:inputText id="epgen_locked_by" value="#{joo2_virtuemart_calcsController.selected.epgen_locked_by}" title="epgen_locked_by" required="false" requiredMessage="Field[23]Joo2_virtuemart_calcs.epgen_locked_by is Required"/>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{joo2_virtuemart_calcsController.create}" value="Save" />
+<br />
+                <br />
+                <h:commandLink  action="#{joo2_virtuemart_calcsController.prepareList}" value=" list" immediate="true"/>
+<br />
+                <br />
+                <h:link outcome="/index" value="Main page"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

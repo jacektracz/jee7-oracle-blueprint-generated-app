@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Create:Joo2_kunena_users"></h:outputText>
+</ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+<h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+<h:panelGrid columns="2">
+                        <h:outputLabel  value="epgen_userid" for="epgen_userid" />
+                        <h:inputText id="epgen_userid" value="#{joo2_kunena_usersController.selected.epgen_userid}" title="epgen_userid" required="false" requiredMessage="Field[0]Joo2_kunena_users.epgen_userid is Required"/>
+                        <h:outputLabel  value="epgen_view" for="epgen_view" />
+                        <h:inputText id="epgen_view" value="#{joo2_kunena_usersController.selected.epgen_view}" title="epgen_view" required="false" requiredMessage="Field[1]Joo2_kunena_users.epgen_view is Required"/>
+                        <h:outputLabel  value="epgen_signature" for="epgen_signature" />
+                        <h:inputText id="epgen_signature" value="#{joo2_kunena_usersController.selected.epgen_signature}" title="epgen_signature" required="false" requiredMessage="Field[2]Joo2_kunena_users.epgen_signature is Required"/>
+                        <h:outputLabel  value="epgen_moderator" for="epgen_moderator" />
+                        <h:inputText id="epgen_moderator" value="#{joo2_kunena_usersController.selected.epgen_moderator}" title="epgen_moderator" required="false" requiredMessage="Field[3]Joo2_kunena_users.epgen_moderator is Required"/>
+                        <h:outputLabel  value="epgen_banned" for="epgen_banned" />
+                        <h:inputText id="epgen_banned" value="#{joo2_kunena_usersController.selected.epgen_banned}" title="epgen_banned" required="false" requiredMessage="Field[4]Joo2_kunena_users.epgen_banned is Required"/>
+                        <h:outputLabel  value="epgen_ordering" for="epgen_ordering" />
+                        <h:inputText id="epgen_ordering" value="#{joo2_kunena_usersController.selected.epgen_ordering}" title="epgen_ordering" required="false" requiredMessage="Field[5]Joo2_kunena_users.epgen_ordering is Required"/>
+                        <h:outputLabel  value="epgen_posts" for="epgen_posts" />
+                        <h:inputText id="epgen_posts" value="#{joo2_kunena_usersController.selected.epgen_posts}" title="epgen_posts" required="false" requiredMessage="Field[6]Joo2_kunena_users.epgen_posts is Required"/>
+                        <h:outputLabel  value="epgen_avatar" for="epgen_avatar" />
+                        <h:inputText id="epgen_avatar" value="#{joo2_kunena_usersController.selected.epgen_avatar}" title="epgen_avatar" required="false" requiredMessage="Field[7]Joo2_kunena_users.epgen_avatar is Required"/>
+                        <h:outputLabel  value="epgen_karma" for="epgen_karma" />
+                        <h:inputText id="epgen_karma" value="#{joo2_kunena_usersController.selected.epgen_karma}" title="epgen_karma" required="false" requiredMessage="Field[8]Joo2_kunena_users.epgen_karma is Required"/>
+                        <h:outputLabel  value="epgen_karma_time" for="epgen_karma_time" />
+                        <h:inputText id="epgen_karma_time" value="#{joo2_kunena_usersController.selected.epgen_karma_time}" title="epgen_karma_time" required="false" requiredMessage="Field[9]Joo2_kunena_users.epgen_karma_time is Required"/>
+                        <h:outputLabel  value="epgen_group_id" for="epgen_group_id" />
+                        <h:inputText id="epgen_group_id" value="#{joo2_kunena_usersController.selected.epgen_group_id}" title="epgen_group_id" required="false" requiredMessage="Field[10]Joo2_kunena_users.epgen_group_id is Required"/>
+                        <h:outputLabel  value="epgen_uhits" for="epgen_uhits" />
+                        <h:inputText id="epgen_uhits" value="#{joo2_kunena_usersController.selected.epgen_uhits}" title="epgen_uhits" required="false" requiredMessage="Field[11]Joo2_kunena_users.epgen_uhits is Required"/>
+                        <h:outputLabel  value="epgen_personalText" for="epgen_personalText" />
+                        <h:inputText id="epgen_personalText" value="#{joo2_kunena_usersController.selected.epgen_personalText}" title="epgen_personalText" required="false" requiredMessage="Field[12]Joo2_kunena_users.epgen_personalText is Required"/>
+                        <h:outputLabel  value="epgen_gender" for="epgen_gender" />
+                        <h:inputText id="epgen_gender" value="#{joo2_kunena_usersController.selected.epgen_gender}" title="epgen_gender" required="false" requiredMessage="Field[13]Joo2_kunena_users.epgen_gender is Required"/>
+                        <h:outputLabel  value="epgen_location" for="epgen_location" />
+                        <h:inputText id="epgen_location" value="#{joo2_kunena_usersController.selected.epgen_location}" title="epgen_location" required="false" requiredMessage="Field[14]Joo2_kunena_users.epgen_location is Required"/>
+                        <h:outputLabel  value="epgen_ICQ" for="epgen_ICQ" />
+                        <h:inputText id="epgen_ICQ" value="#{joo2_kunena_usersController.selected.epgen_ICQ}" title="epgen_ICQ" required="false" requiredMessage="Field[15]Joo2_kunena_users.epgen_ICQ is Required"/>
+                        <h:outputLabel  value="epgen_AIM" for="epgen_AIM" />
+                        <h:inputText id="epgen_AIM" value="#{joo2_kunena_usersController.selected.epgen_AIM}" title="epgen_AIM" required="false" requiredMessage="Field[16]Joo2_kunena_users.epgen_AIM is Required"/>
+                        <h:outputLabel  value="epgen_YIM" for="epgen_YIM" />
+                        <h:inputText id="epgen_YIM" value="#{joo2_kunena_usersController.selected.epgen_YIM}" title="epgen_YIM" required="false" requiredMessage="Field[17]Joo2_kunena_users.epgen_YIM is Required"/>
+                        <h:outputLabel  value="epgen_MSN" for="epgen_MSN" />
+                        <h:inputText id="epgen_MSN" value="#{joo2_kunena_usersController.selected.epgen_MSN}" title="epgen_MSN" required="false" requiredMessage="Field[18]Joo2_kunena_users.epgen_MSN is Required"/>
+                        <h:outputLabel  value="epgen_SKYPE" for="epgen_SKYPE" />
+                        <h:inputText id="epgen_SKYPE" value="#{joo2_kunena_usersController.selected.epgen_SKYPE}" title="epgen_SKYPE" required="false" requiredMessage="Field[19]Joo2_kunena_users.epgen_SKYPE is Required"/>
+                        <h:outputLabel  value="epgen_TWITTER" for="epgen_TWITTER" />
+                        <h:inputText id="epgen_TWITTER" value="#{joo2_kunena_usersController.selected.epgen_TWITTER}" title="epgen_TWITTER" required="false" requiredMessage="Field[20]Joo2_kunena_users.epgen_TWITTER is Required"/>
+                        <h:outputLabel  value="epgen_FACEBOOK" for="epgen_FACEBOOK" />
+                        <h:inputText id="epgen_FACEBOOK" value="#{joo2_kunena_usersController.selected.epgen_FACEBOOK}" title="epgen_FACEBOOK" required="false" requiredMessage="Field[21]Joo2_kunena_users.epgen_FACEBOOK is Required"/>
+                        <h:outputLabel  value="epgen_GTALK" for="epgen_GTALK" />
+                        <h:inputText id="epgen_GTALK" value="#{joo2_kunena_usersController.selected.epgen_GTALK}" title="epgen_GTALK" required="false" requiredMessage="Field[22]Joo2_kunena_users.epgen_GTALK is Required"/>
+                        <h:outputLabel  value="epgen_MYSPACE" for="epgen_MYSPACE" />
+                        <h:inputText id="epgen_MYSPACE" value="#{joo2_kunena_usersController.selected.epgen_MYSPACE}" title="epgen_MYSPACE" required="false" requiredMessage="Field[23]Joo2_kunena_users.epgen_MYSPACE is Required"/>
+                        <h:outputLabel  value="epgen_LINKEDIN" for="epgen_LINKEDIN" />
+                        <h:inputText id="epgen_LINKEDIN" value="#{joo2_kunena_usersController.selected.epgen_LINKEDIN}" title="epgen_LINKEDIN" required="false" requiredMessage="Field[24]Joo2_kunena_users.epgen_LINKEDIN is Required"/>
+                        <h:outputLabel  value="epgen_DELICIOUS" for="epgen_DELICIOUS" />
+                        <h:inputText id="epgen_DELICIOUS" value="#{joo2_kunena_usersController.selected.epgen_DELICIOUS}" title="epgen_DELICIOUS" required="false" requiredMessage="Field[25]Joo2_kunena_users.epgen_DELICIOUS is Required"/>
+                        <h:outputLabel  value="epgen_FRIENDFEED" for="epgen_FRIENDFEED" />
+                        <h:inputText id="epgen_FRIENDFEED" value="#{joo2_kunena_usersController.selected.epgen_FRIENDFEED}" title="epgen_FRIENDFEED" required="false" requiredMessage="Field[26]Joo2_kunena_users.epgen_FRIENDFEED is Required"/>
+                        <h:outputLabel  value="epgen_DIGG" for="epgen_DIGG" />
+                        <h:inputText id="epgen_DIGG" value="#{joo2_kunena_usersController.selected.epgen_DIGG}" title="epgen_DIGG" required="false" requiredMessage="Field[27]Joo2_kunena_users.epgen_DIGG is Required"/>
+                        <h:outputLabel  value="epgen_BLOGSPOT" for="epgen_BLOGSPOT" />
+                        <h:inputText id="epgen_BLOGSPOT" value="#{joo2_kunena_usersController.selected.epgen_BLOGSPOT}" title="epgen_BLOGSPOT" required="false" requiredMessage="Field[28]Joo2_kunena_users.epgen_BLOGSPOT is Required"/>
+                        <h:outputLabel  value="epgen_FLICKR" for="epgen_FLICKR" />
+                        <h:inputText id="epgen_FLICKR" value="#{joo2_kunena_usersController.selected.epgen_FLICKR}" title="epgen_FLICKR" required="false" requiredMessage="Field[29]Joo2_kunena_users.epgen_FLICKR is Required"/>
+                        <h:outputLabel  value="epgen_BEBO" for="epgen_BEBO" />
+                        <h:inputText id="epgen_BEBO" value="#{joo2_kunena_usersController.selected.epgen_BEBO}" title="epgen_BEBO" required="false" requiredMessage="Field[30]Joo2_kunena_users.epgen_BEBO is Required"/>
+                        <h:outputLabel  value="epgen_websitename" for="epgen_websitename" />
+                        <h:inputText id="epgen_websitename" value="#{joo2_kunena_usersController.selected.epgen_websitename}" title="epgen_websitename" required="false" requiredMessage="Field[31]Joo2_kunena_users.epgen_websitename is Required"/>
+                        <h:outputLabel  value="epgen_websiteurl" for="epgen_websiteurl" />
+                        <h:inputText id="epgen_websiteurl" value="#{joo2_kunena_usersController.selected.epgen_websiteurl}" title="epgen_websiteurl" required="false" requiredMessage="Field[32]Joo2_kunena_users.epgen_websiteurl is Required"/>
+                        <h:outputLabel  value="epgen_rank" for="epgen_rank" />
+                        <h:inputText id="epgen_rank" value="#{joo2_kunena_usersController.selected.epgen_rank}" title="epgen_rank" required="false" requiredMessage="Field[33]Joo2_kunena_users.epgen_rank is Required"/>
+                        <h:outputLabel  value="epgen_hideEmail" for="epgen_hideEmail" />
+                        <h:inputText id="epgen_hideEmail" value="#{joo2_kunena_usersController.selected.epgen_hideEmail}" title="epgen_hideEmail" required="false" requiredMessage="Field[34]Joo2_kunena_users.epgen_hideEmail is Required"/>
+                        <h:outputLabel  value="epgen_showOnline" for="epgen_showOnline" />
+                        <h:inputText id="epgen_showOnline" value="#{joo2_kunena_usersController.selected.epgen_showOnline}" title="epgen_showOnline" required="false" requiredMessage="Field[35]Joo2_kunena_users.epgen_showOnline is Required"/>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{joo2_kunena_usersController.create}" value="Save" />
+<br />
+                <br />
+                <h:commandLink  action="#{joo2_kunena_usersController.prepareList}" value=" list" immediate="true"/>
+<br />
+                <br />
+                <h:link outcome="/index" value="Main page"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

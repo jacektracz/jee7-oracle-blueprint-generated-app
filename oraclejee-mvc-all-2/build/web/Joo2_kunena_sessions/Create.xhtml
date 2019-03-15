@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Create:Joo2_kunena_sessions"></h:outputText>
+</ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+<h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+<h:panelGrid columns="2">
+                        <h:outputLabel  value="epgen_userid" for="epgen_userid" />
+                        <h:inputText id="epgen_userid" value="#{joo2_kunena_sessionsController.selected.epgen_userid}" title="epgen_userid" required="false" requiredMessage="Field[0]Joo2_kunena_sessions.epgen_userid is Required"/>
+                        <h:outputLabel  value="epgen_allowed" for="epgen_allowed" />
+                        <h:inputText id="epgen_allowed" value="#{joo2_kunena_sessionsController.selected.epgen_allowed}" title="epgen_allowed" required="false" requiredMessage="Field[1]Joo2_kunena_sessions.epgen_allowed is Required"/>
+                        <h:outputLabel  value="epgen_lasttime" for="epgen_lasttime" />
+                        <h:inputText id="epgen_lasttime" value="#{joo2_kunena_sessionsController.selected.epgen_lasttime}" title="epgen_lasttime" required="false" requiredMessage="Field[2]Joo2_kunena_sessions.epgen_lasttime is Required"/>
+                        <h:outputLabel  value="epgen_readtopics" for="epgen_readtopics" />
+                        <h:inputText id="epgen_readtopics" value="#{joo2_kunena_sessionsController.selected.epgen_readtopics}" title="epgen_readtopics" required="false" requiredMessage="Field[3]Joo2_kunena_sessions.epgen_readtopics is Required"/>
+                        <h:outputLabel  value="epgen_currvisit" for="epgen_currvisit" />
+                        <h:inputText id="epgen_currvisit" value="#{joo2_kunena_sessionsController.selected.epgen_currvisit}" title="epgen_currvisit" required="false" requiredMessage="Field[4]Joo2_kunena_sessions.epgen_currvisit is Required"/>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{joo2_kunena_sessionsController.create}" value="Save" />
+<br />
+                <br />
+                <h:commandLink  action="#{joo2_kunena_sessionsController.prepareList}" value=" list" immediate="true"/>
+<br />
+                <br />
+                <h:link outcome="/index" value="Main page"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

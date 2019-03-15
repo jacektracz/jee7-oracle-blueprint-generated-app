@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Joo2_swmenufree_config"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:form styleClass="jsfcrud_list_form">
+                <h:panelGroup id="messagePanel" layout="block">
+                    <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+                </h:panelGroup>
+                <h:outputText escape="false" value="Empty}" rendered="#{joo2_swmenufree_configController.items.rowCount == 0}"/>
+                <h:panelGroup rendered="#{joo2_swmenufree_configController.items.rowCount > 0}">
+                    <h:outputText value="#{joo2_swmenufree_configController.pagination.pageFirstItem + 1}..#{joo2_swmenufree_configController.pagination.pageLastItem + 1}/#{joo2_swmenufree_configController.pagination.itemsCount}"/>&nbsp;
+                    <h:commandLink action="#{joo2_swmenufree_configController.previous}" value="{Previous} #{joo2_swmenufree_configController.pagination.pageSize}" rendered="#{joo2_swmenufree_configController.pagination.hasPreviousPage}"/>&nbsp;
+                    <h:commandLink action="#{joo2_swmenufree_configController.next}" value="{Next} #{joo2_swmenufree_configController.pagination.pageSize}" rendered="#{joo2_swmenufree_configController.pagination.hasNextPage}"/>&nbsp;
+                    <h:dataTable value="#{joo2_swmenufree_configController.items}" var="item" border="0" cellpadding="2" cellspacing="0" rowClasses="jsfcrud_odd_row,jsfcrud_even_row" rules="all" style="border:solid 1px">
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_id"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_id}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_main_top"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_main_top}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_main_left"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_main_left}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_main_height"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_main_height}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_sub_border_over"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_sub_border_over}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_main_width"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_main_width}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_sub_width"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_sub_width}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_main_back"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_main_back}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_main_over"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_main_over}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_sub_back"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_sub_back}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_sub_over"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_sub_over}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_sub_border"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_sub_border}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_main_font_size"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_main_font_size}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_sub_font_size"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_sub_font_size}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_main_border_over"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_main_border_over}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_sub_font_color"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_sub_font_color}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_main_border"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_main_border}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_main_font_color"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_main_font_color}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_sub_font_color_over"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_sub_font_color_over}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_main_font_color_over"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_main_font_color_over}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_main_align"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_main_align}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_sub_align"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_sub_align}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_sub_height"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_sub_height}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_position"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_position}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_orientation"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_orientation}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_font_family"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_font_family}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_font_weight"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_font_weight}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_font_weight_over"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_font_weight_over}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_level2_sub_top"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_level2_sub_top}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_level2_sub_left"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_level2_sub_left}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_level1_sub_top"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_level1_sub_top}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_level1_sub_left"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_level1_sub_left}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_main_back_image"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_main_back_image}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_main_back_image_over"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_main_back_image_over}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_sub_back_image"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_sub_back_image}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_sub_back_image_over"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_sub_back_image_over}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_specialA"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_specialA}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_main_padding"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_main_padding}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_sub_padding"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_sub_padding}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_specialB"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_specialB}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_sub_font_family"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_sub_font_family}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_extra"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_extra}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_top_ttf"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_top_ttf}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_sub_ttf"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_sub_ttf}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_active_background"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_active_background}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_active_font"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_active_font}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_top_margin"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_top_margin}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_top_wrap"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_top_wrap}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_sub_wrap"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_sub_wrap}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_corners"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_corners}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_top_font_extra"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_top_font_extra}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_sub_font_extra"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_sub_font_extra}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_complete_padding"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_complete_padding}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_complete_background"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_complete_background}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_complete_background_image"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_complete_background_image}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_active_background_image"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_active_background_image}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_sub_indicator"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_sub_indicator}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="&nbsp;"/>
+                            </f:facet>
+                            <h:commandLink action="#{joo2_swmenufree_configController.prepareView}" value="View"/>
+                            <h:outputText value=" "/>
+                            <h:commandLink action="#{joo2_swmenufree_configController.prepareEdit}" value="Edit"/>
+                            <h:outputText value=" "/>
+                            <h:commandLink action="#{joo2_swmenufree_configController.destroy}" value="Delete"/>
+                        </h:column>
+                    </h:dataTable>
+                </h:panelGroup>
+                <br />
+                <h:commandLink action="#{joo2_swmenufree_configController.prepareCreate}" value="Joo2_swmenufree_configCreate"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="Return"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+    </html>

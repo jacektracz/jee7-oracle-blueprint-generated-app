@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Edit: Joo2_virtuemart_shoppergroups"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                        <h:outputLabel value="epgen_virtuemart_shoppergroup_id" for="epgen_virtuemart_shoppergroup_id" />
+                        <h:inputText id="epgen_virtuemart_shoppergroup_id" value="#{joo2_virtuemart_shoppergroupsController.selected.epgen_virtuemart_shoppergroup_id}" title="epgen_virtuemart_shoppergroup_id" required="false" requiredMessage="{FieldJoo2_virtuemart_shoppergroupsepgen_virtuemart_shoppergroup_idis Required}"/>
+                        <h:outputLabel value="epgen_virtuemart_vendor_id" for="epgen_virtuemart_vendor_id" />
+                        <h:inputText id="epgen_virtuemart_vendor_id" value="#{joo2_virtuemart_shoppergroupsController.selected.epgen_virtuemart_vendor_id}" title="epgen_virtuemart_vendor_id" required="false" requiredMessage="{FieldJoo2_virtuemart_shoppergroupsepgen_virtuemart_vendor_idis Required}"/>
+                        <h:outputLabel value="epgen_shopper_group_name" for="epgen_shopper_group_name" />
+                        <h:inputText id="epgen_shopper_group_name" value="#{joo2_virtuemart_shoppergroupsController.selected.epgen_shopper_group_name}" title="epgen_shopper_group_name" required="false" requiredMessage="{FieldJoo2_virtuemart_shoppergroupsepgen_shopper_group_nameis Required}"/>
+                        <h:outputLabel value="epgen_shopper_group_desc" for="epgen_shopper_group_desc" />
+                        <h:inputText id="epgen_shopper_group_desc" value="#{joo2_virtuemart_shoppergroupsController.selected.epgen_shopper_group_desc}" title="epgen_shopper_group_desc" required="false" requiredMessage="{FieldJoo2_virtuemart_shoppergroupsepgen_shopper_group_descis Required}"/>
+                        <h:outputLabel value="epgen_custom_price_display" for="epgen_custom_price_display" />
+                        <h:inputText id="epgen_custom_price_display" value="#{joo2_virtuemart_shoppergroupsController.selected.epgen_custom_price_display}" title="epgen_custom_price_display" required="false" requiredMessage="{FieldJoo2_virtuemart_shoppergroupsepgen_custom_price_displayis Required}"/>
+                        <h:outputLabel value="epgen_default" for="epgen_default" />
+                        <h:inputText id="epgen_default" value="#{joo2_virtuemart_shoppergroupsController.selected.epgen_default}" title="epgen_default" required="false" requiredMessage="{FieldJoo2_virtuemart_shoppergroupsepgen_defaultis Required}"/>
+                        <h:outputLabel value="epgen_ordering" for="epgen_ordering" />
+                        <h:inputText id="epgen_ordering" value="#{joo2_virtuemart_shoppergroupsController.selected.epgen_ordering}" title="epgen_ordering" required="false" requiredMessage="{FieldJoo2_virtuemart_shoppergroupsepgen_orderingis Required}"/>
+                        <h:outputLabel value="epgen_shared" for="epgen_shared" />
+                        <h:inputText id="epgen_shared" value="#{joo2_virtuemart_shoppergroupsController.selected.epgen_shared}" title="epgen_shared" required="false" requiredMessage="{FieldJoo2_virtuemart_shoppergroupsepgen_sharedis Required}"/>
+                        <h:outputLabel value="epgen_published" for="epgen_published" />
+                        <h:inputText id="epgen_published" value="#{joo2_virtuemart_shoppergroupsController.selected.epgen_published}" title="epgen_published" required="false" requiredMessage="{FieldJoo2_virtuemart_shoppergroupsepgen_publishedis Required}"/>
+                        <h:outputLabel value="epgen_created_on" for="epgen_created_on" />
+                        <h:inputText id="epgen_created_on" value="#{joo2_virtuemart_shoppergroupsController.selected.epgen_created_on}" title="epgen_created_on" required="false" requiredMessage="{FieldJoo2_virtuemart_shoppergroupsepgen_created_onis Required}"/>
+                        <h:outputLabel value="epgen_created_by" for="epgen_created_by" />
+                        <h:inputText id="epgen_created_by" value="#{joo2_virtuemart_shoppergroupsController.selected.epgen_created_by}" title="epgen_created_by" required="false" requiredMessage="{FieldJoo2_virtuemart_shoppergroupsepgen_created_byis Required}"/>
+                        <h:outputLabel value="epgen_modified_on" for="epgen_modified_on" />
+                        <h:inputText id="epgen_modified_on" value="#{joo2_virtuemart_shoppergroupsController.selected.epgen_modified_on}" title="epgen_modified_on" required="false" requiredMessage="{FieldJoo2_virtuemart_shoppergroupsepgen_modified_onis Required}"/>
+                        <h:outputLabel value="epgen_modified_by" for="epgen_modified_by" />
+                        <h:inputText id="epgen_modified_by" value="#{joo2_virtuemart_shoppergroupsController.selected.epgen_modified_by}" title="epgen_modified_by" required="false" requiredMessage="{FieldJoo2_virtuemart_shoppergroupsepgen_modified_byis Required}"/>
+                        <h:outputLabel value="epgen_locked_on" for="epgen_locked_on" />
+                        <h:inputText id="epgen_locked_on" value="#{joo2_virtuemart_shoppergroupsController.selected.epgen_locked_on}" title="epgen_locked_on" required="false" requiredMessage="{FieldJoo2_virtuemart_shoppergroupsepgen_locked_onis Required}"/>
+                        <h:outputLabel value="epgen_locked_by" for="epgen_locked_by" />
+                        <h:inputText id="epgen_locked_by" value="#{joo2_virtuemart_shoppergroupsController.selected.epgen_locked_by}" title="epgen_locked_by" required="false" requiredMessage="{FieldJoo2_virtuemart_shoppergroupsepgen_locked_byis Required}"/>
+</h:panelGrid>
+                <h:commandLink  action="#{joo2_virtuemart_shoppergroupsController.update}" value="Save"/>
+<br />
+                <br />
+                <h:link  outcome="View" value="View"/>
+<br />
+                <h:commandLink  action="#{joo2_virtuemart_shoppergroupsController.prepareList}" value="List Joo2_virtuemart_shoppergroups" immediate="true"/>
+<br />
+                <br />
+                <h:link  outcome="/index" value="Return to  main" />
+</h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

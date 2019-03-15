@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Edit: Joo2_weblinks"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                        <h:outputLabel value="epgen_id" for="epgen_id" />
+                        <h:inputText id="epgen_id" value="#{joo2_weblinksController.selected.epgen_id}" title="epgen_id" required="false" requiredMessage="{FieldJoo2_weblinksepgen_idis Required}"/>
+                        <h:outputLabel value="epgen_catid" for="epgen_catid" />
+                        <h:inputText id="epgen_catid" value="#{joo2_weblinksController.selected.epgen_catid}" title="epgen_catid" required="false" requiredMessage="{FieldJoo2_weblinksepgen_catidis Required}"/>
+                        <h:outputLabel value="epgen_sid" for="epgen_sid" />
+                        <h:inputText id="epgen_sid" value="#{joo2_weblinksController.selected.epgen_sid}" title="epgen_sid" required="false" requiredMessage="{FieldJoo2_weblinksepgen_sidis Required}"/>
+                        <h:outputLabel value="epgen_title" for="epgen_title" />
+                        <h:inputText id="epgen_title" value="#{joo2_weblinksController.selected.epgen_title}" title="epgen_title" required="false" requiredMessage="{FieldJoo2_weblinksepgen_titleis Required}"/>
+                        <h:outputLabel value="epgen_alias" for="epgen_alias" />
+                        <h:inputText id="epgen_alias" value="#{joo2_weblinksController.selected.epgen_alias}" title="epgen_alias" required="false" requiredMessage="{FieldJoo2_weblinksepgen_aliasis Required}"/>
+                        <h:outputLabel value="epgen_url" for="epgen_url" />
+                        <h:inputText id="epgen_url" value="#{joo2_weblinksController.selected.epgen_url}" title="epgen_url" required="false" requiredMessage="{FieldJoo2_weblinksepgen_urlis Required}"/>
+                        <h:outputLabel value="epgen_description" for="epgen_description" />
+                        <h:inputText id="epgen_description" value="#{joo2_weblinksController.selected.epgen_description}" title="epgen_description" required="false" requiredMessage="{FieldJoo2_weblinksepgen_descriptionis Required}"/>
+                        <h:outputLabel value="epgen_date" for="epgen_date" />
+                        <h:inputText id="epgen_date" value="#{joo2_weblinksController.selected.epgen_date}" title="epgen_date" required="false" requiredMessage="{FieldJoo2_weblinksepgen_dateis Required}"/>
+                        <h:outputLabel value="epgen_hits" for="epgen_hits" />
+                        <h:inputText id="epgen_hits" value="#{joo2_weblinksController.selected.epgen_hits}" title="epgen_hits" required="false" requiredMessage="{FieldJoo2_weblinksepgen_hitsis Required}"/>
+                        <h:outputLabel value="epgen_state" for="epgen_state" />
+                        <h:inputText id="epgen_state" value="#{joo2_weblinksController.selected.epgen_state}" title="epgen_state" required="false" requiredMessage="{FieldJoo2_weblinksepgen_stateis Required}"/>
+                        <h:outputLabel value="epgen_checked_out" for="epgen_checked_out" />
+                        <h:inputText id="epgen_checked_out" value="#{joo2_weblinksController.selected.epgen_checked_out}" title="epgen_checked_out" required="false" requiredMessage="{FieldJoo2_weblinksepgen_checked_outis Required}"/>
+                        <h:outputLabel value="epgen_checked_out_time" for="epgen_checked_out_time" />
+                        <h:inputText id="epgen_checked_out_time" value="#{joo2_weblinksController.selected.epgen_checked_out_time}" title="epgen_checked_out_time" required="false" requiredMessage="{FieldJoo2_weblinksepgen_checked_out_timeis Required}"/>
+                        <h:outputLabel value="epgen_ordering" for="epgen_ordering" />
+                        <h:inputText id="epgen_ordering" value="#{joo2_weblinksController.selected.epgen_ordering}" title="epgen_ordering" required="false" requiredMessage="{FieldJoo2_weblinksepgen_orderingis Required}"/>
+                        <h:outputLabel value="epgen_archived" for="epgen_archived" />
+                        <h:inputText id="epgen_archived" value="#{joo2_weblinksController.selected.epgen_archived}" title="epgen_archived" required="false" requiredMessage="{FieldJoo2_weblinksepgen_archivedis Required}"/>
+                        <h:outputLabel value="epgen_approved" for="epgen_approved" />
+                        <h:inputText id="epgen_approved" value="#{joo2_weblinksController.selected.epgen_approved}" title="epgen_approved" required="false" requiredMessage="{FieldJoo2_weblinksepgen_approvedis Required}"/>
+                        <h:outputLabel value="epgen_access" for="epgen_access" />
+                        <h:inputText id="epgen_access" value="#{joo2_weblinksController.selected.epgen_access}" title="epgen_access" required="false" requiredMessage="{FieldJoo2_weblinksepgen_accessis Required}"/>
+                        <h:outputLabel value="epgen_params" for="epgen_params" />
+                        <h:inputText id="epgen_params" value="#{joo2_weblinksController.selected.epgen_params}" title="epgen_params" required="false" requiredMessage="{FieldJoo2_weblinksepgen_paramsis Required}"/>
+                        <h:outputLabel value="epgen_language" for="epgen_language" />
+                        <h:inputText id="epgen_language" value="#{joo2_weblinksController.selected.epgen_language}" title="epgen_language" required="false" requiredMessage="{FieldJoo2_weblinksepgen_languageis Required}"/>
+                        <h:outputLabel value="epgen_created" for="epgen_created" />
+                        <h:inputText id="epgen_created" value="#{joo2_weblinksController.selected.epgen_created}" title="epgen_created" required="false" requiredMessage="{FieldJoo2_weblinksepgen_createdis Required}"/>
+                        <h:outputLabel value="epgen_created_by" for="epgen_created_by" />
+                        <h:inputText id="epgen_created_by" value="#{joo2_weblinksController.selected.epgen_created_by}" title="epgen_created_by" required="false" requiredMessage="{FieldJoo2_weblinksepgen_created_byis Required}"/>
+                        <h:outputLabel value="epgen_created_by_alias" for="epgen_created_by_alias" />
+                        <h:inputText id="epgen_created_by_alias" value="#{joo2_weblinksController.selected.epgen_created_by_alias}" title="epgen_created_by_alias" required="false" requiredMessage="{FieldJoo2_weblinksepgen_created_by_aliasis Required}"/>
+                        <h:outputLabel value="epgen_modified" for="epgen_modified" />
+                        <h:inputText id="epgen_modified" value="#{joo2_weblinksController.selected.epgen_modified}" title="epgen_modified" required="false" requiredMessage="{FieldJoo2_weblinksepgen_modifiedis Required}"/>
+                        <h:outputLabel value="epgen_modified_by" for="epgen_modified_by" />
+                        <h:inputText id="epgen_modified_by" value="#{joo2_weblinksController.selected.epgen_modified_by}" title="epgen_modified_by" required="false" requiredMessage="{FieldJoo2_weblinksepgen_modified_byis Required}"/>
+                        <h:outputLabel value="epgen_metakey" for="epgen_metakey" />
+                        <h:inputText id="epgen_metakey" value="#{joo2_weblinksController.selected.epgen_metakey}" title="epgen_metakey" required="false" requiredMessage="{FieldJoo2_weblinksepgen_metakeyis Required}"/>
+                        <h:outputLabel value="epgen_metadesc" for="epgen_metadesc" />
+                        <h:inputText id="epgen_metadesc" value="#{joo2_weblinksController.selected.epgen_metadesc}" title="epgen_metadesc" required="false" requiredMessage="{FieldJoo2_weblinksepgen_metadescis Required}"/>
+                        <h:outputLabel value="epgen_metadata" for="epgen_metadata" />
+                        <h:inputText id="epgen_metadata" value="#{joo2_weblinksController.selected.epgen_metadata}" title="epgen_metadata" required="false" requiredMessage="{FieldJoo2_weblinksepgen_metadatais Required}"/>
+                        <h:outputLabel value="epgen_featured" for="epgen_featured" />
+                        <h:inputText id="epgen_featured" value="#{joo2_weblinksController.selected.epgen_featured}" title="epgen_featured" required="false" requiredMessage="{FieldJoo2_weblinksepgen_featuredis Required}"/>
+                        <h:outputLabel value="epgen_xreference" for="epgen_xreference" />
+                        <h:inputText id="epgen_xreference" value="#{joo2_weblinksController.selected.epgen_xreference}" title="epgen_xreference" required="false" requiredMessage="{FieldJoo2_weblinksepgen_xreferenceis Required}"/>
+                        <h:outputLabel value="epgen_publish_up" for="epgen_publish_up" />
+                        <h:inputText id="epgen_publish_up" value="#{joo2_weblinksController.selected.epgen_publish_up}" title="epgen_publish_up" required="false" requiredMessage="{FieldJoo2_weblinksepgen_publish_upis Required}"/>
+                        <h:outputLabel value="epgen_publish_down" for="epgen_publish_down" />
+                        <h:inputText id="epgen_publish_down" value="#{joo2_weblinksController.selected.epgen_publish_down}" title="epgen_publish_down" required="false" requiredMessage="{FieldJoo2_weblinksepgen_publish_downis Required}"/>
+</h:panelGrid>
+                <h:commandLink  action="#{joo2_weblinksController.update}" value="Save"/>
+<br />
+                <br />
+                <h:link  outcome="View" value="View"/>
+<br />
+                <h:commandLink  action="#{joo2_weblinksController.prepareList}" value="List Joo2_weblinks" immediate="true"/>
+<br />
+                <br />
+                <h:link  outcome="/index" value="Return to  main" />
+</h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

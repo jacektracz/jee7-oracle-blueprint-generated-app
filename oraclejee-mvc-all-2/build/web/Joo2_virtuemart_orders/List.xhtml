@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Joo2_virtuemart_orders"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:form styleClass="jsfcrud_list_form">
+                <h:panelGroup id="messagePanel" layout="block">
+                    <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+                </h:panelGroup>
+                <h:outputText escape="false" value="Empty}" rendered="#{joo2_virtuemart_ordersController.items.rowCount == 0}"/>
+                <h:panelGroup rendered="#{joo2_virtuemart_ordersController.items.rowCount > 0}">
+                    <h:outputText value="#{joo2_virtuemart_ordersController.pagination.pageFirstItem + 1}..#{joo2_virtuemart_ordersController.pagination.pageLastItem + 1}/#{joo2_virtuemart_ordersController.pagination.itemsCount}"/>&nbsp;
+                    <h:commandLink action="#{joo2_virtuemart_ordersController.previous}" value="{Previous} #{joo2_virtuemart_ordersController.pagination.pageSize}" rendered="#{joo2_virtuemart_ordersController.pagination.hasPreviousPage}"/>&nbsp;
+                    <h:commandLink action="#{joo2_virtuemart_ordersController.next}" value="{Next} #{joo2_virtuemart_ordersController.pagination.pageSize}" rendered="#{joo2_virtuemart_ordersController.pagination.hasNextPage}"/>&nbsp;
+                    <h:dataTable value="#{joo2_virtuemart_ordersController.items}" var="item" border="0" cellpadding="2" cellspacing="0" rowClasses="jsfcrud_odd_row,jsfcrud_even_row" rules="all" style="border:solid 1px">
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_virtuemart_order_id"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_virtuemart_order_id}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_virtuemart_user_id"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_virtuemart_user_id}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_virtuemart_vendor_id"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_virtuemart_vendor_id}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_order_number"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_order_number}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_order_pass"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_order_pass}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_virtuemart_userinfo_id"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_virtuemart_userinfo_id}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_order_total"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_order_total}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_order_subtotal"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_order_subtotal}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_order_tax"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_order_tax}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_order_tax_details"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_order_tax_details}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_order_shipping"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_order_shipping}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_order_shipping_tax"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_order_shipping_tax}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_coupon_discount"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_coupon_discount}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_coupon_code"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_coupon_code}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_order_discount"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_order_discount}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_order_currency"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_order_currency}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_order_status"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_order_status}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_user_currency_id"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_user_currency_id}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_user_currency_rate"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_user_currency_rate}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_payment_method_id"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_payment_method_id}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_ship_method_id"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_ship_method_id}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_customer_note"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_customer_note}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_ip_address"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_ip_address}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_created_on"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_created_on}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_created_by"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_created_by}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_modified_on"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_modified_on}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_modified_by"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_modified_by}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_locked_on"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_locked_on}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_locked_by"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_locked_by}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="&nbsp;"/>
+                            </f:facet>
+                            <h:commandLink action="#{joo2_virtuemart_ordersController.prepareView}" value="View"/>
+                            <h:outputText value=" "/>
+                            <h:commandLink action="#{joo2_virtuemart_ordersController.prepareEdit}" value="Edit"/>
+                            <h:outputText value=" "/>
+                            <h:commandLink action="#{joo2_virtuemart_ordersController.destroy}" value="Delete"/>
+                        </h:column>
+                    </h:dataTable>
+                </h:panelGroup>
+                <br />
+                <h:commandLink action="#{joo2_virtuemart_ordersController.prepareCreate}" value="Joo2_virtuemart_ordersCreate"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="Return"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+    </html>

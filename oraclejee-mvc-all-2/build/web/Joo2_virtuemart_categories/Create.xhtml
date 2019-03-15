@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Create:Joo2_virtuemart_categories"></h:outputText>
+</ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+<h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+<h:panelGrid columns="2">
+                        <h:outputLabel  value="epgen_virtuemart_category_id" for="epgen_virtuemart_category_id" />
+                        <h:inputText id="epgen_virtuemart_category_id" value="#{joo2_virtuemart_categoriesController.selected.epgen_virtuemart_category_id}" title="epgen_virtuemart_category_id" required="false" requiredMessage="Field[0]Joo2_virtuemart_categories.epgen_virtuemart_category_id is Required"/>
+                        <h:outputLabel  value="epgen_virtuemart_vendor_id" for="epgen_virtuemart_vendor_id" />
+                        <h:inputText id="epgen_virtuemart_vendor_id" value="#{joo2_virtuemart_categoriesController.selected.epgen_virtuemart_vendor_id}" title="epgen_virtuemart_vendor_id" required="false" requiredMessage="Field[1]Joo2_virtuemart_categories.epgen_virtuemart_vendor_id is Required"/>
+                        <h:outputLabel  value="epgen_category_name" for="epgen_category_name" />
+                        <h:inputText id="epgen_category_name" value="#{joo2_virtuemart_categoriesController.selected.epgen_category_name}" title="epgen_category_name" required="false" requiredMessage="Field[2]Joo2_virtuemart_categories.epgen_category_name is Required"/>
+                        <h:outputLabel  value="epgen_slug" for="epgen_slug" />
+                        <h:inputText id="epgen_slug" value="#{joo2_virtuemart_categoriesController.selected.epgen_slug}" title="epgen_slug" required="false" requiredMessage="Field[3]Joo2_virtuemart_categories.epgen_slug is Required"/>
+                        <h:outputLabel  value="epgen_category_description" for="epgen_category_description" />
+                        <h:inputText id="epgen_category_description" value="#{joo2_virtuemart_categoriesController.selected.epgen_category_description}" title="epgen_category_description" required="false" requiredMessage="Field[4]Joo2_virtuemart_categories.epgen_category_description is Required"/>
+                        <h:outputLabel  value="epgen_category_template" for="epgen_category_template" />
+                        <h:inputText id="epgen_category_template" value="#{joo2_virtuemart_categoriesController.selected.epgen_category_template}" title="epgen_category_template" required="false" requiredMessage="Field[5]Joo2_virtuemart_categories.epgen_category_template is Required"/>
+                        <h:outputLabel  value="epgen_category_layout" for="epgen_category_layout" />
+                        <h:inputText id="epgen_category_layout" value="#{joo2_virtuemart_categoriesController.selected.epgen_category_layout}" title="epgen_category_layout" required="false" requiredMessage="Field[6]Joo2_virtuemart_categories.epgen_category_layout is Required"/>
+                        <h:outputLabel  value="epgen_category_product_layout" for="epgen_category_product_layout" />
+                        <h:inputText id="epgen_category_product_layout" value="#{joo2_virtuemart_categoriesController.selected.epgen_category_product_layout}" title="epgen_category_product_layout" required="false" requiredMessage="Field[7]Joo2_virtuemart_categories.epgen_category_product_layout is Required"/>
+                        <h:outputLabel  value="epgen_products_per_row" for="epgen_products_per_row" />
+                        <h:inputText id="epgen_products_per_row" value="#{joo2_virtuemart_categoriesController.selected.epgen_products_per_row}" title="epgen_products_per_row" required="false" requiredMessage="Field[8]Joo2_virtuemart_categories.epgen_products_per_row is Required"/>
+                        <h:outputLabel  value="epgen_limit_list_start" for="epgen_limit_list_start" />
+                        <h:inputText id="epgen_limit_list_start" value="#{joo2_virtuemart_categoriesController.selected.epgen_limit_list_start}" title="epgen_limit_list_start" required="false" requiredMessage="Field[9]Joo2_virtuemart_categories.epgen_limit_list_start is Required"/>
+                        <h:outputLabel  value="epgen_limit_list_step" for="epgen_limit_list_step" />
+                        <h:inputText id="epgen_limit_list_step" value="#{joo2_virtuemart_categoriesController.selected.epgen_limit_list_step}" title="epgen_limit_list_step" required="false" requiredMessage="Field[10]Joo2_virtuemart_categories.epgen_limit_list_step is Required"/>
+                        <h:outputLabel  value="epgen_limit_list_max" for="epgen_limit_list_max" />
+                        <h:inputText id="epgen_limit_list_max" value="#{joo2_virtuemart_categoriesController.selected.epgen_limit_list_max}" title="epgen_limit_list_max" required="false" requiredMessage="Field[11]Joo2_virtuemart_categories.epgen_limit_list_max is Required"/>
+                        <h:outputLabel  value="epgen_limit_list_initial" for="epgen_limit_list_initial" />
+                        <h:inputText id="epgen_limit_list_initial" value="#{joo2_virtuemart_categoriesController.selected.epgen_limit_list_initial}" title="epgen_limit_list_initial" required="false" requiredMessage="Field[12]Joo2_virtuemart_categories.epgen_limit_list_initial is Required"/>
+                        <h:outputLabel  value="epgen_hits" for="epgen_hits" />
+                        <h:inputText id="epgen_hits" value="#{joo2_virtuemart_categoriesController.selected.epgen_hits}" title="epgen_hits" required="false" requiredMessage="Field[13]Joo2_virtuemart_categories.epgen_hits is Required"/>
+                        <h:outputLabel  value="epgen_metadesc" for="epgen_metadesc" />
+                        <h:inputText id="epgen_metadesc" value="#{joo2_virtuemart_categoriesController.selected.epgen_metadesc}" title="epgen_metadesc" required="false" requiredMessage="Field[14]Joo2_virtuemart_categories.epgen_metadesc is Required"/>
+                        <h:outputLabel  value="epgen_metakey" for="epgen_metakey" />
+                        <h:inputText id="epgen_metakey" value="#{joo2_virtuemart_categoriesController.selected.epgen_metakey}" title="epgen_metakey" required="false" requiredMessage="Field[15]Joo2_virtuemart_categories.epgen_metakey is Required"/>
+                        <h:outputLabel  value="epgen_metarobot" for="epgen_metarobot" />
+                        <h:inputText id="epgen_metarobot" value="#{joo2_virtuemart_categoriesController.selected.epgen_metarobot}" title="epgen_metarobot" required="false" requiredMessage="Field[16]Joo2_virtuemart_categories.epgen_metarobot is Required"/>
+                        <h:outputLabel  value="epgen_metaauthor" for="epgen_metaauthor" />
+                        <h:inputText id="epgen_metaauthor" value="#{joo2_virtuemart_categoriesController.selected.epgen_metaauthor}" title="epgen_metaauthor" required="false" requiredMessage="Field[17]Joo2_virtuemart_categories.epgen_metaauthor is Required"/>
+                        <h:outputLabel  value="epgen_ordering" for="epgen_ordering" />
+                        <h:inputText id="epgen_ordering" value="#{joo2_virtuemart_categoriesController.selected.epgen_ordering}" title="epgen_ordering" required="false" requiredMessage="Field[18]Joo2_virtuemart_categories.epgen_ordering is Required"/>
+                        <h:outputLabel  value="epgen_shared" for="epgen_shared" />
+                        <h:inputText id="epgen_shared" value="#{joo2_virtuemart_categoriesController.selected.epgen_shared}" title="epgen_shared" required="false" requiredMessage="Field[19]Joo2_virtuemart_categories.epgen_shared is Required"/>
+                        <h:outputLabel  value="epgen_published" for="epgen_published" />
+                        <h:inputText id="epgen_published" value="#{joo2_virtuemart_categoriesController.selected.epgen_published}" title="epgen_published" required="false" requiredMessage="Field[20]Joo2_virtuemart_categories.epgen_published is Required"/>
+                        <h:outputLabel  value="epgen_created_on" for="epgen_created_on" />
+                        <h:inputText id="epgen_created_on" value="#{joo2_virtuemart_categoriesController.selected.epgen_created_on}" title="epgen_created_on" required="false" requiredMessage="Field[21]Joo2_virtuemart_categories.epgen_created_on is Required"/>
+                        <h:outputLabel  value="epgen_created_by" for="epgen_created_by" />
+                        <h:inputText id="epgen_created_by" value="#{joo2_virtuemart_categoriesController.selected.epgen_created_by}" title="epgen_created_by" required="false" requiredMessage="Field[22]Joo2_virtuemart_categories.epgen_created_by is Required"/>
+                        <h:outputLabel  value="epgen_modified_on" for="epgen_modified_on" />
+                        <h:inputText id="epgen_modified_on" value="#{joo2_virtuemart_categoriesController.selected.epgen_modified_on}" title="epgen_modified_on" required="false" requiredMessage="Field[23]Joo2_virtuemart_categories.epgen_modified_on is Required"/>
+                        <h:outputLabel  value="epgen_modified_by" for="epgen_modified_by" />
+                        <h:inputText id="epgen_modified_by" value="#{joo2_virtuemart_categoriesController.selected.epgen_modified_by}" title="epgen_modified_by" required="false" requiredMessage="Field[24]Joo2_virtuemart_categories.epgen_modified_by is Required"/>
+                        <h:outputLabel  value="epgen_locked_on" for="epgen_locked_on" />
+                        <h:inputText id="epgen_locked_on" value="#{joo2_virtuemart_categoriesController.selected.epgen_locked_on}" title="epgen_locked_on" required="false" requiredMessage="Field[25]Joo2_virtuemart_categories.epgen_locked_on is Required"/>
+                        <h:outputLabel  value="epgen_locked_by" for="epgen_locked_by" />
+                        <h:inputText id="epgen_locked_by" value="#{joo2_virtuemart_categoriesController.selected.epgen_locked_by}" title="epgen_locked_by" required="false" requiredMessage="Field[26]Joo2_virtuemart_categories.epgen_locked_by is Required"/>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{joo2_virtuemart_categoriesController.create}" value="Save" />
+<br />
+                <br />
+                <h:commandLink  action="#{joo2_virtuemart_categoriesController.prepareList}" value=" list" immediate="true"/>
+<br />
+                <br />
+                <h:link outcome="/index" value="Main page"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

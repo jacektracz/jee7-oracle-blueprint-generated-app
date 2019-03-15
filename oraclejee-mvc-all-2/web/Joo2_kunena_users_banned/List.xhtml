@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Joo2_kunena_users_banned"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:form styleClass="jsfcrud_list_form">
+                <h:panelGroup id="messagePanel" layout="block">
+                    <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+                </h:panelGroup>
+                <h:outputText escape="false" value="Empty}" rendered="#{joo2_kunena_users_bannedController.items.rowCount == 0}"/>
+                <h:panelGroup rendered="#{joo2_kunena_users_bannedController.items.rowCount > 0}">
+                    <h:outputText value="#{joo2_kunena_users_bannedController.pagination.pageFirstItem + 1}..#{joo2_kunena_users_bannedController.pagination.pageLastItem + 1}/#{joo2_kunena_users_bannedController.pagination.itemsCount}"/>&nbsp;
+                    <h:commandLink action="#{joo2_kunena_users_bannedController.previous}" value="{Previous} #{joo2_kunena_users_bannedController.pagination.pageSize}" rendered="#{joo2_kunena_users_bannedController.pagination.hasPreviousPage}"/>&nbsp;
+                    <h:commandLink action="#{joo2_kunena_users_bannedController.next}" value="{Next} #{joo2_kunena_users_bannedController.pagination.pageSize}" rendered="#{joo2_kunena_users_bannedController.pagination.hasNextPage}"/>&nbsp;
+                    <h:dataTable value="#{joo2_kunena_users_bannedController.items}" var="item" border="0" cellpadding="2" cellspacing="0" rowClasses="jsfcrud_odd_row,jsfcrud_even_row" rules="all" style="border:solid 1px">
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_id"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_id}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_userid"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_userid}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_ip"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_ip}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_blocked"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_blocked}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_expiration"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_expiration}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_created_by"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_created_by}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_created_time"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_created_time}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_reason_private"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_reason_private}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_reason_public"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_reason_public}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_modified_by"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_modified_by}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_modified_time"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_modified_time}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_comments"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_comments}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_params"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_params}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="&nbsp;"/>
+                            </f:facet>
+                            <h:commandLink action="#{joo2_kunena_users_bannedController.prepareView}" value="View"/>
+                            <h:outputText value=" "/>
+                            <h:commandLink action="#{joo2_kunena_users_bannedController.prepareEdit}" value="Edit"/>
+                            <h:outputText value=" "/>
+                            <h:commandLink action="#{joo2_kunena_users_bannedController.destroy}" value="Delete"/>
+                        </h:column>
+                    </h:dataTable>
+                </h:panelGroup>
+                <br />
+                <h:commandLink action="#{joo2_kunena_users_bannedController.prepareCreate}" value="Joo2_kunena_users_bannedCreate"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="Return"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+    </html>

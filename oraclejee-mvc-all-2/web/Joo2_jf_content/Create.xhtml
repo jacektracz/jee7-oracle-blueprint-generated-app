@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Create:Joo2_jf_content"></h:outputText>
+</ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+<h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+<h:panelGrid columns="2">
+                        <h:outputLabel  value="epgen_id" for="epgen_id" />
+                        <h:inputText id="epgen_id" value="#{joo2_jf_contentController.selected.epgen_id}" title="epgen_id" required="false" requiredMessage="Field[0]Joo2_jf_content.epgen_id is Required"/>
+                        <h:outputLabel  value="epgen_language_id" for="epgen_language_id" />
+                        <h:inputText id="epgen_language_id" value="#{joo2_jf_contentController.selected.epgen_language_id}" title="epgen_language_id" required="false" requiredMessage="Field[1]Joo2_jf_content.epgen_language_id is Required"/>
+                        <h:outputLabel  value="epgen_reference_id" for="epgen_reference_id" />
+                        <h:inputText id="epgen_reference_id" value="#{joo2_jf_contentController.selected.epgen_reference_id}" title="epgen_reference_id" required="false" requiredMessage="Field[2]Joo2_jf_content.epgen_reference_id is Required"/>
+                        <h:outputLabel  value="epgen_reference_table" for="epgen_reference_table" />
+                        <h:inputText id="epgen_reference_table" value="#{joo2_jf_contentController.selected.epgen_reference_table}" title="epgen_reference_table" required="false" requiredMessage="Field[3]Joo2_jf_content.epgen_reference_table is Required"/>
+                        <h:outputLabel  value="epgen_reference_field" for="epgen_reference_field" />
+                        <h:inputText id="epgen_reference_field" value="#{joo2_jf_contentController.selected.epgen_reference_field}" title="epgen_reference_field" required="false" requiredMessage="Field[4]Joo2_jf_content.epgen_reference_field is Required"/>
+                        <h:outputLabel  value="epgen_value" for="epgen_value" />
+                        <h:inputText id="epgen_value" value="#{joo2_jf_contentController.selected.epgen_value}" title="epgen_value" required="false" requiredMessage="Field[5]Joo2_jf_content.epgen_value is Required"/>
+                        <h:outputLabel  value="epgen_original_value" for="epgen_original_value" />
+                        <h:inputText id="epgen_original_value" value="#{joo2_jf_contentController.selected.epgen_original_value}" title="epgen_original_value" required="false" requiredMessage="Field[6]Joo2_jf_content.epgen_original_value is Required"/>
+                        <h:outputLabel  value="epgen_original_text" for="epgen_original_text" />
+                        <h:inputText id="epgen_original_text" value="#{joo2_jf_contentController.selected.epgen_original_text}" title="epgen_original_text" required="false" requiredMessage="Field[7]Joo2_jf_content.epgen_original_text is Required"/>
+                        <h:outputLabel  value="epgen_modified" for="epgen_modified" />
+                        <h:inputText id="epgen_modified" value="#{joo2_jf_contentController.selected.epgen_modified}" title="epgen_modified" required="false" requiredMessage="Field[8]Joo2_jf_content.epgen_modified is Required"/>
+                        <h:outputLabel  value="epgen_modified_by" for="epgen_modified_by" />
+                        <h:inputText id="epgen_modified_by" value="#{joo2_jf_contentController.selected.epgen_modified_by}" title="epgen_modified_by" required="false" requiredMessage="Field[9]Joo2_jf_content.epgen_modified_by is Required"/>
+                        <h:outputLabel  value="epgen_published" for="epgen_published" />
+                        <h:inputText id="epgen_published" value="#{joo2_jf_contentController.selected.epgen_published}" title="epgen_published" required="false" requiredMessage="Field[10]Joo2_jf_content.epgen_published is Required"/>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{joo2_jf_contentController.create}" value="Save" />
+<br />
+                <br />
+                <h:commandLink  action="#{joo2_jf_contentController.prepareList}" value=" list" immediate="true"/>
+<br />
+                <br />
+                <h:link outcome="/index" value="Main page"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Create:Joo2_content_tmp"></h:outputText>
+</ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+<h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+<h:panelGrid columns="2">
+                        <h:outputLabel  value="epgen_id" for="epgen_id" />
+                        <h:inputText id="epgen_id" value="#{joo2_content_tmpController.selected.epgen_id}" title="epgen_id" required="false" requiredMessage="Field[0]Joo2_content_tmp.epgen_id is Required"/>
+                        <h:outputLabel  value="epgen_fulltext" for="epgen_fulltext" />
+                        <h:inputText id="epgen_fulltext" value="#{joo2_content_tmpController.selected.epgen_fulltext}" title="epgen_fulltext" required="false" requiredMessage="Field[1]Joo2_content_tmp.epgen_fulltext is Required"/>
+                        <h:outputLabel  value="epgen_introtext" for="epgen_introtext" />
+                        <h:inputText id="epgen_introtext" value="#{joo2_content_tmpController.selected.epgen_introtext}" title="epgen_introtext" required="false" requiredMessage="Field[2]Joo2_content_tmp.epgen_introtext is Required"/>
+                        <h:outputLabel  value="epgen_ep_href_main" for="epgen_ep_href_main" />
+                        <h:inputText id="epgen_ep_href_main" value="#{joo2_content_tmpController.selected.epgen_ep_href_main}" title="epgen_ep_href_main" required="false" requiredMessage="Field[3]Joo2_content_tmp.epgen_ep_href_main is Required"/>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{joo2_content_tmpController.create}" value="Save" />
+<br />
+                <br />
+                <h:commandLink  action="#{joo2_content_tmpController.prepareList}" value=" list" immediate="true"/>
+<br />
+                <br />
+                <h:link outcome="/index" value="Main page"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

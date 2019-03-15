@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Edit: Joo2_virtuemart_manufacturers"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                        <h:outputLabel value="epgen_virtuemart_manufacturer_id" for="epgen_virtuemart_manufacturer_id" />
+                        <h:inputText id="epgen_virtuemart_manufacturer_id" value="#{joo2_virtuemart_manufacturersController.selected.epgen_virtuemart_manufacturer_id}" title="epgen_virtuemart_manufacturer_id" required="false" requiredMessage="{FieldJoo2_virtuemart_manufacturersepgen_virtuemart_manufacturer_idis Required}"/>
+                        <h:outputLabel value="epgen_mf_name" for="epgen_mf_name" />
+                        <h:inputText id="epgen_mf_name" value="#{joo2_virtuemart_manufacturersController.selected.epgen_mf_name}" title="epgen_mf_name" required="false" requiredMessage="{FieldJoo2_virtuemart_manufacturersepgen_mf_nameis Required}"/>
+                        <h:outputLabel value="epgen_slug" for="epgen_slug" />
+                        <h:inputText id="epgen_slug" value="#{joo2_virtuemart_manufacturersController.selected.epgen_slug}" title="epgen_slug" required="false" requiredMessage="{FieldJoo2_virtuemart_manufacturersepgen_slugis Required}"/>
+                        <h:outputLabel value="epgen_mf_email" for="epgen_mf_email" />
+                        <h:inputText id="epgen_mf_email" value="#{joo2_virtuemart_manufacturersController.selected.epgen_mf_email}" title="epgen_mf_email" required="false" requiredMessage="{FieldJoo2_virtuemart_manufacturersepgen_mf_emailis Required}"/>
+                        <h:outputLabel value="epgen_mf_desc" for="epgen_mf_desc" />
+                        <h:inputText id="epgen_mf_desc" value="#{joo2_virtuemart_manufacturersController.selected.epgen_mf_desc}" title="epgen_mf_desc" required="false" requiredMessage="{FieldJoo2_virtuemart_manufacturersepgen_mf_descis Required}"/>
+                        <h:outputLabel value="epgen_virtuemart_manufacturercategories_id" for="epgen_virtuemart_manufacturercategories_id" />
+                        <h:inputText id="epgen_virtuemart_manufacturercategories_id" value="#{joo2_virtuemart_manufacturersController.selected.epgen_virtuemart_manufacturercategories_id}" title="epgen_virtuemart_manufacturercategories_id" required="false" requiredMessage="{FieldJoo2_virtuemart_manufacturersepgen_virtuemart_manufacturercategories_idis Required}"/>
+                        <h:outputLabel value="epgen_mf_url" for="epgen_mf_url" />
+                        <h:inputText id="epgen_mf_url" value="#{joo2_virtuemart_manufacturersController.selected.epgen_mf_url}" title="epgen_mf_url" required="false" requiredMessage="{FieldJoo2_virtuemart_manufacturersepgen_mf_urlis Required}"/>
+                        <h:outputLabel value="epgen_hits" for="epgen_hits" />
+                        <h:inputText id="epgen_hits" value="#{joo2_virtuemart_manufacturersController.selected.epgen_hits}" title="epgen_hits" required="false" requiredMessage="{FieldJoo2_virtuemart_manufacturersepgen_hitsis Required}"/>
+                        <h:outputLabel value="epgen_published" for="epgen_published" />
+                        <h:inputText id="epgen_published" value="#{joo2_virtuemart_manufacturersController.selected.epgen_published}" title="epgen_published" required="false" requiredMessage="{FieldJoo2_virtuemart_manufacturersepgen_publishedis Required}"/>
+                        <h:outputLabel value="epgen_created_on" for="epgen_created_on" />
+                        <h:inputText id="epgen_created_on" value="#{joo2_virtuemart_manufacturersController.selected.epgen_created_on}" title="epgen_created_on" required="false" requiredMessage="{FieldJoo2_virtuemart_manufacturersepgen_created_onis Required}"/>
+                        <h:outputLabel value="epgen_created_by" for="epgen_created_by" />
+                        <h:inputText id="epgen_created_by" value="#{joo2_virtuemart_manufacturersController.selected.epgen_created_by}" title="epgen_created_by" required="false" requiredMessage="{FieldJoo2_virtuemart_manufacturersepgen_created_byis Required}"/>
+                        <h:outputLabel value="epgen_modified_on" for="epgen_modified_on" />
+                        <h:inputText id="epgen_modified_on" value="#{joo2_virtuemart_manufacturersController.selected.epgen_modified_on}" title="epgen_modified_on" required="false" requiredMessage="{FieldJoo2_virtuemart_manufacturersepgen_modified_onis Required}"/>
+                        <h:outputLabel value="epgen_modified_by" for="epgen_modified_by" />
+                        <h:inputText id="epgen_modified_by" value="#{joo2_virtuemart_manufacturersController.selected.epgen_modified_by}" title="epgen_modified_by" required="false" requiredMessage="{FieldJoo2_virtuemart_manufacturersepgen_modified_byis Required}"/>
+                        <h:outputLabel value="epgen_locked_on" for="epgen_locked_on" />
+                        <h:inputText id="epgen_locked_on" value="#{joo2_virtuemart_manufacturersController.selected.epgen_locked_on}" title="epgen_locked_on" required="false" requiredMessage="{FieldJoo2_virtuemart_manufacturersepgen_locked_onis Required}"/>
+                        <h:outputLabel value="epgen_locked_by" for="epgen_locked_by" />
+                        <h:inputText id="epgen_locked_by" value="#{joo2_virtuemart_manufacturersController.selected.epgen_locked_by}" title="epgen_locked_by" required="false" requiredMessage="{FieldJoo2_virtuemart_manufacturersepgen_locked_byis Required}"/>
+</h:panelGrid>
+                <h:commandLink  action="#{joo2_virtuemart_manufacturersController.update}" value="Save"/>
+<br />
+                <br />
+                <h:link  outcome="View" value="View"/>
+<br />
+                <h:commandLink  action="#{joo2_virtuemart_manufacturersController.prepareList}" value="List Joo2_virtuemart_manufacturers" immediate="true"/>
+<br />
+                <br />
+                <h:link  outcome="/index" value="Return to  main" />
+</h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Create:Joo2_kunena_moderation"></h:outputText>
+</ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+<h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+<h:panelGrid columns="2">
+                        <h:outputLabel  value="epgen_catid" for="epgen_catid" />
+                        <h:inputText id="epgen_catid" value="#{joo2_kunena_moderationController.selected.epgen_catid}" title="epgen_catid" required="false" requiredMessage="Field[0]Joo2_kunena_moderation.epgen_catid is Required"/>
+                        <h:outputLabel  value="epgen_userid" for="epgen_userid" />
+                        <h:inputText id="epgen_userid" value="#{joo2_kunena_moderationController.selected.epgen_userid}" title="epgen_userid" required="false" requiredMessage="Field[1]Joo2_kunena_moderation.epgen_userid is Required"/>
+                        <h:outputLabel  value="epgen_future1" for="epgen_future1" />
+                        <h:inputText id="epgen_future1" value="#{joo2_kunena_moderationController.selected.epgen_future1}" title="epgen_future1" required="false" requiredMessage="Field[2]Joo2_kunena_moderation.epgen_future1 is Required"/>
+                        <h:outputLabel  value="epgen_future2" for="epgen_future2" />
+                        <h:inputText id="epgen_future2" value="#{joo2_kunena_moderationController.selected.epgen_future2}" title="epgen_future2" required="false" requiredMessage="Field[3]Joo2_kunena_moderation.epgen_future2 is Required"/>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{joo2_kunena_moderationController.create}" value="Save" />
+<br />
+                <br />
+                <h:commandLink  action="#{joo2_kunena_moderationController.prepareList}" value=" list" immediate="true"/>
+<br />
+                <br />
+                <h:link outcome="/index" value="Main page"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Edit: Joo2_update_categories"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                        <h:outputLabel value="epgen_categoryid" for="epgen_categoryid" />
+                        <h:inputText id="epgen_categoryid" value="#{joo2_update_categoriesController.selected.epgen_categoryid}" title="epgen_categoryid" required="false" requiredMessage="{FieldJoo2_update_categoriesepgen_categoryidis Required}"/>
+                        <h:outputLabel value="epgen_name" for="epgen_name" />
+                        <h:inputText id="epgen_name" value="#{joo2_update_categoriesController.selected.epgen_name}" title="epgen_name" required="false" requiredMessage="{FieldJoo2_update_categoriesepgen_nameis Required}"/>
+                        <h:outputLabel value="epgen_description" for="epgen_description" />
+                        <h:inputText id="epgen_description" value="#{joo2_update_categoriesController.selected.epgen_description}" title="epgen_description" required="false" requiredMessage="{FieldJoo2_update_categoriesepgen_descriptionis Required}"/>
+                        <h:outputLabel value="epgen_parent" for="epgen_parent" />
+                        <h:inputText id="epgen_parent" value="#{joo2_update_categoriesController.selected.epgen_parent}" title="epgen_parent" required="false" requiredMessage="{FieldJoo2_update_categoriesepgen_parentis Required}"/>
+                        <h:outputLabel value="epgen_updatesite" for="epgen_updatesite" />
+                        <h:inputText id="epgen_updatesite" value="#{joo2_update_categoriesController.selected.epgen_updatesite}" title="epgen_updatesite" required="false" requiredMessage="{FieldJoo2_update_categoriesepgen_updatesiteis Required}"/>
+</h:panelGrid>
+                <h:commandLink  action="#{joo2_update_categoriesController.update}" value="Save"/>
+<br />
+                <br />
+                <h:link  outcome="View" value="View"/>
+<br />
+                <h:commandLink  action="#{joo2_update_categoriesController.prepareList}" value="List Joo2_update_categories" immediate="true"/>
+<br />
+                <br />
+                <h:link  outcome="/index" value="Return to  main" />
+</h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

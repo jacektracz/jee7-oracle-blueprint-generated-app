@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Joo2_content_tmp"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:form styleClass="jsfcrud_list_form">
+                <h:panelGroup id="messagePanel" layout="block">
+                    <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+                </h:panelGroup>
+                <h:outputText escape="false" value="Empty}" rendered="#{joo2_content_tmpController.items.rowCount == 0}"/>
+                <h:panelGroup rendered="#{joo2_content_tmpController.items.rowCount > 0}">
+                    <h:outputText value="#{joo2_content_tmpController.pagination.pageFirstItem + 1}..#{joo2_content_tmpController.pagination.pageLastItem + 1}/#{joo2_content_tmpController.pagination.itemsCount}"/>&nbsp;
+                    <h:commandLink action="#{joo2_content_tmpController.previous}" value="{Previous} #{joo2_content_tmpController.pagination.pageSize}" rendered="#{joo2_content_tmpController.pagination.hasPreviousPage}"/>&nbsp;
+                    <h:commandLink action="#{joo2_content_tmpController.next}" value="{Next} #{joo2_content_tmpController.pagination.pageSize}" rendered="#{joo2_content_tmpController.pagination.hasNextPage}"/>&nbsp;
+                    <h:dataTable value="#{joo2_content_tmpController.items}" var="item" border="0" cellpadding="2" cellspacing="0" rowClasses="jsfcrud_odd_row,jsfcrud_even_row" rules="all" style="border:solid 1px">
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_id"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_id}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_fulltext"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_fulltext}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_introtext"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_introtext}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_ep_href_main"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_ep_href_main}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="&nbsp;"/>
+                            </f:facet>
+                            <h:commandLink action="#{joo2_content_tmpController.prepareView}" value="View"/>
+                            <h:outputText value=" "/>
+                            <h:commandLink action="#{joo2_content_tmpController.prepareEdit}" value="Edit"/>
+                            <h:outputText value=" "/>
+                            <h:commandLink action="#{joo2_content_tmpController.destroy}" value="Delete"/>
+                        </h:column>
+                    </h:dataTable>
+                </h:panelGroup>
+                <br />
+                <h:commandLink action="#{joo2_content_tmpController.prepareCreate}" value="Joo2_content_tmpCreate"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="Return"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+    </html>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Edit: Joo2_viewlevels"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                        <h:outputLabel value="epgen_id" for="epgen_id" />
+                        <h:inputText id="epgen_id" value="#{joo2_viewlevelsController.selected.epgen_id}" title="epgen_id" required="false" requiredMessage="{FieldJoo2_viewlevelsepgen_idis Required}"/>
+                        <h:outputLabel value="epgen_title" for="epgen_title" />
+                        <h:inputText id="epgen_title" value="#{joo2_viewlevelsController.selected.epgen_title}" title="epgen_title" required="false" requiredMessage="{FieldJoo2_viewlevelsepgen_titleis Required}"/>
+                        <h:outputLabel value="epgen_ordering" for="epgen_ordering" />
+                        <h:inputText id="epgen_ordering" value="#{joo2_viewlevelsController.selected.epgen_ordering}" title="epgen_ordering" required="false" requiredMessage="{FieldJoo2_viewlevelsepgen_orderingis Required}"/>
+                        <h:outputLabel value="epgen_rules" for="epgen_rules" />
+                        <h:inputText id="epgen_rules" value="#{joo2_viewlevelsController.selected.epgen_rules}" title="epgen_rules" required="false" requiredMessage="{FieldJoo2_viewlevelsepgen_rulesis Required}"/>
+</h:panelGrid>
+                <h:commandLink  action="#{joo2_viewlevelsController.update}" value="Save"/>
+<br />
+                <br />
+                <h:link  outcome="View" value="View"/>
+<br />
+                <h:commandLink  action="#{joo2_viewlevelsController.prepareList}" value="List Joo2_viewlevels" immediate="true"/>
+<br />
+                <br />
+                <h:link  outcome="/index" value="Return to  main" />
+</h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Create:Joo2_reglayer"></h:outputText>
+</ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+<h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+<h:panelGrid columns="2">
+                        <h:outputLabel  value="epgen_m_RegLayer_id" for="epgen_m_RegLayer_id" />
+                        <h:inputText id="epgen_m_RegLayer_id" value="#{joo2_reglayerController.selected.epgen_m_RegLayer_id}" title="epgen_m_RegLayer_id" required="false" requiredMessage="Field[0]Joo2_reglayer.epgen_m_RegLayer_id is Required"/>
+                        <h:outputLabel  value="epgen_m_parent_id" for="epgen_m_parent_id" />
+                        <h:inputText id="epgen_m_parent_id" value="#{joo2_reglayerController.selected.epgen_m_parent_id}" title="epgen_m_parent_id" required="false" requiredMessage="Field[1]Joo2_reglayer.epgen_m_parent_id is Required"/>
+                        <h:outputLabel  value="epgen_m_layer_id" for="epgen_m_layer_id" />
+                        <h:inputText id="epgen_m_layer_id" value="#{joo2_reglayerController.selected.epgen_m_layer_id}" title="epgen_m_layer_id" required="false" requiredMessage="Field[2]Joo2_reglayer.epgen_m_layer_id is Required"/>
+                        <h:outputLabel  value="epgen_m_short_name" for="epgen_m_short_name" />
+                        <h:inputText id="epgen_m_short_name" value="#{joo2_reglayerController.selected.epgen_m_short_name}" title="epgen_m_short_name" required="false" requiredMessage="Field[3]Joo2_reglayer.epgen_m_short_name is Required"/>
+                        <h:outputLabel  value="epgen_m_title" for="epgen_m_title" />
+                        <h:inputText id="epgen_m_title" value="#{joo2_reglayerController.selected.epgen_m_title}" title="epgen_m_title" required="false" requiredMessage="Field[4]Joo2_reglayer.epgen_m_title is Required"/>
+                        <h:outputLabel  value="epgen_m_collapsible" for="epgen_m_collapsible" />
+                        <h:inputText id="epgen_m_collapsible" value="#{joo2_reglayerController.selected.epgen_m_collapsible}" title="epgen_m_collapsible" required="false" requiredMessage="Field[5]Joo2_reglayer.epgen_m_collapsible is Required"/>
+                        <h:outputLabel  value="epgen_m_open_content" for="epgen_m_open_content" />
+                        <h:inputText id="epgen_m_open_content" value="#{joo2_reglayerController.selected.epgen_m_open_content}" title="epgen_m_open_content" required="false" requiredMessage="Field[6]Joo2_reglayer.epgen_m_open_content is Required"/>
+                        <h:outputLabel  value="epgen_m_RegLayer_type" for="epgen_m_RegLayer_type" />
+                        <h:inputText id="epgen_m_RegLayer_type" value="#{joo2_reglayerController.selected.epgen_m_RegLayer_type}" title="epgen_m_RegLayer_type" required="false" requiredMessage="Field[7]Joo2_reglayer.epgen_m_RegLayer_type is Required"/>
+                        <h:outputLabel  value="epgen_m_RegLayer_position" for="epgen_m_RegLayer_position" />
+                        <h:inputText id="epgen_m_RegLayer_position" value="#{joo2_reglayerController.selected.epgen_m_RegLayer_position}" title="epgen_m_RegLayer_position" required="false" requiredMessage="Field[8]Joo2_reglayer.epgen_m_RegLayer_position is Required"/>
+                        <h:outputLabel  value="epgen_m_RegLayer_ordering" for="epgen_m_RegLayer_ordering" />
+                        <h:inputText id="epgen_m_RegLayer_ordering" value="#{joo2_reglayerController.selected.epgen_m_RegLayer_ordering}" title="epgen_m_RegLayer_ordering" required="false" requiredMessage="Field[9]Joo2_reglayer.epgen_m_RegLayer_ordering is Required"/>
+                        <h:outputLabel  value="epgen_m_RegLayer_name" for="epgen_m_RegLayer_name" />
+                        <h:inputText id="epgen_m_RegLayer_name" value="#{joo2_reglayerController.selected.epgen_m_RegLayer_name}" title="epgen_m_RegLayer_name" required="false" requiredMessage="Field[10]Joo2_reglayer.epgen_m_RegLayer_name is Required"/>
+                        <h:outputLabel  value="epgen_m_RegLayer_title" for="epgen_m_RegLayer_title" />
+                        <h:inputText id="epgen_m_RegLayer_title" value="#{joo2_reglayerController.selected.epgen_m_RegLayer_title}" title="epgen_m_RegLayer_title" required="false" requiredMessage="Field[11]Joo2_reglayer.epgen_m_RegLayer_title is Required"/>
+                        <h:outputLabel  value="epgen_RegLayer_display" for="epgen_RegLayer_display" />
+                        <h:inputText id="epgen_RegLayer_display" value="#{joo2_reglayerController.selected.epgen_RegLayer_display}" title="epgen_RegLayer_display" required="false" requiredMessage="Field[12]Joo2_reglayer.epgen_RegLayer_display is Required"/>
+                        <h:outputLabel  value="epgen_m_RegLayer_display" for="epgen_m_RegLayer_display" />
+                        <h:inputText id="epgen_m_RegLayer_display" value="#{joo2_reglayerController.selected.epgen_m_RegLayer_display}" title="epgen_m_RegLayer_display" required="false" requiredMessage="Field[13]Joo2_reglayer.epgen_m_RegLayer_display is Required"/>
+                        <h:outputLabel  value="epgen_m_theme_team" for="epgen_m_theme_team" />
+                        <h:inputText id="epgen_m_theme_team" value="#{joo2_reglayerController.selected.epgen_m_theme_team}" title="epgen_m_theme_team" required="false" requiredMessage="Field[14]Joo2_reglayer.epgen_m_theme_team is Required"/>
+                        <h:outputLabel  value="epgen_m_theme_ept" for="epgen_m_theme_ept" />
+                        <h:inputText id="epgen_m_theme_ept" value="#{joo2_reglayerController.selected.epgen_m_theme_ept}" title="epgen_m_theme_ept" required="false" requiredMessage="Field[15]Joo2_reglayer.epgen_m_theme_ept is Required"/>
+                        <h:outputLabel  value="epgen_m_reglayer_themes_path" for="epgen_m_reglayer_themes_path" />
+                        <h:inputText id="epgen_m_reglayer_themes_path" value="#{joo2_reglayerController.selected.epgen_m_reglayer_themes_path}" title="epgen_m_reglayer_themes_path" required="false" requiredMessage="Field[16]Joo2_reglayer.epgen_m_reglayer_themes_path is Required"/>
+                        <h:outputLabel  value="epgen_m_reglayer_theme_default" for="epgen_m_reglayer_theme_default" />
+                        <h:inputText id="epgen_m_reglayer_theme_default" value="#{joo2_reglayerController.selected.epgen_m_reglayer_theme_default}" title="epgen_m_reglayer_theme_default" required="false" requiredMessage="Field[17]Joo2_reglayer.epgen_m_reglayer_theme_default is Required"/>
+                        <h:outputLabel  value="epgen_m_reglayer_theme_last" for="epgen_m_reglayer_theme_last" />
+                        <h:inputText id="epgen_m_reglayer_theme_last" value="#{joo2_reglayerController.selected.epgen_m_reglayer_theme_last}" title="epgen_m_reglayer_theme_last" required="false" requiredMessage="Field[18]Joo2_reglayer.epgen_m_reglayer_theme_last is Required"/>
+                        <h:outputLabel  value="epgen_m_reglayer_lead_theme" for="epgen_m_reglayer_lead_theme" />
+                        <h:inputText id="epgen_m_reglayer_lead_theme" value="#{joo2_reglayerController.selected.epgen_m_reglayer_lead_theme}" title="epgen_m_reglayer_lead_theme" required="false" requiredMessage="Field[19]Joo2_reglayer.epgen_m_reglayer_lead_theme is Required"/>
+                        <h:outputLabel  value="epgen_m_reglayer_three_tab_theme" for="epgen_m_reglayer_three_tab_theme" />
+                        <h:inputText id="epgen_m_reglayer_three_tab_theme" value="#{joo2_reglayerController.selected.epgen_m_reglayer_three_tab_theme}" title="epgen_m_reglayer_three_tab_theme" required="false" requiredMessage="Field[20]Joo2_reglayer.epgen_m_reglayer_three_tab_theme is Required"/>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{joo2_reglayerController.create}" value="Save" />
+<br />
+                <br />
+                <h:commandLink  action="#{joo2_reglayerController.prepareList}" value=" list" immediate="true"/>
+<br />
+                <br />
+                <h:link outcome="/index" value="Main page"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

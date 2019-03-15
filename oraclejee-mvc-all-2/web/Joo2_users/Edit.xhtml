@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Edit: Joo2_users"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                        <h:outputLabel value="epgen_id" for="epgen_id" />
+                        <h:inputText id="epgen_id" value="#{joo2_usersController.selected.epgen_id}" title="epgen_id" required="false" requiredMessage="{FieldJoo2_usersepgen_idis Required}"/>
+                        <h:outputLabel value="epgen_name" for="epgen_name" />
+                        <h:inputText id="epgen_name" value="#{joo2_usersController.selected.epgen_name}" title="epgen_name" required="false" requiredMessage="{FieldJoo2_usersepgen_nameis Required}"/>
+                        <h:outputLabel value="epgen_username" for="epgen_username" />
+                        <h:inputText id="epgen_username" value="#{joo2_usersController.selected.epgen_username}" title="epgen_username" required="false" requiredMessage="{FieldJoo2_usersepgen_usernameis Required}"/>
+                        <h:outputLabel value="epgen_email" for="epgen_email" />
+                        <h:inputText id="epgen_email" value="#{joo2_usersController.selected.epgen_email}" title="epgen_email" required="false" requiredMessage="{FieldJoo2_usersepgen_emailis Required}"/>
+                        <h:outputLabel value="epgen_password" for="epgen_password" />
+                        <h:inputText id="epgen_password" value="#{joo2_usersController.selected.epgen_password}" title="epgen_password" required="false" requiredMessage="{FieldJoo2_usersepgen_passwordis Required}"/>
+                        <h:outputLabel value="epgen_usertype" for="epgen_usertype" />
+                        <h:inputText id="epgen_usertype" value="#{joo2_usersController.selected.epgen_usertype}" title="epgen_usertype" required="false" requiredMessage="{FieldJoo2_usersepgen_usertypeis Required}"/>
+                        <h:outputLabel value="epgen_block" for="epgen_block" />
+                        <h:inputText id="epgen_block" value="#{joo2_usersController.selected.epgen_block}" title="epgen_block" required="false" requiredMessage="{FieldJoo2_usersepgen_blockis Required}"/>
+                        <h:outputLabel value="epgen_sendEmail" for="epgen_sendEmail" />
+                        <h:inputText id="epgen_sendEmail" value="#{joo2_usersController.selected.epgen_sendEmail}" title="epgen_sendEmail" required="false" requiredMessage="{FieldJoo2_usersepgen_sendEmailis Required}"/>
+                        <h:outputLabel value="epgen_registerDate" for="epgen_registerDate" />
+                        <h:inputText id="epgen_registerDate" value="#{joo2_usersController.selected.epgen_registerDate}" title="epgen_registerDate" required="false" requiredMessage="{FieldJoo2_usersepgen_registerDateis Required}"/>
+                        <h:outputLabel value="epgen_lastvisitDate" for="epgen_lastvisitDate" />
+                        <h:inputText id="epgen_lastvisitDate" value="#{joo2_usersController.selected.epgen_lastvisitDate}" title="epgen_lastvisitDate" required="false" requiredMessage="{FieldJoo2_usersepgen_lastvisitDateis Required}"/>
+                        <h:outputLabel value="epgen_activation" for="epgen_activation" />
+                        <h:inputText id="epgen_activation" value="#{joo2_usersController.selected.epgen_activation}" title="epgen_activation" required="false" requiredMessage="{FieldJoo2_usersepgen_activationis Required}"/>
+                        <h:outputLabel value="epgen_params" for="epgen_params" />
+                        <h:inputText id="epgen_params" value="#{joo2_usersController.selected.epgen_params}" title="epgen_params" required="false" requiredMessage="{FieldJoo2_usersepgen_paramsis Required}"/>
+</h:panelGrid>
+                <h:commandLink  action="#{joo2_usersController.update}" value="Save"/>
+<br />
+                <br />
+                <h:link  outcome="View" value="View"/>
+<br />
+                <h:commandLink  action="#{joo2_usersController.prepareList}" value="List Joo2_users" immediate="true"/>
+<br />
+                <br />
+                <h:link  outcome="/index" value="Return to  main" />
+</h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

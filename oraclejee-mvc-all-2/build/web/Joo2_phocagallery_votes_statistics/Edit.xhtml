@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Edit: Joo2_phocagallery_votes_statistics"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                        <h:outputLabel value="epgen_id" for="epgen_id" />
+                        <h:inputText id="epgen_id" value="#{joo2_phocagallery_votes_statisticsController.selected.epgen_id}" title="epgen_id" required="false" requiredMessage="{FieldJoo2_phocagallery_votes_statisticsepgen_idis Required}"/>
+                        <h:outputLabel value="epgen_catid" for="epgen_catid" />
+                        <h:inputText id="epgen_catid" value="#{joo2_phocagallery_votes_statisticsController.selected.epgen_catid}" title="epgen_catid" required="false" requiredMessage="{FieldJoo2_phocagallery_votes_statisticsepgen_catidis Required}"/>
+                        <h:outputLabel value="epgen_count" for="epgen_count" />
+                        <h:inputText id="epgen_count" value="#{joo2_phocagallery_votes_statisticsController.selected.epgen_count}" title="epgen_count" required="false" requiredMessage="{FieldJoo2_phocagallery_votes_statisticsepgen_countis Required}"/>
+                        <h:outputLabel value="epgen_language" for="epgen_language" />
+                        <h:inputText id="epgen_language" value="#{joo2_phocagallery_votes_statisticsController.selected.epgen_language}" title="epgen_language" required="false" requiredMessage="{FieldJoo2_phocagallery_votes_statisticsepgen_languageis Required}"/>
+</h:panelGrid>
+                <h:commandLink  action="#{joo2_phocagallery_votes_statisticsController.update}" value="Save"/>
+<br />
+                <br />
+                <h:link  outcome="View" value="View"/>
+<br />
+                <h:commandLink  action="#{joo2_phocagallery_votes_statisticsController.prepareList}" value="List Joo2_phocagallery_votes_statistics" immediate="true"/>
+<br />
+                <br />
+                <h:link  outcome="/index" value="Return to  main" />
+</h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

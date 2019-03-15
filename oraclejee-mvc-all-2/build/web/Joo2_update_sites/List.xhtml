@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Joo2_update_sites"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:form styleClass="jsfcrud_list_form">
+                <h:panelGroup id="messagePanel" layout="block">
+                    <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+                </h:panelGroup>
+                <h:outputText escape="false" value="Empty}" rendered="#{joo2_update_sitesController.items.rowCount == 0}"/>
+                <h:panelGroup rendered="#{joo2_update_sitesController.items.rowCount > 0}">
+                    <h:outputText value="#{joo2_update_sitesController.pagination.pageFirstItem + 1}..#{joo2_update_sitesController.pagination.pageLastItem + 1}/#{joo2_update_sitesController.pagination.itemsCount}"/>&nbsp;
+                    <h:commandLink action="#{joo2_update_sitesController.previous}" value="{Previous} #{joo2_update_sitesController.pagination.pageSize}" rendered="#{joo2_update_sitesController.pagination.hasPreviousPage}"/>&nbsp;
+                    <h:commandLink action="#{joo2_update_sitesController.next}" value="{Next} #{joo2_update_sitesController.pagination.pageSize}" rendered="#{joo2_update_sitesController.pagination.hasNextPage}"/>&nbsp;
+                    <h:dataTable value="#{joo2_update_sitesController.items}" var="item" border="0" cellpadding="2" cellspacing="0" rowClasses="jsfcrud_odd_row,jsfcrud_even_row" rules="all" style="border:solid 1px">
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_update_site_id"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_update_site_id}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_name"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_name}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_type"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_type}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_location"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_location}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_enabled"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_enabled}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="&nbsp;"/>
+                            </f:facet>
+                            <h:commandLink action="#{joo2_update_sitesController.prepareView}" value="View"/>
+                            <h:outputText value=" "/>
+                            <h:commandLink action="#{joo2_update_sitesController.prepareEdit}" value="Edit"/>
+                            <h:outputText value=" "/>
+                            <h:commandLink action="#{joo2_update_sitesController.destroy}" value="Delete"/>
+                        </h:column>
+                    </h:dataTable>
+                </h:panelGroup>
+                <br />
+                <h:commandLink action="#{joo2_update_sitesController.prepareCreate}" value="Joo2_update_sitesCreate"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="Return"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+    </html>

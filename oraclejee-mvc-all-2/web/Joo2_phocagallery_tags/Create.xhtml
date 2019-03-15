@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Create:Joo2_phocagallery_tags"></h:outputText>
+</ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+<h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+<h:panelGrid columns="2">
+                        <h:outputLabel  value="epgen_id" for="epgen_id" />
+                        <h:inputText id="epgen_id" value="#{joo2_phocagallery_tagsController.selected.epgen_id}" title="epgen_id" required="false" requiredMessage="Field[0]Joo2_phocagallery_tags.epgen_id is Required"/>
+                        <h:outputLabel  value="epgen_title" for="epgen_title" />
+                        <h:inputText id="epgen_title" value="#{joo2_phocagallery_tagsController.selected.epgen_title}" title="epgen_title" required="false" requiredMessage="Field[1]Joo2_phocagallery_tags.epgen_title is Required"/>
+                        <h:outputLabel  value="epgen_alias" for="epgen_alias" />
+                        <h:inputText id="epgen_alias" value="#{joo2_phocagallery_tagsController.selected.epgen_alias}" title="epgen_alias" required="false" requiredMessage="Field[2]Joo2_phocagallery_tags.epgen_alias is Required"/>
+                        <h:outputLabel  value="epgen_link_cat" for="epgen_link_cat" />
+                        <h:inputText id="epgen_link_cat" value="#{joo2_phocagallery_tagsController.selected.epgen_link_cat}" title="epgen_link_cat" required="false" requiredMessage="Field[3]Joo2_phocagallery_tags.epgen_link_cat is Required"/>
+                        <h:outputLabel  value="epgen_link_ext" for="epgen_link_ext" />
+                        <h:inputText id="epgen_link_ext" value="#{joo2_phocagallery_tagsController.selected.epgen_link_ext}" title="epgen_link_ext" required="false" requiredMessage="Field[4]Joo2_phocagallery_tags.epgen_link_ext is Required"/>
+                        <h:outputLabel  value="epgen_description" for="epgen_description" />
+                        <h:inputText id="epgen_description" value="#{joo2_phocagallery_tagsController.selected.epgen_description}" title="epgen_description" required="false" requiredMessage="Field[5]Joo2_phocagallery_tags.epgen_description is Required"/>
+                        <h:outputLabel  value="epgen_published" for="epgen_published" />
+                        <h:inputText id="epgen_published" value="#{joo2_phocagallery_tagsController.selected.epgen_published}" title="epgen_published" required="false" requiredMessage="Field[6]Joo2_phocagallery_tags.epgen_published is Required"/>
+                        <h:outputLabel  value="epgen_checked_out" for="epgen_checked_out" />
+                        <h:inputText id="epgen_checked_out" value="#{joo2_phocagallery_tagsController.selected.epgen_checked_out}" title="epgen_checked_out" required="false" requiredMessage="Field[7]Joo2_phocagallery_tags.epgen_checked_out is Required"/>
+                        <h:outputLabel  value="epgen_checked_out_time" for="epgen_checked_out_time" />
+                        <h:inputText id="epgen_checked_out_time" value="#{joo2_phocagallery_tagsController.selected.epgen_checked_out_time}" title="epgen_checked_out_time" required="false" requiredMessage="Field[8]Joo2_phocagallery_tags.epgen_checked_out_time is Required"/>
+                        <h:outputLabel  value="epgen_ordering" for="epgen_ordering" />
+                        <h:inputText id="epgen_ordering" value="#{joo2_phocagallery_tagsController.selected.epgen_ordering}" title="epgen_ordering" required="false" requiredMessage="Field[9]Joo2_phocagallery_tags.epgen_ordering is Required"/>
+                        <h:outputLabel  value="epgen_params" for="epgen_params" />
+                        <h:inputText id="epgen_params" value="#{joo2_phocagallery_tagsController.selected.epgen_params}" title="epgen_params" required="false" requiredMessage="Field[10]Joo2_phocagallery_tags.epgen_params is Required"/>
+                        <h:outputLabel  value="epgen_language" for="epgen_language" />
+                        <h:inputText id="epgen_language" value="#{joo2_phocagallery_tagsController.selected.epgen_language}" title="epgen_language" required="false" requiredMessage="Field[11]Joo2_phocagallery_tags.epgen_language is Required"/>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{joo2_phocagallery_tagsController.create}" value="Save" />
+<br />
+                <br />
+                <h:commandLink  action="#{joo2_phocagallery_tagsController.prepareList}" value=" list" immediate="true"/>
+<br />
+                <br />
+                <h:link outcome="/index" value="Main page"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Edit: Joo2_kunena_version"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                        <h:outputLabel value="epgen_id" for="epgen_id" />
+                        <h:inputText id="epgen_id" value="#{joo2_kunena_versionController.selected.epgen_id}" title="epgen_id" required="false" requiredMessage="{FieldJoo2_kunena_versionepgen_idis Required}"/>
+                        <h:outputLabel value="epgen_version" for="epgen_version" />
+                        <h:inputText id="epgen_version" value="#{joo2_kunena_versionController.selected.epgen_version}" title="epgen_version" required="false" requiredMessage="{FieldJoo2_kunena_versionepgen_versionis Required}"/>
+                        <h:outputLabel value="epgen_build" for="epgen_build" />
+                        <h:inputText id="epgen_build" value="#{joo2_kunena_versionController.selected.epgen_build}" title="epgen_build" required="false" requiredMessage="{FieldJoo2_kunena_versionepgen_buildis Required}"/>
+                        <h:outputLabel value="epgen_versionname" for="epgen_versionname" />
+                        <h:inputText id="epgen_versionname" value="#{joo2_kunena_versionController.selected.epgen_versionname}" title="epgen_versionname" required="false" requiredMessage="{FieldJoo2_kunena_versionepgen_versionnameis Required}"/>
+                        <h:outputLabel value="epgen_state" for="epgen_state" />
+                        <h:inputText id="epgen_state" value="#{joo2_kunena_versionController.selected.epgen_state}" title="epgen_state" required="false" requiredMessage="{FieldJoo2_kunena_versionepgen_stateis Required}"/>
+</h:panelGrid>
+                <h:commandLink  action="#{joo2_kunena_versionController.update}" value="Save"/>
+<br />
+                <br />
+                <h:link  outcome="View" value="View"/>
+<br />
+                <h:commandLink  action="#{joo2_kunena_versionController.prepareList}" value="List Joo2_kunena_version" immediate="true"/>
+<br />
+                <br />
+                <h:link  outcome="/index" value="Return to  main" />
+</h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Create:Joo2_virtuemart_userfields"></h:outputText>
+</ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+<h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+<h:panelGrid columns="2">
+                        <h:outputLabel  value="epgen_virtuemart_userfield_id" for="epgen_virtuemart_userfield_id" />
+                        <h:inputText id="epgen_virtuemart_userfield_id" value="#{joo2_virtuemart_userfieldsController.selected.epgen_virtuemart_userfield_id}" title="epgen_virtuemart_userfield_id" required="false" requiredMessage="Field[0]Joo2_virtuemart_userfields.epgen_virtuemart_userfield_id is Required"/>
+                        <h:outputLabel  value="epgen_virtuemart_vendor_id" for="epgen_virtuemart_vendor_id" />
+                        <h:inputText id="epgen_virtuemart_vendor_id" value="#{joo2_virtuemart_userfieldsController.selected.epgen_virtuemart_vendor_id}" title="epgen_virtuemart_vendor_id" required="false" requiredMessage="Field[1]Joo2_virtuemart_userfields.epgen_virtuemart_vendor_id is Required"/>
+                        <h:outputLabel  value="epgen_name" for="epgen_name" />
+                        <h:inputText id="epgen_name" value="#{joo2_virtuemart_userfieldsController.selected.epgen_name}" title="epgen_name" required="false" requiredMessage="Field[2]Joo2_virtuemart_userfields.epgen_name is Required"/>
+                        <h:outputLabel  value="epgen_title" for="epgen_title" />
+                        <h:inputText id="epgen_title" value="#{joo2_virtuemart_userfieldsController.selected.epgen_title}" title="epgen_title" required="false" requiredMessage="Field[3]Joo2_virtuemart_userfields.epgen_title is Required"/>
+                        <h:outputLabel  value="epgen_description" for="epgen_description" />
+                        <h:inputText id="epgen_description" value="#{joo2_virtuemart_userfieldsController.selected.epgen_description}" title="epgen_description" required="false" requiredMessage="Field[4]Joo2_virtuemart_userfields.epgen_description is Required"/>
+                        <h:outputLabel  value="epgen_type" for="epgen_type" />
+                        <h:inputText id="epgen_type" value="#{joo2_virtuemart_userfieldsController.selected.epgen_type}" title="epgen_type" required="false" requiredMessage="Field[5]Joo2_virtuemart_userfields.epgen_type is Required"/>
+                        <h:outputLabel  value="epgen_maxlength" for="epgen_maxlength" />
+                        <h:inputText id="epgen_maxlength" value="#{joo2_virtuemart_userfieldsController.selected.epgen_maxlength}" title="epgen_maxlength" required="false" requiredMessage="Field[6]Joo2_virtuemart_userfields.epgen_maxlength is Required"/>
+                        <h:outputLabel  value="epgen_size" for="epgen_size" />
+                        <h:inputText id="epgen_size" value="#{joo2_virtuemart_userfieldsController.selected.epgen_size}" title="epgen_size" required="false" requiredMessage="Field[7]Joo2_virtuemart_userfields.epgen_size is Required"/>
+                        <h:outputLabel  value="epgen_required" for="epgen_required" />
+                        <h:inputText id="epgen_required" value="#{joo2_virtuemart_userfieldsController.selected.epgen_required}" title="epgen_required" required="false" requiredMessage="Field[8]Joo2_virtuemart_userfields.epgen_required is Required"/>
+                        <h:outputLabel  value="epgen_cols" for="epgen_cols" />
+                        <h:inputText id="epgen_cols" value="#{joo2_virtuemart_userfieldsController.selected.epgen_cols}" title="epgen_cols" required="false" requiredMessage="Field[9]Joo2_virtuemart_userfields.epgen_cols is Required"/>
+                        <h:outputLabel  value="epgen_rows" for="epgen_rows" />
+                        <h:inputText id="epgen_rows" value="#{joo2_virtuemart_userfieldsController.selected.epgen_rows}" title="epgen_rows" required="false" requiredMessage="Field[10]Joo2_virtuemart_userfields.epgen_rows is Required"/>
+                        <h:outputLabel  value="epgen_value" for="epgen_value" />
+                        <h:inputText id="epgen_value" value="#{joo2_virtuemart_userfieldsController.selected.epgen_value}" title="epgen_value" required="false" requiredMessage="Field[11]Joo2_virtuemart_userfields.epgen_value is Required"/>
+                        <h:outputLabel  value="epgen_default" for="epgen_default" />
+                        <h:inputText id="epgen_default" value="#{joo2_virtuemart_userfieldsController.selected.epgen_default}" title="epgen_default" required="false" requiredMessage="Field[12]Joo2_virtuemart_userfields.epgen_default is Required"/>
+                        <h:outputLabel  value="epgen_registration" for="epgen_registration" />
+                        <h:inputText id="epgen_registration" value="#{joo2_virtuemart_userfieldsController.selected.epgen_registration}" title="epgen_registration" required="false" requiredMessage="Field[13]Joo2_virtuemart_userfields.epgen_registration is Required"/>
+                        <h:outputLabel  value="epgen_shipping" for="epgen_shipping" />
+                        <h:inputText id="epgen_shipping" value="#{joo2_virtuemart_userfieldsController.selected.epgen_shipping}" title="epgen_shipping" required="false" requiredMessage="Field[14]Joo2_virtuemart_userfields.epgen_shipping is Required"/>
+                        <h:outputLabel  value="epgen_account" for="epgen_account" />
+                        <h:inputText id="epgen_account" value="#{joo2_virtuemart_userfieldsController.selected.epgen_account}" title="epgen_account" required="false" requiredMessage="Field[15]Joo2_virtuemart_userfields.epgen_account is Required"/>
+                        <h:outputLabel  value="epgen_readonly" for="epgen_readonly" />
+                        <h:inputText id="epgen_readonly" value="#{joo2_virtuemart_userfieldsController.selected.epgen_readonly}" title="epgen_readonly" required="false" requiredMessage="Field[16]Joo2_virtuemart_userfields.epgen_readonly is Required"/>
+                        <h:outputLabel  value="epgen_calculated" for="epgen_calculated" />
+                        <h:inputText id="epgen_calculated" value="#{joo2_virtuemart_userfieldsController.selected.epgen_calculated}" title="epgen_calculated" required="false" requiredMessage="Field[17]Joo2_virtuemart_userfields.epgen_calculated is Required"/>
+                        <h:outputLabel  value="epgen_sys" for="epgen_sys" />
+                        <h:inputText id="epgen_sys" value="#{joo2_virtuemart_userfieldsController.selected.epgen_sys}" title="epgen_sys" required="false" requiredMessage="Field[18]Joo2_virtuemart_userfields.epgen_sys is Required"/>
+                        <h:outputLabel  value="epgen_params" for="epgen_params" />
+                        <h:inputText id="epgen_params" value="#{joo2_virtuemart_userfieldsController.selected.epgen_params}" title="epgen_params" required="false" requiredMessage="Field[19]Joo2_virtuemart_userfields.epgen_params is Required"/>
+                        <h:outputLabel  value="epgen_ordering" for="epgen_ordering" />
+                        <h:inputText id="epgen_ordering" value="#{joo2_virtuemart_userfieldsController.selected.epgen_ordering}" title="epgen_ordering" required="false" requiredMessage="Field[20]Joo2_virtuemart_userfields.epgen_ordering is Required"/>
+                        <h:outputLabel  value="epgen_shared" for="epgen_shared" />
+                        <h:inputText id="epgen_shared" value="#{joo2_virtuemart_userfieldsController.selected.epgen_shared}" title="epgen_shared" required="false" requiredMessage="Field[21]Joo2_virtuemart_userfields.epgen_shared is Required"/>
+                        <h:outputLabel  value="epgen_published" for="epgen_published" />
+                        <h:inputText id="epgen_published" value="#{joo2_virtuemart_userfieldsController.selected.epgen_published}" title="epgen_published" required="false" requiredMessage="Field[22]Joo2_virtuemart_userfields.epgen_published is Required"/>
+                        <h:outputLabel  value="epgen_created_on" for="epgen_created_on" />
+                        <h:inputText id="epgen_created_on" value="#{joo2_virtuemart_userfieldsController.selected.epgen_created_on}" title="epgen_created_on" required="false" requiredMessage="Field[23]Joo2_virtuemart_userfields.epgen_created_on is Required"/>
+                        <h:outputLabel  value="epgen_created_by" for="epgen_created_by" />
+                        <h:inputText id="epgen_created_by" value="#{joo2_virtuemart_userfieldsController.selected.epgen_created_by}" title="epgen_created_by" required="false" requiredMessage="Field[24]Joo2_virtuemart_userfields.epgen_created_by is Required"/>
+                        <h:outputLabel  value="epgen_modified_on" for="epgen_modified_on" />
+                        <h:inputText id="epgen_modified_on" value="#{joo2_virtuemart_userfieldsController.selected.epgen_modified_on}" title="epgen_modified_on" required="false" requiredMessage="Field[25]Joo2_virtuemart_userfields.epgen_modified_on is Required"/>
+                        <h:outputLabel  value="epgen_modified_by" for="epgen_modified_by" />
+                        <h:inputText id="epgen_modified_by" value="#{joo2_virtuemart_userfieldsController.selected.epgen_modified_by}" title="epgen_modified_by" required="false" requiredMessage="Field[26]Joo2_virtuemart_userfields.epgen_modified_by is Required"/>
+                        <h:outputLabel  value="epgen_locked_on" for="epgen_locked_on" />
+                        <h:inputText id="epgen_locked_on" value="#{joo2_virtuemart_userfieldsController.selected.epgen_locked_on}" title="epgen_locked_on" required="false" requiredMessage="Field[27]Joo2_virtuemart_userfields.epgen_locked_on is Required"/>
+                        <h:outputLabel  value="epgen_locked_by" for="epgen_locked_by" />
+                        <h:inputText id="epgen_locked_by" value="#{joo2_virtuemart_userfieldsController.selected.epgen_locked_by}" title="epgen_locked_by" required="false" requiredMessage="Field[28]Joo2_virtuemart_userfields.epgen_locked_by is Required"/>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{joo2_virtuemart_userfieldsController.create}" value="Save" />
+<br />
+                <br />
+                <h:commandLink  action="#{joo2_virtuemart_userfieldsController.prepareList}" value=" list" immediate="true"/>
+<br />
+                <br />
+                <h:link outcome="/index" value="Main page"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

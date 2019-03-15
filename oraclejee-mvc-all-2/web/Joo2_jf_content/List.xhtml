@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Joo2_jf_content"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:form styleClass="jsfcrud_list_form">
+                <h:panelGroup id="messagePanel" layout="block">
+                    <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+                </h:panelGroup>
+                <h:outputText escape="false" value="Empty}" rendered="#{joo2_jf_contentController.items.rowCount == 0}"/>
+                <h:panelGroup rendered="#{joo2_jf_contentController.items.rowCount > 0}">
+                    <h:outputText value="#{joo2_jf_contentController.pagination.pageFirstItem + 1}..#{joo2_jf_contentController.pagination.pageLastItem + 1}/#{joo2_jf_contentController.pagination.itemsCount}"/>&nbsp;
+                    <h:commandLink action="#{joo2_jf_contentController.previous}" value="{Previous} #{joo2_jf_contentController.pagination.pageSize}" rendered="#{joo2_jf_contentController.pagination.hasPreviousPage}"/>&nbsp;
+                    <h:commandLink action="#{joo2_jf_contentController.next}" value="{Next} #{joo2_jf_contentController.pagination.pageSize}" rendered="#{joo2_jf_contentController.pagination.hasNextPage}"/>&nbsp;
+                    <h:dataTable value="#{joo2_jf_contentController.items}" var="item" border="0" cellpadding="2" cellspacing="0" rowClasses="jsfcrud_odd_row,jsfcrud_even_row" rules="all" style="border:solid 1px">
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_id"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_id}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_language_id"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_language_id}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_reference_id"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_reference_id}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_reference_table"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_reference_table}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_reference_field"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_reference_field}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_value"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_value}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_original_value"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_original_value}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_original_text"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_original_text}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_modified"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_modified}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_modified_by"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_modified_by}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_published"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_published}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="&nbsp;"/>
+                            </f:facet>
+                            <h:commandLink action="#{joo2_jf_contentController.prepareView}" value="View"/>
+                            <h:outputText value=" "/>
+                            <h:commandLink action="#{joo2_jf_contentController.prepareEdit}" value="Edit"/>
+                            <h:outputText value=" "/>
+                            <h:commandLink action="#{joo2_jf_contentController.destroy}" value="Delete"/>
+                        </h:column>
+                    </h:dataTable>
+                </h:panelGroup>
+                <br />
+                <h:commandLink action="#{joo2_jf_contentController.prepareCreate}" value="Joo2_jf_contentCreate"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="Return"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+    </html>

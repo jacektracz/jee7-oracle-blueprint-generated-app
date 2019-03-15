@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Create:Joo2_images"></h:outputText>
+</ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+<h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+<h:panelGrid columns="2">
+                        <h:outputLabel  value="epgen_ep_image_id" for="epgen_ep_image_id" />
+                        <h:inputText id="epgen_ep_image_id" value="#{joo2_imagesController.selected.epgen_ep_image_id}" title="epgen_ep_image_id" required="false" requiredMessage="Field[0]Joo2_images.epgen_ep_image_id is Required"/>
+                        <h:outputLabel  value="epgen_ep_image_small_path" for="epgen_ep_image_small_path" />
+                        <h:inputText id="epgen_ep_image_small_path" value="#{joo2_imagesController.selected.epgen_ep_image_small_path}" title="epgen_ep_image_small_path" required="false" requiredMessage="Field[1]Joo2_images.epgen_ep_image_small_path is Required"/>
+                        <h:outputLabel  value="epgen_ep_image_big_path" for="epgen_ep_image_big_path" />
+                        <h:inputText id="epgen_ep_image_big_path" value="#{joo2_imagesController.selected.epgen_ep_image_big_path}" title="epgen_ep_image_big_path" required="false" requiredMessage="Field[2]Joo2_images.epgen_ep_image_big_path is Required"/>
+                        <h:outputLabel  value="epgen_ep_source_class" for="epgen_ep_source_class" />
+                        <h:inputText id="epgen_ep_source_class" value="#{joo2_imagesController.selected.epgen_ep_source_class}" title="epgen_ep_source_class" required="false" requiredMessage="Field[3]Joo2_images.epgen_ep_source_class is Required"/>
+                        <h:outputLabel  value="epgen_ep_size_small" for="epgen_ep_size_small" />
+                        <h:inputText id="epgen_ep_size_small" value="#{joo2_imagesController.selected.epgen_ep_size_small}" title="epgen_ep_size_small" required="false" requiredMessage="Field[4]Joo2_images.epgen_ep_size_small is Required"/>
+                        <h:outputLabel  value="epgen_ep_size_bigl" for="epgen_ep_size_bigl" />
+                        <h:inputText id="epgen_ep_size_bigl" value="#{joo2_imagesController.selected.epgen_ep_size_bigl}" title="epgen_ep_size_bigl" required="false" requiredMessage="Field[5]Joo2_images.epgen_ep_size_bigl is Required"/>
+                        <h:outputLabel  value="epgen_ep_size_big" for="epgen_ep_size_big" />
+                        <h:inputText id="epgen_ep_size_big" value="#{joo2_imagesController.selected.epgen_ep_size_big}" title="epgen_ep_size_big" required="false" requiredMessage="Field[6]Joo2_images.epgen_ep_size_big is Required"/>
+                        <h:outputLabel  value="epgen_ep_size_small_db" for="epgen_ep_size_small_db" />
+                        <h:inputText id="epgen_ep_size_small_db" value="#{joo2_imagesController.selected.epgen_ep_size_small_db}" title="epgen_ep_size_small_db" required="false" requiredMessage="Field[7]Joo2_images.epgen_ep_size_small_db is Required"/>
+                        <h:outputLabel  value="epgen_ep_size_big_db" for="epgen_ep_size_big_db" />
+                        <h:inputText id="epgen_ep_size_big_db" value="#{joo2_imagesController.selected.epgen_ep_size_big_db}" title="epgen_ep_size_big_db" required="false" requiredMessage="Field[8]Joo2_images.epgen_ep_size_big_db is Required"/>
+                        <h:outputLabel  value="epgen_ep_size_type" for="epgen_ep_size_type" />
+                        <h:inputText id="epgen_ep_size_type" value="#{joo2_imagesController.selected.epgen_ep_size_type}" title="epgen_ep_size_type" required="false" requiredMessage="Field[9]Joo2_images.epgen_ep_size_type is Required"/>
+                        <h:outputLabel  value="epgen_ep_big_size_type" for="epgen_ep_big_size_type" />
+                        <h:inputText id="epgen_ep_big_size_type" value="#{joo2_imagesController.selected.epgen_ep_big_size_type}" title="epgen_ep_big_size_type" required="false" requiredMessage="Field[10]Joo2_images.epgen_ep_big_size_type is Required"/>
+                        <h:outputLabel  value="epgen_ep_small_size_type" for="epgen_ep_small_size_type" />
+                        <h:inputText id="epgen_ep_small_size_type" value="#{joo2_imagesController.selected.epgen_ep_small_size_type}" title="epgen_ep_small_size_type" required="false" requiredMessage="Field[11]Joo2_images.epgen_ep_small_size_type is Required"/>
+                        <h:outputLabel  value="epgen_ep_big_width" for="epgen_ep_big_width" />
+                        <h:inputText id="epgen_ep_big_width" value="#{joo2_imagesController.selected.epgen_ep_big_width}" title="epgen_ep_big_width" required="false" requiredMessage="Field[12]Joo2_images.epgen_ep_big_width is Required"/>
+                        <h:outputLabel  value="epgen_ep_big_height" for="epgen_ep_big_height" />
+                        <h:inputText id="epgen_ep_big_height" value="#{joo2_imagesController.selected.epgen_ep_big_height}" title="epgen_ep_big_height" required="false" requiredMessage="Field[13]Joo2_images.epgen_ep_big_height is Required"/>
+                        <h:outputLabel  value="epgen_ep_small_width" for="epgen_ep_small_width" />
+                        <h:inputText id="epgen_ep_small_width" value="#{joo2_imagesController.selected.epgen_ep_small_width}" title="epgen_ep_small_width" required="false" requiredMessage="Field[14]Joo2_images.epgen_ep_small_width is Required"/>
+                        <h:outputLabel  value="epgen_ep_small_height" for="epgen_ep_small_height" />
+                        <h:inputText id="epgen_ep_small_height" value="#{joo2_imagesController.selected.epgen_ep_small_height}" title="epgen_ep_small_height" required="false" requiredMessage="Field[15]Joo2_images.epgen_ep_small_height is Required"/>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{joo2_imagesController.create}" value="Save" />
+<br />
+                <br />
+                <h:commandLink  action="#{joo2_imagesController.prepareList}" value=" list" immediate="true"/>
+<br />
+                <br />
+                <h:link outcome="/index" value="Main page"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

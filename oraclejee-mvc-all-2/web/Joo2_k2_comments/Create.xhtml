@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Create:Joo2_k2_comments"></h:outputText>
+</ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+<h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+<h:panelGrid columns="2">
+                        <h:outputLabel  value="epgen_id" for="epgen_id" />
+                        <h:inputText id="epgen_id" value="#{joo2_k2_commentsController.selected.epgen_id}" title="epgen_id" required="false" requiredMessage="Field[0]Joo2_k2_comments.epgen_id is Required"/>
+                        <h:outputLabel  value="epgen_itemID" for="epgen_itemID" />
+                        <h:inputText id="epgen_itemID" value="#{joo2_k2_commentsController.selected.epgen_itemID}" title="epgen_itemID" required="false" requiredMessage="Field[1]Joo2_k2_comments.epgen_itemID is Required"/>
+                        <h:outputLabel  value="epgen_userID" for="epgen_userID" />
+                        <h:inputText id="epgen_userID" value="#{joo2_k2_commentsController.selected.epgen_userID}" title="epgen_userID" required="false" requiredMessage="Field[2]Joo2_k2_comments.epgen_userID is Required"/>
+                        <h:outputLabel  value="epgen_userName" for="epgen_userName" />
+                        <h:inputText id="epgen_userName" value="#{joo2_k2_commentsController.selected.epgen_userName}" title="epgen_userName" required="false" requiredMessage="Field[3]Joo2_k2_comments.epgen_userName is Required"/>
+                        <h:outputLabel  value="epgen_commentDate" for="epgen_commentDate" />
+                        <h:inputText id="epgen_commentDate" value="#{joo2_k2_commentsController.selected.epgen_commentDate}" title="epgen_commentDate" required="false" requiredMessage="Field[4]Joo2_k2_comments.epgen_commentDate is Required"/>
+                        <h:outputLabel  value="epgen_commentText" for="epgen_commentText" />
+                        <h:inputText id="epgen_commentText" value="#{joo2_k2_commentsController.selected.epgen_commentText}" title="epgen_commentText" required="false" requiredMessage="Field[5]Joo2_k2_comments.epgen_commentText is Required"/>
+                        <h:outputLabel  value="epgen_commentEmail" for="epgen_commentEmail" />
+                        <h:inputText id="epgen_commentEmail" value="#{joo2_k2_commentsController.selected.epgen_commentEmail}" title="epgen_commentEmail" required="false" requiredMessage="Field[6]Joo2_k2_comments.epgen_commentEmail is Required"/>
+                        <h:outputLabel  value="epgen_commentURL" for="epgen_commentURL" />
+                        <h:inputText id="epgen_commentURL" value="#{joo2_k2_commentsController.selected.epgen_commentURL}" title="epgen_commentURL" required="false" requiredMessage="Field[7]Joo2_k2_comments.epgen_commentURL is Required"/>
+                        <h:outputLabel  value="epgen_published" for="epgen_published" />
+                        <h:inputText id="epgen_published" value="#{joo2_k2_commentsController.selected.epgen_published}" title="epgen_published" required="false" requiredMessage="Field[8]Joo2_k2_comments.epgen_published is Required"/>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{joo2_k2_commentsController.create}" value="Save" />
+<br />
+                <br />
+                <h:commandLink  action="#{joo2_k2_commentsController.prepareList}" value=" list" immediate="true"/>
+<br />
+                <br />
+                <h:link outcome="/index" value="Main page"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

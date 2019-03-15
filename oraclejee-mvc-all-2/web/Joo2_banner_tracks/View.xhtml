@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Edit: Joo2_banner_tracks"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                        <h:outputLabel value="epgen_track_date" for="epgen_track_date" />
+                        <h:inputText id="epgen_track_date" value="#{joo2_banner_tracksController.selected.epgen_track_date}" title="epgen_track_date" required="false" requiredMessage="{FieldJoo2_banner_tracksepgen_track_dateis Required}"/>
+                        <h:outputLabel value="epgen_track_type" for="epgen_track_type" />
+                        <h:inputText id="epgen_track_type" value="#{joo2_banner_tracksController.selected.epgen_track_type}" title="epgen_track_type" required="false" requiredMessage="{FieldJoo2_banner_tracksepgen_track_typeis Required}"/>
+                        <h:outputLabel value="epgen_banner_id" for="epgen_banner_id" />
+                        <h:inputText id="epgen_banner_id" value="#{joo2_banner_tracksController.selected.epgen_banner_id}" title="epgen_banner_id" required="false" requiredMessage="{FieldJoo2_banner_tracksepgen_banner_idis Required}"/>
+                        <h:outputLabel value="epgen_count" for="epgen_count" />
+                        <h:inputText id="epgen_count" value="#{joo2_banner_tracksController.selected.epgen_count}" title="epgen_count" required="false" requiredMessage="{FieldJoo2_banner_tracksepgen_countis Required}"/>
+</h:panelGrid>
+                <h:commandLink  action="#{joo2_banner_tracksController.update}" value="Save"/>
+<br />
+                <br />
+                <h:link  outcome="View" value="View"/>
+<br />
+                <h:commandLink  action="#{joo2_banner_tracksController.prepareList}" value="List Joo2_banner_tracks" immediate="true"/>
+<br />
+                <br />
+                <h:link  outcome="/index" value="Return to  main" />
+</h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

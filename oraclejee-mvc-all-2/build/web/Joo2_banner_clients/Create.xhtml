@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Create:Joo2_banner_clients"></h:outputText>
+</ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+<h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+<h:panelGrid columns="2">
+                        <h:outputLabel  value="epgen_id" for="epgen_id" />
+                        <h:inputText id="epgen_id" value="#{joo2_banner_clientsController.selected.epgen_id}" title="epgen_id" required="false" requiredMessage="Field[0]Joo2_banner_clients.epgen_id is Required"/>
+                        <h:outputLabel  value="epgen_name" for="epgen_name" />
+                        <h:inputText id="epgen_name" value="#{joo2_banner_clientsController.selected.epgen_name}" title="epgen_name" required="false" requiredMessage="Field[1]Joo2_banner_clients.epgen_name is Required"/>
+                        <h:outputLabel  value="epgen_contact" for="epgen_contact" />
+                        <h:inputText id="epgen_contact" value="#{joo2_banner_clientsController.selected.epgen_contact}" title="epgen_contact" required="false" requiredMessage="Field[2]Joo2_banner_clients.epgen_contact is Required"/>
+                        <h:outputLabel  value="epgen_email" for="epgen_email" />
+                        <h:inputText id="epgen_email" value="#{joo2_banner_clientsController.selected.epgen_email}" title="epgen_email" required="false" requiredMessage="Field[3]Joo2_banner_clients.epgen_email is Required"/>
+                        <h:outputLabel  value="epgen_extrainfo" for="epgen_extrainfo" />
+                        <h:inputText id="epgen_extrainfo" value="#{joo2_banner_clientsController.selected.epgen_extrainfo}" title="epgen_extrainfo" required="false" requiredMessage="Field[4]Joo2_banner_clients.epgen_extrainfo is Required"/>
+                        <h:outputLabel  value="epgen_state" for="epgen_state" />
+                        <h:inputText id="epgen_state" value="#{joo2_banner_clientsController.selected.epgen_state}" title="epgen_state" required="false" requiredMessage="Field[5]Joo2_banner_clients.epgen_state is Required"/>
+                        <h:outputLabel  value="epgen_checked_out" for="epgen_checked_out" />
+                        <h:inputText id="epgen_checked_out" value="#{joo2_banner_clientsController.selected.epgen_checked_out}" title="epgen_checked_out" required="false" requiredMessage="Field[6]Joo2_banner_clients.epgen_checked_out is Required"/>
+                        <h:outputLabel  value="epgen_checked_out_time" for="epgen_checked_out_time" />
+                        <h:inputText id="epgen_checked_out_time" value="#{joo2_banner_clientsController.selected.epgen_checked_out_time}" title="epgen_checked_out_time" required="false" requiredMessage="Field[7]Joo2_banner_clients.epgen_checked_out_time is Required"/>
+                        <h:outputLabel  value="epgen_metakey" for="epgen_metakey" />
+                        <h:inputText id="epgen_metakey" value="#{joo2_banner_clientsController.selected.epgen_metakey}" title="epgen_metakey" required="false" requiredMessage="Field[8]Joo2_banner_clients.epgen_metakey is Required"/>
+                        <h:outputLabel  value="epgen_own_prefix" for="epgen_own_prefix" />
+                        <h:inputText id="epgen_own_prefix" value="#{joo2_banner_clientsController.selected.epgen_own_prefix}" title="epgen_own_prefix" required="false" requiredMessage="Field[9]Joo2_banner_clients.epgen_own_prefix is Required"/>
+                        <h:outputLabel  value="epgen_metakey_prefix" for="epgen_metakey_prefix" />
+                        <h:inputText id="epgen_metakey_prefix" value="#{joo2_banner_clientsController.selected.epgen_metakey_prefix}" title="epgen_metakey_prefix" required="false" requiredMessage="Field[10]Joo2_banner_clients.epgen_metakey_prefix is Required"/>
+                        <h:outputLabel  value="epgen_purchase_type" for="epgen_purchase_type" />
+                        <h:inputText id="epgen_purchase_type" value="#{joo2_banner_clientsController.selected.epgen_purchase_type}" title="epgen_purchase_type" required="false" requiredMessage="Field[11]Joo2_banner_clients.epgen_purchase_type is Required"/>
+                        <h:outputLabel  value="epgen_track_clicks" for="epgen_track_clicks" />
+                        <h:inputText id="epgen_track_clicks" value="#{joo2_banner_clientsController.selected.epgen_track_clicks}" title="epgen_track_clicks" required="false" requiredMessage="Field[12]Joo2_banner_clients.epgen_track_clicks is Required"/>
+                        <h:outputLabel  value="epgen_track_impressions" for="epgen_track_impressions" />
+                        <h:inputText id="epgen_track_impressions" value="#{joo2_banner_clientsController.selected.epgen_track_impressions}" title="epgen_track_impressions" required="false" requiredMessage="Field[13]Joo2_banner_clients.epgen_track_impressions is Required"/>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{joo2_banner_clientsController.create}" value="Save" />
+<br />
+                <br />
+                <h:commandLink  action="#{joo2_banner_clientsController.prepareList}" value=" list" immediate="true"/>
+<br />
+                <br />
+                <h:link outcome="/index" value="Main page"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

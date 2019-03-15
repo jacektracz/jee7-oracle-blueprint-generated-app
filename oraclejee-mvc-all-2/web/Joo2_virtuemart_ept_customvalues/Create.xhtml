@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Create:Joo2_virtuemart_ept_customvalues"></h:outputText>
+</ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+<h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+<h:panelGrid columns="2">
+                        <h:outputLabel  value="epgen_ept_customvalues_id" for="epgen_ept_customvalues_id" />
+                        <h:inputText id="epgen_ept_customvalues_id" value="#{joo2_virtuemart_ept_customvaluesController.selected.epgen_ept_customvalues_id}" title="epgen_ept_customvalues_id" required="false" requiredMessage="Field[0]Joo2_virtuemart_ept_customvalues.epgen_ept_customvalues_id is Required"/>
+                        <h:outputLabel  value="epgen_product_id" for="epgen_product_id" />
+                        <h:inputText id="epgen_product_id" value="#{joo2_virtuemart_ept_customvaluesController.selected.epgen_product_id}" title="epgen_product_id" required="false" requiredMessage="Field[1]Joo2_virtuemart_ept_customvalues.epgen_product_id is Required"/>
+                        <h:outputLabel  value="epgen_product_parent_id" for="epgen_product_parent_id" />
+                        <h:inputText id="epgen_product_parent_id" value="#{joo2_virtuemart_ept_customvaluesController.selected.epgen_product_parent_id}" title="epgen_product_parent_id" required="false" requiredMessage="Field[2]Joo2_virtuemart_ept_customvalues.epgen_product_parent_id is Required"/>
+                        <h:outputLabel  value="epgen_color" for="epgen_color" />
+                        <h:inputText id="epgen_color" value="#{joo2_virtuemart_ept_customvaluesController.selected.epgen_color}" title="epgen_color" required="false" requiredMessage="Field[3]Joo2_virtuemart_ept_customvalues.epgen_color is Required"/>
+                        <h:outputLabel  value="epgen_size" for="epgen_size" />
+                        <h:inputText id="epgen_size" value="#{joo2_virtuemart_ept_customvaluesController.selected.epgen_size}" title="epgen_size" required="false" requiredMessage="Field[4]Joo2_virtuemart_ept_customvalues.epgen_size is Required"/>
+                        <h:outputLabel  value="epgen_on_stock" for="epgen_on_stock" />
+                        <h:inputText id="epgen_on_stock" value="#{joo2_virtuemart_ept_customvaluesController.selected.epgen_on_stock}" title="epgen_on_stock" required="false" requiredMessage="Field[5]Joo2_virtuemart_ept_customvalues.epgen_on_stock is Required"/>
+                        <h:outputLabel  value="epgen_charge" for="epgen_charge" />
+                        <h:inputText id="epgen_charge" value="#{joo2_virtuemart_ept_customvaluesController.selected.epgen_charge}" title="epgen_charge" required="false" requiredMessage="Field[6]Joo2_virtuemart_ept_customvalues.epgen_charge is Required"/>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{joo2_virtuemart_ept_customvaluesController.create}" value="Save" />
+<br />
+                <br />
+                <h:commandLink  action="#{joo2_virtuemart_ept_customvaluesController.prepareList}" value=" list" immediate="true"/>
+<br />
+                <br />
+                <h:link outcome="/index" value="Main page"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

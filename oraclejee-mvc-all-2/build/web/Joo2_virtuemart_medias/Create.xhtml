@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Create:Joo2_virtuemart_medias"></h:outputText>
+</ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+<h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+<h:panelGrid columns="2">
+                        <h:outputLabel  value="epgen_virtuemart_media_id" for="epgen_virtuemart_media_id" />
+                        <h:inputText id="epgen_virtuemart_media_id" value="#{joo2_virtuemart_mediasController.selected.epgen_virtuemart_media_id}" title="epgen_virtuemart_media_id" required="false" requiredMessage="Field[0]Joo2_virtuemart_medias.epgen_virtuemart_media_id is Required"/>
+                        <h:outputLabel  value="epgen_virtuemart_vendor_id" for="epgen_virtuemart_vendor_id" />
+                        <h:inputText id="epgen_virtuemart_vendor_id" value="#{joo2_virtuemart_mediasController.selected.epgen_virtuemart_vendor_id}" title="epgen_virtuemart_vendor_id" required="false" requiredMessage="Field[1]Joo2_virtuemart_medias.epgen_virtuemart_vendor_id is Required"/>
+                        <h:outputLabel  value="epgen_file_title" for="epgen_file_title" />
+                        <h:inputText id="epgen_file_title" value="#{joo2_virtuemart_mediasController.selected.epgen_file_title}" title="epgen_file_title" required="false" requiredMessage="Field[2]Joo2_virtuemart_medias.epgen_file_title is Required"/>
+                        <h:outputLabel  value="epgen_file_description" for="epgen_file_description" />
+                        <h:inputText id="epgen_file_description" value="#{joo2_virtuemart_mediasController.selected.epgen_file_description}" title="epgen_file_description" required="false" requiredMessage="Field[3]Joo2_virtuemart_medias.epgen_file_description is Required"/>
+                        <h:outputLabel  value="epgen_file_meta" for="epgen_file_meta" />
+                        <h:inputText id="epgen_file_meta" value="#{joo2_virtuemart_mediasController.selected.epgen_file_meta}" title="epgen_file_meta" required="false" requiredMessage="Field[4]Joo2_virtuemart_medias.epgen_file_meta is Required"/>
+                        <h:outputLabel  value="epgen_file_mimetype" for="epgen_file_mimetype" />
+                        <h:inputText id="epgen_file_mimetype" value="#{joo2_virtuemart_mediasController.selected.epgen_file_mimetype}" title="epgen_file_mimetype" required="false" requiredMessage="Field[5]Joo2_virtuemart_medias.epgen_file_mimetype is Required"/>
+                        <h:outputLabel  value="epgen_file_type" for="epgen_file_type" />
+                        <h:inputText id="epgen_file_type" value="#{joo2_virtuemart_mediasController.selected.epgen_file_type}" title="epgen_file_type" required="false" requiredMessage="Field[6]Joo2_virtuemart_medias.epgen_file_type is Required"/>
+                        <h:outputLabel  value="epgen_file_url" for="epgen_file_url" />
+                        <h:inputText id="epgen_file_url" value="#{joo2_virtuemart_mediasController.selected.epgen_file_url}" title="epgen_file_url" required="false" requiredMessage="Field[7]Joo2_virtuemart_medias.epgen_file_url is Required"/>
+                        <h:outputLabel  value="epgen_file_url_thumb" for="epgen_file_url_thumb" />
+                        <h:inputText id="epgen_file_url_thumb" value="#{joo2_virtuemart_mediasController.selected.epgen_file_url_thumb}" title="epgen_file_url_thumb" required="false" requiredMessage="Field[8]Joo2_virtuemart_medias.epgen_file_url_thumb is Required"/>
+                        <h:outputLabel  value="epgen_file_is_product_image" for="epgen_file_is_product_image" />
+                        <h:inputText id="epgen_file_is_product_image" value="#{joo2_virtuemart_mediasController.selected.epgen_file_is_product_image}" title="epgen_file_is_product_image" required="false" requiredMessage="Field[9]Joo2_virtuemart_medias.epgen_file_is_product_image is Required"/>
+                        <h:outputLabel  value="epgen_file_is_downloadable" for="epgen_file_is_downloadable" />
+                        <h:inputText id="epgen_file_is_downloadable" value="#{joo2_virtuemart_mediasController.selected.epgen_file_is_downloadable}" title="epgen_file_is_downloadable" required="false" requiredMessage="Field[10]Joo2_virtuemart_medias.epgen_file_is_downloadable is Required"/>
+                        <h:outputLabel  value="epgen_file_is_forSale" for="epgen_file_is_forSale" />
+                        <h:inputText id="epgen_file_is_forSale" value="#{joo2_virtuemart_mediasController.selected.epgen_file_is_forSale}" title="epgen_file_is_forSale" required="false" requiredMessage="Field[11]Joo2_virtuemart_medias.epgen_file_is_forSale is Required"/>
+                        <h:outputLabel  value="epgen_file_params" for="epgen_file_params" />
+                        <h:inputText id="epgen_file_params" value="#{joo2_virtuemart_mediasController.selected.epgen_file_params}" title="epgen_file_params" required="false" requiredMessage="Field[12]Joo2_virtuemart_medias.epgen_file_params is Required"/>
+                        <h:outputLabel  value="epgen_ordering" for="epgen_ordering" />
+                        <h:inputText id="epgen_ordering" value="#{joo2_virtuemart_mediasController.selected.epgen_ordering}" title="epgen_ordering" required="false" requiredMessage="Field[13]Joo2_virtuemart_medias.epgen_ordering is Required"/>
+                        <h:outputLabel  value="epgen_shared" for="epgen_shared" />
+                        <h:inputText id="epgen_shared" value="#{joo2_virtuemart_mediasController.selected.epgen_shared}" title="epgen_shared" required="false" requiredMessage="Field[14]Joo2_virtuemart_medias.epgen_shared is Required"/>
+                        <h:outputLabel  value="epgen_published" for="epgen_published" />
+                        <h:inputText id="epgen_published" value="#{joo2_virtuemart_mediasController.selected.epgen_published}" title="epgen_published" required="false" requiredMessage="Field[15]Joo2_virtuemart_medias.epgen_published is Required"/>
+                        <h:outputLabel  value="epgen_created_on" for="epgen_created_on" />
+                        <h:inputText id="epgen_created_on" value="#{joo2_virtuemart_mediasController.selected.epgen_created_on}" title="epgen_created_on" required="false" requiredMessage="Field[16]Joo2_virtuemart_medias.epgen_created_on is Required"/>
+                        <h:outputLabel  value="epgen_created_by" for="epgen_created_by" />
+                        <h:inputText id="epgen_created_by" value="#{joo2_virtuemart_mediasController.selected.epgen_created_by}" title="epgen_created_by" required="false" requiredMessage="Field[17]Joo2_virtuemart_medias.epgen_created_by is Required"/>
+                        <h:outputLabel  value="epgen_modified_on" for="epgen_modified_on" />
+                        <h:inputText id="epgen_modified_on" value="#{joo2_virtuemart_mediasController.selected.epgen_modified_on}" title="epgen_modified_on" required="false" requiredMessage="Field[18]Joo2_virtuemart_medias.epgen_modified_on is Required"/>
+                        <h:outputLabel  value="epgen_modified_by" for="epgen_modified_by" />
+                        <h:inputText id="epgen_modified_by" value="#{joo2_virtuemart_mediasController.selected.epgen_modified_by}" title="epgen_modified_by" required="false" requiredMessage="Field[19]Joo2_virtuemart_medias.epgen_modified_by is Required"/>
+                        <h:outputLabel  value="epgen_locked_on" for="epgen_locked_on" />
+                        <h:inputText id="epgen_locked_on" value="#{joo2_virtuemart_mediasController.selected.epgen_locked_on}" title="epgen_locked_on" required="false" requiredMessage="Field[20]Joo2_virtuemart_medias.epgen_locked_on is Required"/>
+                        <h:outputLabel  value="epgen_locked_by" for="epgen_locked_by" />
+                        <h:inputText id="epgen_locked_by" value="#{joo2_virtuemart_mediasController.selected.epgen_locked_by}" title="epgen_locked_by" required="false" requiredMessage="Field[21]Joo2_virtuemart_medias.epgen_locked_by is Required"/>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{joo2_virtuemart_mediasController.create}" value="Save" />
+<br />
+                <br />
+                <h:commandLink  action="#{joo2_virtuemart_mediasController.prepareList}" value=" list" immediate="true"/>
+<br />
+                <br />
+                <h:link outcome="/index" value="Main page"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

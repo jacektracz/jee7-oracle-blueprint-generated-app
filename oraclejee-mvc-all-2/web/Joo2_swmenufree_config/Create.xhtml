@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Create:Joo2_swmenufree_config"></h:outputText>
+</ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+<h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+<h:panelGrid columns="2">
+                        <h:outputLabel  value="epgen_id" for="epgen_id" />
+                        <h:inputText id="epgen_id" value="#{joo2_swmenufree_configController.selected.epgen_id}" title="epgen_id" required="false" requiredMessage="Field[0]Joo2_swmenufree_config.epgen_id is Required"/>
+                        <h:outputLabel  value="epgen_main_top" for="epgen_main_top" />
+                        <h:inputText id="epgen_main_top" value="#{joo2_swmenufree_configController.selected.epgen_main_top}" title="epgen_main_top" required="false" requiredMessage="Field[1]Joo2_swmenufree_config.epgen_main_top is Required"/>
+                        <h:outputLabel  value="epgen_main_left" for="epgen_main_left" />
+                        <h:inputText id="epgen_main_left" value="#{joo2_swmenufree_configController.selected.epgen_main_left}" title="epgen_main_left" required="false" requiredMessage="Field[2]Joo2_swmenufree_config.epgen_main_left is Required"/>
+                        <h:outputLabel  value="epgen_main_height" for="epgen_main_height" />
+                        <h:inputText id="epgen_main_height" value="#{joo2_swmenufree_configController.selected.epgen_main_height}" title="epgen_main_height" required="false" requiredMessage="Field[3]Joo2_swmenufree_config.epgen_main_height is Required"/>
+                        <h:outputLabel  value="epgen_sub_border_over" for="epgen_sub_border_over" />
+                        <h:inputText id="epgen_sub_border_over" value="#{joo2_swmenufree_configController.selected.epgen_sub_border_over}" title="epgen_sub_border_over" required="false" requiredMessage="Field[4]Joo2_swmenufree_config.epgen_sub_border_over is Required"/>
+                        <h:outputLabel  value="epgen_main_width" for="epgen_main_width" />
+                        <h:inputText id="epgen_main_width" value="#{joo2_swmenufree_configController.selected.epgen_main_width}" title="epgen_main_width" required="false" requiredMessage="Field[5]Joo2_swmenufree_config.epgen_main_width is Required"/>
+                        <h:outputLabel  value="epgen_sub_width" for="epgen_sub_width" />
+                        <h:inputText id="epgen_sub_width" value="#{joo2_swmenufree_configController.selected.epgen_sub_width}" title="epgen_sub_width" required="false" requiredMessage="Field[6]Joo2_swmenufree_config.epgen_sub_width is Required"/>
+                        <h:outputLabel  value="epgen_main_back" for="epgen_main_back" />
+                        <h:inputText id="epgen_main_back" value="#{joo2_swmenufree_configController.selected.epgen_main_back}" title="epgen_main_back" required="false" requiredMessage="Field[7]Joo2_swmenufree_config.epgen_main_back is Required"/>
+                        <h:outputLabel  value="epgen_main_over" for="epgen_main_over" />
+                        <h:inputText id="epgen_main_over" value="#{joo2_swmenufree_configController.selected.epgen_main_over}" title="epgen_main_over" required="false" requiredMessage="Field[8]Joo2_swmenufree_config.epgen_main_over is Required"/>
+                        <h:outputLabel  value="epgen_sub_back" for="epgen_sub_back" />
+                        <h:inputText id="epgen_sub_back" value="#{joo2_swmenufree_configController.selected.epgen_sub_back}" title="epgen_sub_back" required="false" requiredMessage="Field[9]Joo2_swmenufree_config.epgen_sub_back is Required"/>
+                        <h:outputLabel  value="epgen_sub_over" for="epgen_sub_over" />
+                        <h:inputText id="epgen_sub_over" value="#{joo2_swmenufree_configController.selected.epgen_sub_over}" title="epgen_sub_over" required="false" requiredMessage="Field[10]Joo2_swmenufree_config.epgen_sub_over is Required"/>
+                        <h:outputLabel  value="epgen_sub_border" for="epgen_sub_border" />
+                        <h:inputText id="epgen_sub_border" value="#{joo2_swmenufree_configController.selected.epgen_sub_border}" title="epgen_sub_border" required="false" requiredMessage="Field[11]Joo2_swmenufree_config.epgen_sub_border is Required"/>
+                        <h:outputLabel  value="epgen_main_font_size" for="epgen_main_font_size" />
+                        <h:inputText id="epgen_main_font_size" value="#{joo2_swmenufree_configController.selected.epgen_main_font_size}" title="epgen_main_font_size" required="false" requiredMessage="Field[12]Joo2_swmenufree_config.epgen_main_font_size is Required"/>
+                        <h:outputLabel  value="epgen_sub_font_size" for="epgen_sub_font_size" />
+                        <h:inputText id="epgen_sub_font_size" value="#{joo2_swmenufree_configController.selected.epgen_sub_font_size}" title="epgen_sub_font_size" required="false" requiredMessage="Field[13]Joo2_swmenufree_config.epgen_sub_font_size is Required"/>
+                        <h:outputLabel  value="epgen_main_border_over" for="epgen_main_border_over" />
+                        <h:inputText id="epgen_main_border_over" value="#{joo2_swmenufree_configController.selected.epgen_main_border_over}" title="epgen_main_border_over" required="false" requiredMessage="Field[14]Joo2_swmenufree_config.epgen_main_border_over is Required"/>
+                        <h:outputLabel  value="epgen_sub_font_color" for="epgen_sub_font_color" />
+                        <h:inputText id="epgen_sub_font_color" value="#{joo2_swmenufree_configController.selected.epgen_sub_font_color}" title="epgen_sub_font_color" required="false" requiredMessage="Field[15]Joo2_swmenufree_config.epgen_sub_font_color is Required"/>
+                        <h:outputLabel  value="epgen_main_border" for="epgen_main_border" />
+                        <h:inputText id="epgen_main_border" value="#{joo2_swmenufree_configController.selected.epgen_main_border}" title="epgen_main_border" required="false" requiredMessage="Field[16]Joo2_swmenufree_config.epgen_main_border is Required"/>
+                        <h:outputLabel  value="epgen_main_font_color" for="epgen_main_font_color" />
+                        <h:inputText id="epgen_main_font_color" value="#{joo2_swmenufree_configController.selected.epgen_main_font_color}" title="epgen_main_font_color" required="false" requiredMessage="Field[17]Joo2_swmenufree_config.epgen_main_font_color is Required"/>
+                        <h:outputLabel  value="epgen_sub_font_color_over" for="epgen_sub_font_color_over" />
+                        <h:inputText id="epgen_sub_font_color_over" value="#{joo2_swmenufree_configController.selected.epgen_sub_font_color_over}" title="epgen_sub_font_color_over" required="false" requiredMessage="Field[18]Joo2_swmenufree_config.epgen_sub_font_color_over is Required"/>
+                        <h:outputLabel  value="epgen_main_font_color_over" for="epgen_main_font_color_over" />
+                        <h:inputText id="epgen_main_font_color_over" value="#{joo2_swmenufree_configController.selected.epgen_main_font_color_over}" title="epgen_main_font_color_over" required="false" requiredMessage="Field[19]Joo2_swmenufree_config.epgen_main_font_color_over is Required"/>
+                        <h:outputLabel  value="epgen_main_align" for="epgen_main_align" />
+                        <h:inputText id="epgen_main_align" value="#{joo2_swmenufree_configController.selected.epgen_main_align}" title="epgen_main_align" required="false" requiredMessage="Field[20]Joo2_swmenufree_config.epgen_main_align is Required"/>
+                        <h:outputLabel  value="epgen_sub_align" for="epgen_sub_align" />
+                        <h:inputText id="epgen_sub_align" value="#{joo2_swmenufree_configController.selected.epgen_sub_align}" title="epgen_sub_align" required="false" requiredMessage="Field[21]Joo2_swmenufree_config.epgen_sub_align is Required"/>
+                        <h:outputLabel  value="epgen_sub_height" for="epgen_sub_height" />
+                        <h:inputText id="epgen_sub_height" value="#{joo2_swmenufree_configController.selected.epgen_sub_height}" title="epgen_sub_height" required="false" requiredMessage="Field[22]Joo2_swmenufree_config.epgen_sub_height is Required"/>
+                        <h:outputLabel  value="epgen_position" for="epgen_position" />
+                        <h:inputText id="epgen_position" value="#{joo2_swmenufree_configController.selected.epgen_position}" title="epgen_position" required="false" requiredMessage="Field[23]Joo2_swmenufree_config.epgen_position is Required"/>
+                        <h:outputLabel  value="epgen_orientation" for="epgen_orientation" />
+                        <h:inputText id="epgen_orientation" value="#{joo2_swmenufree_configController.selected.epgen_orientation}" title="epgen_orientation" required="false" requiredMessage="Field[24]Joo2_swmenufree_config.epgen_orientation is Required"/>
+                        <h:outputLabel  value="epgen_font_family" for="epgen_font_family" />
+                        <h:inputText id="epgen_font_family" value="#{joo2_swmenufree_configController.selected.epgen_font_family}" title="epgen_font_family" required="false" requiredMessage="Field[25]Joo2_swmenufree_config.epgen_font_family is Required"/>
+                        <h:outputLabel  value="epgen_font_weight" for="epgen_font_weight" />
+                        <h:inputText id="epgen_font_weight" value="#{joo2_swmenufree_configController.selected.epgen_font_weight}" title="epgen_font_weight" required="false" requiredMessage="Field[26]Joo2_swmenufree_config.epgen_font_weight is Required"/>
+                        <h:outputLabel  value="epgen_font_weight_over" for="epgen_font_weight_over" />
+                        <h:inputText id="epgen_font_weight_over" value="#{joo2_swmenufree_configController.selected.epgen_font_weight_over}" title="epgen_font_weight_over" required="false" requiredMessage="Field[27]Joo2_swmenufree_config.epgen_font_weight_over is Required"/>
+                        <h:outputLabel  value="epgen_level2_sub_top" for="epgen_level2_sub_top" />
+                        <h:inputText id="epgen_level2_sub_top" value="#{joo2_swmenufree_configController.selected.epgen_level2_sub_top}" title="epgen_level2_sub_top" required="false" requiredMessage="Field[28]Joo2_swmenufree_config.epgen_level2_sub_top is Required"/>
+                        <h:outputLabel  value="epgen_level2_sub_left" for="epgen_level2_sub_left" />
+                        <h:inputText id="epgen_level2_sub_left" value="#{joo2_swmenufree_configController.selected.epgen_level2_sub_left}" title="epgen_level2_sub_left" required="false" requiredMessage="Field[29]Joo2_swmenufree_config.epgen_level2_sub_left is Required"/>
+                        <h:outputLabel  value="epgen_level1_sub_top" for="epgen_level1_sub_top" />
+                        <h:inputText id="epgen_level1_sub_top" value="#{joo2_swmenufree_configController.selected.epgen_level1_sub_top}" title="epgen_level1_sub_top" required="false" requiredMessage="Field[30]Joo2_swmenufree_config.epgen_level1_sub_top is Required"/>
+                        <h:outputLabel  value="epgen_level1_sub_left" for="epgen_level1_sub_left" />
+                        <h:inputText id="epgen_level1_sub_left" value="#{joo2_swmenufree_configController.selected.epgen_level1_sub_left}" title="epgen_level1_sub_left" required="false" requiredMessage="Field[31]Joo2_swmenufree_config.epgen_level1_sub_left is Required"/>
+                        <h:outputLabel  value="epgen_main_back_image" for="epgen_main_back_image" />
+                        <h:inputText id="epgen_main_back_image" value="#{joo2_swmenufree_configController.selected.epgen_main_back_image}" title="epgen_main_back_image" required="false" requiredMessage="Field[32]Joo2_swmenufree_config.epgen_main_back_image is Required"/>
+                        <h:outputLabel  value="epgen_main_back_image_over" for="epgen_main_back_image_over" />
+                        <h:inputText id="epgen_main_back_image_over" value="#{joo2_swmenufree_configController.selected.epgen_main_back_image_over}" title="epgen_main_back_image_over" required="false" requiredMessage="Field[33]Joo2_swmenufree_config.epgen_main_back_image_over is Required"/>
+                        <h:outputLabel  value="epgen_sub_back_image" for="epgen_sub_back_image" />
+                        <h:inputText id="epgen_sub_back_image" value="#{joo2_swmenufree_configController.selected.epgen_sub_back_image}" title="epgen_sub_back_image" required="false" requiredMessage="Field[34]Joo2_swmenufree_config.epgen_sub_back_image is Required"/>
+                        <h:outputLabel  value="epgen_sub_back_image_over" for="epgen_sub_back_image_over" />
+                        <h:inputText id="epgen_sub_back_image_over" value="#{joo2_swmenufree_configController.selected.epgen_sub_back_image_over}" title="epgen_sub_back_image_over" required="false" requiredMessage="Field[35]Joo2_swmenufree_config.epgen_sub_back_image_over is Required"/>
+                        <h:outputLabel  value="epgen_specialA" for="epgen_specialA" />
+                        <h:inputText id="epgen_specialA" value="#{joo2_swmenufree_configController.selected.epgen_specialA}" title="epgen_specialA" required="false" requiredMessage="Field[36]Joo2_swmenufree_config.epgen_specialA is Required"/>
+                        <h:outputLabel  value="epgen_main_padding" for="epgen_main_padding" />
+                        <h:inputText id="epgen_main_padding" value="#{joo2_swmenufree_configController.selected.epgen_main_padding}" title="epgen_main_padding" required="false" requiredMessage="Field[37]Joo2_swmenufree_config.epgen_main_padding is Required"/>
+                        <h:outputLabel  value="epgen_sub_padding" for="epgen_sub_padding" />
+                        <h:inputText id="epgen_sub_padding" value="#{joo2_swmenufree_configController.selected.epgen_sub_padding}" title="epgen_sub_padding" required="false" requiredMessage="Field[38]Joo2_swmenufree_config.epgen_sub_padding is Required"/>
+                        <h:outputLabel  value="epgen_specialB" for="epgen_specialB" />
+                        <h:inputText id="epgen_specialB" value="#{joo2_swmenufree_configController.selected.epgen_specialB}" title="epgen_specialB" required="false" requiredMessage="Field[39]Joo2_swmenufree_config.epgen_specialB is Required"/>
+                        <h:outputLabel  value="epgen_sub_font_family" for="epgen_sub_font_family" />
+                        <h:inputText id="epgen_sub_font_family" value="#{joo2_swmenufree_configController.selected.epgen_sub_font_family}" title="epgen_sub_font_family" required="false" requiredMessage="Field[40]Joo2_swmenufree_config.epgen_sub_font_family is Required"/>
+                        <h:outputLabel  value="epgen_extra" for="epgen_extra" />
+                        <h:inputText id="epgen_extra" value="#{joo2_swmenufree_configController.selected.epgen_extra}" title="epgen_extra" required="false" requiredMessage="Field[41]Joo2_swmenufree_config.epgen_extra is Required"/>
+                        <h:outputLabel  value="epgen_top_ttf" for="epgen_top_ttf" />
+                        <h:inputText id="epgen_top_ttf" value="#{joo2_swmenufree_configController.selected.epgen_top_ttf}" title="epgen_top_ttf" required="false" requiredMessage="Field[42]Joo2_swmenufree_config.epgen_top_ttf is Required"/>
+                        <h:outputLabel  value="epgen_sub_ttf" for="epgen_sub_ttf" />
+                        <h:inputText id="epgen_sub_ttf" value="#{joo2_swmenufree_configController.selected.epgen_sub_ttf}" title="epgen_sub_ttf" required="false" requiredMessage="Field[43]Joo2_swmenufree_config.epgen_sub_ttf is Required"/>
+                        <h:outputLabel  value="epgen_active_background" for="epgen_active_background" />
+                        <h:inputText id="epgen_active_background" value="#{joo2_swmenufree_configController.selected.epgen_active_background}" title="epgen_active_background" required="false" requiredMessage="Field[44]Joo2_swmenufree_config.epgen_active_background is Required"/>
+                        <h:outputLabel  value="epgen_active_font" for="epgen_active_font" />
+                        <h:inputText id="epgen_active_font" value="#{joo2_swmenufree_configController.selected.epgen_active_font}" title="epgen_active_font" required="false" requiredMessage="Field[45]Joo2_swmenufree_config.epgen_active_font is Required"/>
+                        <h:outputLabel  value="epgen_top_margin" for="epgen_top_margin" />
+                        <h:inputText id="epgen_top_margin" value="#{joo2_swmenufree_configController.selected.epgen_top_margin}" title="epgen_top_margin" required="false" requiredMessage="Field[46]Joo2_swmenufree_config.epgen_top_margin is Required"/>
+                        <h:outputLabel  value="epgen_top_wrap" for="epgen_top_wrap" />
+                        <h:inputText id="epgen_top_wrap" value="#{joo2_swmenufree_configController.selected.epgen_top_wrap}" title="epgen_top_wrap" required="false" requiredMessage="Field[47]Joo2_swmenufree_config.epgen_top_wrap is Required"/>
+                        <h:outputLabel  value="epgen_sub_wrap" for="epgen_sub_wrap" />
+                        <h:inputText id="epgen_sub_wrap" value="#{joo2_swmenufree_configController.selected.epgen_sub_wrap}" title="epgen_sub_wrap" required="false" requiredMessage="Field[48]Joo2_swmenufree_config.epgen_sub_wrap is Required"/>
+                        <h:outputLabel  value="epgen_corners" for="epgen_corners" />
+                        <h:inputText id="epgen_corners" value="#{joo2_swmenufree_configController.selected.epgen_corners}" title="epgen_corners" required="false" requiredMessage="Field[49]Joo2_swmenufree_config.epgen_corners is Required"/>
+                        <h:outputLabel  value="epgen_top_font_extra" for="epgen_top_font_extra" />
+                        <h:inputText id="epgen_top_font_extra" value="#{joo2_swmenufree_configController.selected.epgen_top_font_extra}" title="epgen_top_font_extra" required="false" requiredMessage="Field[50]Joo2_swmenufree_config.epgen_top_font_extra is Required"/>
+                        <h:outputLabel  value="epgen_sub_font_extra" for="epgen_sub_font_extra" />
+                        <h:inputText id="epgen_sub_font_extra" value="#{joo2_swmenufree_configController.selected.epgen_sub_font_extra}" title="epgen_sub_font_extra" required="false" requiredMessage="Field[51]Joo2_swmenufree_config.epgen_sub_font_extra is Required"/>
+                        <h:outputLabel  value="epgen_complete_padding" for="epgen_complete_padding" />
+                        <h:inputText id="epgen_complete_padding" value="#{joo2_swmenufree_configController.selected.epgen_complete_padding}" title="epgen_complete_padding" required="false" requiredMessage="Field[52]Joo2_swmenufree_config.epgen_complete_padding is Required"/>
+                        <h:outputLabel  value="epgen_complete_background" for="epgen_complete_background" />
+                        <h:inputText id="epgen_complete_background" value="#{joo2_swmenufree_configController.selected.epgen_complete_background}" title="epgen_complete_background" required="false" requiredMessage="Field[53]Joo2_swmenufree_config.epgen_complete_background is Required"/>
+                        <h:outputLabel  value="epgen_complete_background_image" for="epgen_complete_background_image" />
+                        <h:inputText id="epgen_complete_background_image" value="#{joo2_swmenufree_configController.selected.epgen_complete_background_image}" title="epgen_complete_background_image" required="false" requiredMessage="Field[54]Joo2_swmenufree_config.epgen_complete_background_image is Required"/>
+                        <h:outputLabel  value="epgen_active_background_image" for="epgen_active_background_image" />
+                        <h:inputText id="epgen_active_background_image" value="#{joo2_swmenufree_configController.selected.epgen_active_background_image}" title="epgen_active_background_image" required="false" requiredMessage="Field[55]Joo2_swmenufree_config.epgen_active_background_image is Required"/>
+                        <h:outputLabel  value="epgen_sub_indicator" for="epgen_sub_indicator" />
+                        <h:inputText id="epgen_sub_indicator" value="#{joo2_swmenufree_configController.selected.epgen_sub_indicator}" title="epgen_sub_indicator" required="false" requiredMessage="Field[56]Joo2_swmenufree_config.epgen_sub_indicator is Required"/>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{joo2_swmenufree_configController.create}" value="Save" />
+<br />
+                <br />
+                <h:commandLink  action="#{joo2_swmenufree_configController.prepareList}" value=" list" immediate="true"/>
+<br />
+                <br />
+                <h:link outcome="/index" value="Main page"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Create:Joo2_virtuemart_waitingusers"></h:outputText>
+</ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+<h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+<h:panelGrid columns="2">
+                        <h:outputLabel  value="epgen_virtuemart_waitinguser_id" for="epgen_virtuemart_waitinguser_id" />
+                        <h:inputText id="epgen_virtuemart_waitinguser_id" value="#{joo2_virtuemart_waitingusersController.selected.epgen_virtuemart_waitinguser_id}" title="epgen_virtuemart_waitinguser_id" required="false" requiredMessage="Field[0]Joo2_virtuemart_waitingusers.epgen_virtuemart_waitinguser_id is Required"/>
+                        <h:outputLabel  value="epgen_virtuemart_product_id" for="epgen_virtuemart_product_id" />
+                        <h:inputText id="epgen_virtuemart_product_id" value="#{joo2_virtuemart_waitingusersController.selected.epgen_virtuemart_product_id}" title="epgen_virtuemart_product_id" required="false" requiredMessage="Field[1]Joo2_virtuemart_waitingusers.epgen_virtuemart_product_id is Required"/>
+                        <h:outputLabel  value="epgen_virtuemart_user_id" for="epgen_virtuemart_user_id" />
+                        <h:inputText id="epgen_virtuemart_user_id" value="#{joo2_virtuemart_waitingusersController.selected.epgen_virtuemart_user_id}" title="epgen_virtuemart_user_id" required="false" requiredMessage="Field[2]Joo2_virtuemart_waitingusers.epgen_virtuemart_user_id is Required"/>
+                        <h:outputLabel  value="epgen_notify_email" for="epgen_notify_email" />
+                        <h:inputText id="epgen_notify_email" value="#{joo2_virtuemart_waitingusersController.selected.epgen_notify_email}" title="epgen_notify_email" required="false" requiredMessage="Field[3]Joo2_virtuemart_waitingusers.epgen_notify_email is Required"/>
+                        <h:outputLabel  value="epgen_ordering" for="epgen_ordering" />
+                        <h:inputText id="epgen_ordering" value="#{joo2_virtuemart_waitingusersController.selected.epgen_ordering}" title="epgen_ordering" required="false" requiredMessage="Field[4]Joo2_virtuemart_waitingusers.epgen_ordering is Required"/>
+                        <h:outputLabel  value="epgen_created_on" for="epgen_created_on" />
+                        <h:inputText id="epgen_created_on" value="#{joo2_virtuemart_waitingusersController.selected.epgen_created_on}" title="epgen_created_on" required="false" requiredMessage="Field[5]Joo2_virtuemart_waitingusers.epgen_created_on is Required"/>
+                        <h:outputLabel  value="epgen_created_by" for="epgen_created_by" />
+                        <h:inputText id="epgen_created_by" value="#{joo2_virtuemart_waitingusersController.selected.epgen_created_by}" title="epgen_created_by" required="false" requiredMessage="Field[6]Joo2_virtuemart_waitingusers.epgen_created_by is Required"/>
+                        <h:outputLabel  value="epgen_modified_on" for="epgen_modified_on" />
+                        <h:inputText id="epgen_modified_on" value="#{joo2_virtuemart_waitingusersController.selected.epgen_modified_on}" title="epgen_modified_on" required="false" requiredMessage="Field[7]Joo2_virtuemart_waitingusers.epgen_modified_on is Required"/>
+                        <h:outputLabel  value="epgen_modified_by" for="epgen_modified_by" />
+                        <h:inputText id="epgen_modified_by" value="#{joo2_virtuemart_waitingusersController.selected.epgen_modified_by}" title="epgen_modified_by" required="false" requiredMessage="Field[8]Joo2_virtuemart_waitingusers.epgen_modified_by is Required"/>
+                        <h:outputLabel  value="epgen_locked_on" for="epgen_locked_on" />
+                        <h:inputText id="epgen_locked_on" value="#{joo2_virtuemart_waitingusersController.selected.epgen_locked_on}" title="epgen_locked_on" required="false" requiredMessage="Field[9]Joo2_virtuemart_waitingusers.epgen_locked_on is Required"/>
+                        <h:outputLabel  value="epgen_locked_by" for="epgen_locked_by" />
+                        <h:inputText id="epgen_locked_by" value="#{joo2_virtuemart_waitingusersController.selected.epgen_locked_by}" title="epgen_locked_by" required="false" requiredMessage="Field[10]Joo2_virtuemart_waitingusers.epgen_locked_by is Required"/>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{joo2_virtuemart_waitingusersController.create}" value="Save" />
+<br />
+                <br />
+                <h:commandLink  action="#{joo2_virtuemart_waitingusersController.prepareList}" value=" list" immediate="true"/>
+<br />
+                <br />
+                <h:link outcome="/index" value="Main page"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

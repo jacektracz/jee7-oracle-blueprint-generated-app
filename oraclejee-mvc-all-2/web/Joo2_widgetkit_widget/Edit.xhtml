@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Edit: Joo2_widgetkit_widget"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                        <h:outputLabel value="epgen_id" for="epgen_id" />
+                        <h:inputText id="epgen_id" value="#{joo2_widgetkit_widgetController.selected.epgen_id}" title="epgen_id" required="false" requiredMessage="{FieldJoo2_widgetkit_widgetepgen_idis Required}"/>
+                        <h:outputLabel value="epgen_type" for="epgen_type" />
+                        <h:inputText id="epgen_type" value="#{joo2_widgetkit_widgetController.selected.epgen_type}" title="epgen_type" required="false" requiredMessage="{FieldJoo2_widgetkit_widgetepgen_typeis Required}"/>
+                        <h:outputLabel value="epgen_style" for="epgen_style" />
+                        <h:inputText id="epgen_style" value="#{joo2_widgetkit_widgetController.selected.epgen_style}" title="epgen_style" required="false" requiredMessage="{FieldJoo2_widgetkit_widgetepgen_styleis Required}"/>
+                        <h:outputLabel value="epgen_name" for="epgen_name" />
+                        <h:inputText id="epgen_name" value="#{joo2_widgetkit_widgetController.selected.epgen_name}" title="epgen_name" required="false" requiredMessage="{FieldJoo2_widgetkit_widgetepgen_nameis Required}"/>
+                        <h:outputLabel value="epgen_content" for="epgen_content" />
+                        <h:inputText id="epgen_content" value="#{joo2_widgetkit_widgetController.selected.epgen_content}" title="epgen_content" required="false" requiredMessage="{FieldJoo2_widgetkit_widgetepgen_contentis Required}"/>
+                        <h:outputLabel value="epgen_created" for="epgen_created" />
+                        <h:inputText id="epgen_created" value="#{joo2_widgetkit_widgetController.selected.epgen_created}" title="epgen_created" required="false" requiredMessage="{FieldJoo2_widgetkit_widgetepgen_createdis Required}"/>
+                        <h:outputLabel value="epgen_modified" for="epgen_modified" />
+                        <h:inputText id="epgen_modified" value="#{joo2_widgetkit_widgetController.selected.epgen_modified}" title="epgen_modified" required="false" requiredMessage="{FieldJoo2_widgetkit_widgetepgen_modifiedis Required}"/>
+</h:panelGrid>
+                <h:commandLink  action="#{joo2_widgetkit_widgetController.update}" value="Save"/>
+<br />
+                <br />
+                <h:link  outcome="View" value="View"/>
+<br />
+                <h:commandLink  action="#{joo2_widgetkit_widgetController.prepareList}" value="List Joo2_widgetkit_widget" immediate="true"/>
+<br />
+                <br />
+                <h:link  outcome="/index" value="Return to  main" />
+</h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

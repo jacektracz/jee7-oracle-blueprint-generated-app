@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Edit: Joo2_session"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                        <h:outputLabel value="epgen_session_id" for="epgen_session_id" />
+                        <h:inputText id="epgen_session_id" value="#{joo2_sessionController.selected.epgen_session_id}" title="epgen_session_id" required="false" requiredMessage="{FieldJoo2_sessionepgen_session_idis Required}"/>
+                        <h:outputLabel value="epgen_client_id" for="epgen_client_id" />
+                        <h:inputText id="epgen_client_id" value="#{joo2_sessionController.selected.epgen_client_id}" title="epgen_client_id" required="false" requiredMessage="{FieldJoo2_sessionepgen_client_idis Required}"/>
+                        <h:outputLabel value="epgen_guest" for="epgen_guest" />
+                        <h:inputText id="epgen_guest" value="#{joo2_sessionController.selected.epgen_guest}" title="epgen_guest" required="false" requiredMessage="{FieldJoo2_sessionepgen_guestis Required}"/>
+                        <h:outputLabel value="epgen_time" for="epgen_time" />
+                        <h:inputText id="epgen_time" value="#{joo2_sessionController.selected.epgen_time}" title="epgen_time" required="false" requiredMessage="{FieldJoo2_sessionepgen_timeis Required}"/>
+                        <h:outputLabel value="epgen_data" for="epgen_data" />
+                        <h:inputText id="epgen_data" value="#{joo2_sessionController.selected.epgen_data}" title="epgen_data" required="false" requiredMessage="{FieldJoo2_sessionepgen_datais Required}"/>
+                        <h:outputLabel value="epgen_userid" for="epgen_userid" />
+                        <h:inputText id="epgen_userid" value="#{joo2_sessionController.selected.epgen_userid}" title="epgen_userid" required="false" requiredMessage="{FieldJoo2_sessionepgen_useridis Required}"/>
+                        <h:outputLabel value="epgen_username" for="epgen_username" />
+                        <h:inputText id="epgen_username" value="#{joo2_sessionController.selected.epgen_username}" title="epgen_username" required="false" requiredMessage="{FieldJoo2_sessionepgen_usernameis Required}"/>
+                        <h:outputLabel value="epgen_usertype" for="epgen_usertype" />
+                        <h:inputText id="epgen_usertype" value="#{joo2_sessionController.selected.epgen_usertype}" title="epgen_usertype" required="false" requiredMessage="{FieldJoo2_sessionepgen_usertypeis Required}"/>
+</h:panelGrid>
+                <h:commandLink  action="#{joo2_sessionController.update}" value="Save"/>
+<br />
+                <br />
+                <h:link  outcome="View" value="View"/>
+<br />
+                <h:commandLink  action="#{joo2_sessionController.prepareList}" value="List Joo2_session" immediate="true"/>
+<br />
+                <br />
+                <h:link  outcome="/index" value="Return to  main" />
+</h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

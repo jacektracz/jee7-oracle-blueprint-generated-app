@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Edit: Joo2_region"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                        <h:outputLabel value="epgen_m_region_id" for="epgen_m_region_id" />
+                        <h:inputText id="epgen_m_region_id" value="#{joo2_regionController.selected.epgen_m_region_id}" title="epgen_m_region_id" required="false" requiredMessage="{FieldJoo2_regionepgen_m_region_idis Required}"/>
+                        <h:outputLabel value="epgen_m_parent_id" for="epgen_m_parent_id" />
+                        <h:inputText id="epgen_m_parent_id" value="#{joo2_regionController.selected.epgen_m_parent_id}" title="epgen_m_parent_id" required="false" requiredMessage="{FieldJoo2_regionepgen_m_parent_idis Required}"/>
+                        <h:outputLabel value="epgen_m_layer_id" for="epgen_m_layer_id" />
+                        <h:inputText id="epgen_m_layer_id" value="#{joo2_regionController.selected.epgen_m_layer_id}" title="epgen_m_layer_id" required="false" requiredMessage="{FieldJoo2_regionepgen_m_layer_idis Required}"/>
+                        <h:outputLabel value="epgen_m_short_name" for="epgen_m_short_name" />
+                        <h:inputText id="epgen_m_short_name" value="#{joo2_regionController.selected.epgen_m_short_name}" title="epgen_m_short_name" required="false" requiredMessage="{FieldJoo2_regionepgen_m_short_nameis Required}"/>
+                        <h:outputLabel value="epgen_m_title" for="epgen_m_title" />
+                        <h:inputText id="epgen_m_title" value="#{joo2_regionController.selected.epgen_m_title}" title="epgen_m_title" required="false" requiredMessage="{FieldJoo2_regionepgen_m_titleis Required}"/>
+                        <h:outputLabel value="epgen_m_collapsible" for="epgen_m_collapsible" />
+                        <h:inputText id="epgen_m_collapsible" value="#{joo2_regionController.selected.epgen_m_collapsible}" title="epgen_m_collapsible" required="false" requiredMessage="{FieldJoo2_regionepgen_m_collapsibleis Required}"/>
+                        <h:outputLabel value="epgen_m_open_content" for="epgen_m_open_content" />
+                        <h:inputText id="epgen_m_open_content" value="#{joo2_regionController.selected.epgen_m_open_content}" title="epgen_m_open_content" required="false" requiredMessage="{FieldJoo2_regionepgen_m_open_contentis Required}"/>
+                        <h:outputLabel value="epgen_m_region_type" for="epgen_m_region_type" />
+                        <h:inputText id="epgen_m_region_type" value="#{joo2_regionController.selected.epgen_m_region_type}" title="epgen_m_region_type" required="false" requiredMessage="{FieldJoo2_regionepgen_m_region_typeis Required}"/>
+                        <h:outputLabel value="epgen_m_region_position" for="epgen_m_region_position" />
+                        <h:inputText id="epgen_m_region_position" value="#{joo2_regionController.selected.epgen_m_region_position}" title="epgen_m_region_position" required="false" requiredMessage="{FieldJoo2_regionepgen_m_region_positionis Required}"/>
+                        <h:outputLabel value="epgen_m_region_ordering" for="epgen_m_region_ordering" />
+                        <h:inputText id="epgen_m_region_ordering" value="#{joo2_regionController.selected.epgen_m_region_ordering}" title="epgen_m_region_ordering" required="false" requiredMessage="{FieldJoo2_regionepgen_m_region_orderingis Required}"/>
+                        <h:outputLabel value="epgen_m_region_name" for="epgen_m_region_name" />
+                        <h:inputText id="epgen_m_region_name" value="#{joo2_regionController.selected.epgen_m_region_name}" title="epgen_m_region_name" required="false" requiredMessage="{FieldJoo2_regionepgen_m_region_nameis Required}"/>
+                        <h:outputLabel value="epgen_m_region_title" for="epgen_m_region_title" />
+                        <h:inputText id="epgen_m_region_title" value="#{joo2_regionController.selected.epgen_m_region_title}" title="epgen_m_region_title" required="false" requiredMessage="{FieldJoo2_regionepgen_m_region_titleis Required}"/>
+                        <h:outputLabel value="epgen_region_display" for="epgen_region_display" />
+                        <h:inputText id="epgen_region_display" value="#{joo2_regionController.selected.epgen_region_display}" title="epgen_region_display" required="false" requiredMessage="{FieldJoo2_regionepgen_region_displayis Required}"/>
+                        <h:outputLabel value="epgen_m_region_display" for="epgen_m_region_display" />
+                        <h:inputText id="epgen_m_region_display" value="#{joo2_regionController.selected.epgen_m_region_display}" title="epgen_m_region_display" required="false" requiredMessage="{FieldJoo2_regionepgen_m_region_displayis Required}"/>
+</h:panelGrid>
+                <h:commandLink  action="#{joo2_regionController.update}" value="Save"/>
+<br />
+                <br />
+                <h:link  outcome="View" value="View"/>
+<br />
+                <h:commandLink  action="#{joo2_regionController.prepareList}" value="List Joo2_region" immediate="true"/>
+<br />
+                <br />
+                <h:link  outcome="/index" value="Return to  main" />
+</h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Create:Joo2_modules"></h:outputText>
+</ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+<h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+<h:panelGrid columns="2">
+                        <h:outputLabel  value="epgen_id" for="epgen_id" />
+                        <h:inputText id="epgen_id" value="#{joo2_modulesController.selected.epgen_id}" title="epgen_id" required="false" requiredMessage="Field[0]Joo2_modules.epgen_id is Required"/>
+                        <h:outputLabel  value="epgen_title" for="epgen_title" />
+                        <h:inputText id="epgen_title" value="#{joo2_modulesController.selected.epgen_title}" title="epgen_title" required="false" requiredMessage="Field[1]Joo2_modules.epgen_title is Required"/>
+                        <h:outputLabel  value="epgen_note" for="epgen_note" />
+                        <h:inputText id="epgen_note" value="#{joo2_modulesController.selected.epgen_note}" title="epgen_note" required="false" requiredMessage="Field[2]Joo2_modules.epgen_note is Required"/>
+                        <h:outputLabel  value="epgen_content" for="epgen_content" />
+                        <h:inputText id="epgen_content" value="#{joo2_modulesController.selected.epgen_content}" title="epgen_content" required="false" requiredMessage="Field[3]Joo2_modules.epgen_content is Required"/>
+                        <h:outputLabel  value="epgen_ordering" for="epgen_ordering" />
+                        <h:inputText id="epgen_ordering" value="#{joo2_modulesController.selected.epgen_ordering}" title="epgen_ordering" required="false" requiredMessage="Field[4]Joo2_modules.epgen_ordering is Required"/>
+                        <h:outputLabel  value="epgen_position" for="epgen_position" />
+                        <h:inputText id="epgen_position" value="#{joo2_modulesController.selected.epgen_position}" title="epgen_position" required="false" requiredMessage="Field[5]Joo2_modules.epgen_position is Required"/>
+                        <h:outputLabel  value="epgen_checked_out" for="epgen_checked_out" />
+                        <h:inputText id="epgen_checked_out" value="#{joo2_modulesController.selected.epgen_checked_out}" title="epgen_checked_out" required="false" requiredMessage="Field[6]Joo2_modules.epgen_checked_out is Required"/>
+                        <h:outputLabel  value="epgen_checked_out_time" for="epgen_checked_out_time" />
+                        <h:inputText id="epgen_checked_out_time" value="#{joo2_modulesController.selected.epgen_checked_out_time}" title="epgen_checked_out_time" required="false" requiredMessage="Field[7]Joo2_modules.epgen_checked_out_time is Required"/>
+                        <h:outputLabel  value="epgen_publish_up" for="epgen_publish_up" />
+                        <h:inputText id="epgen_publish_up" value="#{joo2_modulesController.selected.epgen_publish_up}" title="epgen_publish_up" required="false" requiredMessage="Field[8]Joo2_modules.epgen_publish_up is Required"/>
+                        <h:outputLabel  value="epgen_publish_down" for="epgen_publish_down" />
+                        <h:inputText id="epgen_publish_down" value="#{joo2_modulesController.selected.epgen_publish_down}" title="epgen_publish_down" required="false" requiredMessage="Field[9]Joo2_modules.epgen_publish_down is Required"/>
+                        <h:outputLabel  value="epgen_published" for="epgen_published" />
+                        <h:inputText id="epgen_published" value="#{joo2_modulesController.selected.epgen_published}" title="epgen_published" required="false" requiredMessage="Field[10]Joo2_modules.epgen_published is Required"/>
+                        <h:outputLabel  value="epgen_module" for="epgen_module" />
+                        <h:inputText id="epgen_module" value="#{joo2_modulesController.selected.epgen_module}" title="epgen_module" required="false" requiredMessage="Field[11]Joo2_modules.epgen_module is Required"/>
+                        <h:outputLabel  value="epgen_access" for="epgen_access" />
+                        <h:inputText id="epgen_access" value="#{joo2_modulesController.selected.epgen_access}" title="epgen_access" required="false" requiredMessage="Field[12]Joo2_modules.epgen_access is Required"/>
+                        <h:outputLabel  value="epgen_showtitle" for="epgen_showtitle" />
+                        <h:inputText id="epgen_showtitle" value="#{joo2_modulesController.selected.epgen_showtitle}" title="epgen_showtitle" required="false" requiredMessage="Field[13]Joo2_modules.epgen_showtitle is Required"/>
+                        <h:outputLabel  value="epgen_params" for="epgen_params" />
+                        <h:inputText id="epgen_params" value="#{joo2_modulesController.selected.epgen_params}" title="epgen_params" required="false" requiredMessage="Field[14]Joo2_modules.epgen_params is Required"/>
+                        <h:outputLabel  value="epgen_client_id" for="epgen_client_id" />
+                        <h:inputText id="epgen_client_id" value="#{joo2_modulesController.selected.epgen_client_id}" title="epgen_client_id" required="false" requiredMessage="Field[15]Joo2_modules.epgen_client_id is Required"/>
+                        <h:outputLabel  value="epgen_language" for="epgen_language" />
+                        <h:inputText id="epgen_language" value="#{joo2_modulesController.selected.epgen_language}" title="epgen_language" required="false" requiredMessage="Field[16]Joo2_modules.epgen_language is Required"/>
+                        <h:outputLabel  value="epgen_ep_root_cat_id" for="epgen_ep_root_cat_id" />
+                        <h:inputText id="epgen_ep_root_cat_id" value="#{joo2_modulesController.selected.epgen_ep_root_cat_id}" title="epgen_ep_root_cat_id" required="false" requiredMessage="Field[17]Joo2_modules.epgen_ep_root_cat_id is Required"/>
+                        <h:outputLabel  value="epgen_ep_root_menu_id" for="epgen_ep_root_menu_id" />
+                        <h:inputText id="epgen_ep_root_menu_id" value="#{joo2_modulesController.selected.epgen_ep_root_menu_id}" title="epgen_ep_root_menu_id" required="false" requiredMessage="Field[18]Joo2_modules.epgen_ep_root_menu_id is Required"/>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{joo2_modulesController.create}" value="Save" />
+<br />
+                <br />
+                <h:commandLink  action="#{joo2_modulesController.prepareList}" value=" list" immediate="true"/>
+<br />
+                <br />
+                <h:link outcome="/index" value="Main page"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

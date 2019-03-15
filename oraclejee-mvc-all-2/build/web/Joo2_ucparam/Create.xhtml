@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Create:Joo2_ucparam"></h:outputText>
+</ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+<h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+<h:panelGrid columns="2">
+                        <h:outputLabel  value="epgen_m_ucparam_id" for="epgen_m_ucparam_id" />
+                        <h:inputText id="epgen_m_ucparam_id" value="#{joo2_ucparamController.selected.epgen_m_ucparam_id}" title="epgen_m_ucparam_id" required="false" requiredMessage="Field[0]Joo2_ucparam.epgen_m_ucparam_id is Required"/>
+                        <h:outputLabel  value="epgen_m_uctxc_id" for="epgen_m_uctxc_id" />
+                        <h:inputText id="epgen_m_uctxc_id" value="#{joo2_ucparamController.selected.epgen_m_uctxc_id}" title="epgen_m_uctxc_id" required="false" requiredMessage="Field[1]Joo2_ucparam.epgen_m_uctxc_id is Required"/>
+                        <h:outputLabel  value="epgen_m_ucparam_key" for="epgen_m_ucparam_key" />
+                        <h:inputText id="epgen_m_ucparam_key" value="#{joo2_ucparamController.selected.epgen_m_ucparam_key}" title="epgen_m_ucparam_key" required="false" requiredMessage="Field[2]Joo2_ucparam.epgen_m_ucparam_key is Required"/>
+                        <h:outputLabel  value="epgen_m_ucparam_name" for="epgen_m_ucparam_name" />
+                        <h:inputText id="epgen_m_ucparam_name" value="#{joo2_ucparamController.selected.epgen_m_ucparam_name}" title="epgen_m_ucparam_name" required="false" requiredMessage="Field[3]Joo2_ucparam.epgen_m_ucparam_name is Required"/>
+                        <h:outputLabel  value="epgen_m_ucparam_value" for="epgen_m_ucparam_value" />
+                        <h:inputText id="epgen_m_ucparam_value" value="#{joo2_ucparamController.selected.epgen_m_ucparam_value}" title="epgen_m_ucparam_value" required="false" requiredMessage="Field[4]Joo2_ucparam.epgen_m_ucparam_value is Required"/>
+                        <h:outputLabel  value="epgen_m_ucparam_value_0" for="epgen_m_ucparam_value_0" />
+                        <h:inputText id="epgen_m_ucparam_value_0" value="#{joo2_ucparamController.selected.epgen_m_ucparam_value_0}" title="epgen_m_ucparam_value_0" required="false" requiredMessage="Field[5]Joo2_ucparam.epgen_m_ucparam_value_0 is Required"/>
+                        <h:outputLabel  value="epgen_m_ucparam_value_1" for="epgen_m_ucparam_value_1" />
+                        <h:inputText id="epgen_m_ucparam_value_1" value="#{joo2_ucparamController.selected.epgen_m_ucparam_value_1}" title="epgen_m_ucparam_value_1" required="false" requiredMessage="Field[6]Joo2_ucparam.epgen_m_ucparam_value_1 is Required"/>
+                        <h:outputLabel  value="epgen_m_ucparam_value_2" for="epgen_m_ucparam_value_2" />
+                        <h:inputText id="epgen_m_ucparam_value_2" value="#{joo2_ucparamController.selected.epgen_m_ucparam_value_2}" title="epgen_m_ucparam_value_2" required="false" requiredMessage="Field[7]Joo2_ucparam.epgen_m_ucparam_value_2 is Required"/>
+                        <h:outputLabel  value="epgen_m_ucparam_value_3" for="epgen_m_ucparam_value_3" />
+                        <h:inputText id="epgen_m_ucparam_value_3" value="#{joo2_ucparamController.selected.epgen_m_ucparam_value_3}" title="epgen_m_ucparam_value_3" required="false" requiredMessage="Field[8]Joo2_ucparam.epgen_m_ucparam_value_3 is Required"/>
+                        <h:outputLabel  value="epgen_m_ucparam_title" for="epgen_m_ucparam_title" />
+                        <h:inputText id="epgen_m_ucparam_title" value="#{joo2_ucparamController.selected.epgen_m_ucparam_title}" title="epgen_m_ucparam_title" required="false" requiredMessage="Field[9]Joo2_ucparam.epgen_m_ucparam_title is Required"/>
+                        <h:outputLabel  value="epgen_m_ucparam_type" for="epgen_m_ucparam_type" />
+                        <h:inputText id="epgen_m_ucparam_type" value="#{joo2_ucparamController.selected.epgen_m_ucparam_type}" title="epgen_m_ucparam_type" required="false" requiredMessage="Field[10]Joo2_ucparam.epgen_m_ucparam_type is Required"/>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{joo2_ucparamController.create}" value="Save" />
+<br />
+                <br />
+                <h:commandLink  action="#{joo2_ucparamController.prepareList}" value=" list" immediate="true"/>
+<br />
+                <br />
+                <h:link outcome="/index" value="Main page"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

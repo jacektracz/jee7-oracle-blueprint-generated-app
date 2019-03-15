@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Edit: Joo2_languages"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                        <h:outputLabel value="epgen_lang_id" for="epgen_lang_id" />
+                        <h:inputText id="epgen_lang_id" value="#{joo2_languagesController.selected.epgen_lang_id}" title="epgen_lang_id" required="false" requiredMessage="{FieldJoo2_languagesepgen_lang_idis Required}"/>
+                        <h:outputLabel value="epgen_lang_code" for="epgen_lang_code" />
+                        <h:inputText id="epgen_lang_code" value="#{joo2_languagesController.selected.epgen_lang_code}" title="epgen_lang_code" required="false" requiredMessage="{FieldJoo2_languagesepgen_lang_codeis Required}"/>
+                        <h:outputLabel value="epgen_title" for="epgen_title" />
+                        <h:inputText id="epgen_title" value="#{joo2_languagesController.selected.epgen_title}" title="epgen_title" required="false" requiredMessage="{FieldJoo2_languagesepgen_titleis Required}"/>
+                        <h:outputLabel value="epgen_title_native" for="epgen_title_native" />
+                        <h:inputText id="epgen_title_native" value="#{joo2_languagesController.selected.epgen_title_native}" title="epgen_title_native" required="false" requiredMessage="{FieldJoo2_languagesepgen_title_nativeis Required}"/>
+                        <h:outputLabel value="epgen_sef" for="epgen_sef" />
+                        <h:inputText id="epgen_sef" value="#{joo2_languagesController.selected.epgen_sef}" title="epgen_sef" required="false" requiredMessage="{FieldJoo2_languagesepgen_sefis Required}"/>
+                        <h:outputLabel value="epgen_image" for="epgen_image" />
+                        <h:inputText id="epgen_image" value="#{joo2_languagesController.selected.epgen_image}" title="epgen_image" required="false" requiredMessage="{FieldJoo2_languagesepgen_imageis Required}"/>
+                        <h:outputLabel value="epgen_description" for="epgen_description" />
+                        <h:inputText id="epgen_description" value="#{joo2_languagesController.selected.epgen_description}" title="epgen_description" required="false" requiredMessage="{FieldJoo2_languagesepgen_descriptionis Required}"/>
+                        <h:outputLabel value="epgen_metakey" for="epgen_metakey" />
+                        <h:inputText id="epgen_metakey" value="#{joo2_languagesController.selected.epgen_metakey}" title="epgen_metakey" required="false" requiredMessage="{FieldJoo2_languagesepgen_metakeyis Required}"/>
+                        <h:outputLabel value="epgen_metadesc" for="epgen_metadesc" />
+                        <h:inputText id="epgen_metadesc" value="#{joo2_languagesController.selected.epgen_metadesc}" title="epgen_metadesc" required="false" requiredMessage="{FieldJoo2_languagesepgen_metadescis Required}"/>
+                        <h:outputLabel value="epgen_sitename" for="epgen_sitename" />
+                        <h:inputText id="epgen_sitename" value="#{joo2_languagesController.selected.epgen_sitename}" title="epgen_sitename" required="false" requiredMessage="{FieldJoo2_languagesepgen_sitenameis Required}"/>
+                        <h:outputLabel value="epgen_published" for="epgen_published" />
+                        <h:inputText id="epgen_published" value="#{joo2_languagesController.selected.epgen_published}" title="epgen_published" required="false" requiredMessage="{FieldJoo2_languagesepgen_publishedis Required}"/>
+                        <h:outputLabel value="epgen_ordering" for="epgen_ordering" />
+                        <h:inputText id="epgen_ordering" value="#{joo2_languagesController.selected.epgen_ordering}" title="epgen_ordering" required="false" requiredMessage="{FieldJoo2_languagesepgen_orderingis Required}"/>
+</h:panelGrid>
+                <h:commandLink  action="#{joo2_languagesController.update}" value="Save"/>
+<br />
+                <br />
+                <h:link  outcome="View" value="View"/>
+<br />
+                <h:commandLink  action="#{joo2_languagesController.prepareList}" value="List Joo2_languages" immediate="true"/>
+<br />
+                <br />
+                <h:link  outcome="/index" value="Return to  main" />
+</h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

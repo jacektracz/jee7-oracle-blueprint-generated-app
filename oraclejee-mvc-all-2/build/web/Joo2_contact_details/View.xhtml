@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Edit: Joo2_contact_details"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                        <h:outputLabel value="epgen_id" for="epgen_id" />
+                        <h:inputText id="epgen_id" value="#{joo2_contact_detailsController.selected.epgen_id}" title="epgen_id" required="false" requiredMessage="{FieldJoo2_contact_detailsepgen_idis Required}"/>
+                        <h:outputLabel value="epgen_name" for="epgen_name" />
+                        <h:inputText id="epgen_name" value="#{joo2_contact_detailsController.selected.epgen_name}" title="epgen_name" required="false" requiredMessage="{FieldJoo2_contact_detailsepgen_nameis Required}"/>
+                        <h:outputLabel value="epgen_alias" for="epgen_alias" />
+                        <h:inputText id="epgen_alias" value="#{joo2_contact_detailsController.selected.epgen_alias}" title="epgen_alias" required="false" requiredMessage="{FieldJoo2_contact_detailsepgen_aliasis Required}"/>
+                        <h:outputLabel value="epgen_con_position" for="epgen_con_position" />
+                        <h:inputText id="epgen_con_position" value="#{joo2_contact_detailsController.selected.epgen_con_position}" title="epgen_con_position" required="false" requiredMessage="{FieldJoo2_contact_detailsepgen_con_positionis Required}"/>
+                        <h:outputLabel value="epgen_address" for="epgen_address" />
+                        <h:inputText id="epgen_address" value="#{joo2_contact_detailsController.selected.epgen_address}" title="epgen_address" required="false" requiredMessage="{FieldJoo2_contact_detailsepgen_addressis Required}"/>
+                        <h:outputLabel value="epgen_suburb" for="epgen_suburb" />
+                        <h:inputText id="epgen_suburb" value="#{joo2_contact_detailsController.selected.epgen_suburb}" title="epgen_suburb" required="false" requiredMessage="{FieldJoo2_contact_detailsepgen_suburbis Required}"/>
+                        <h:outputLabel value="epgen_state" for="epgen_state" />
+                        <h:inputText id="epgen_state" value="#{joo2_contact_detailsController.selected.epgen_state}" title="epgen_state" required="false" requiredMessage="{FieldJoo2_contact_detailsepgen_stateis Required}"/>
+                        <h:outputLabel value="epgen_country" for="epgen_country" />
+                        <h:inputText id="epgen_country" value="#{joo2_contact_detailsController.selected.epgen_country}" title="epgen_country" required="false" requiredMessage="{FieldJoo2_contact_detailsepgen_countryis Required}"/>
+                        <h:outputLabel value="epgen_postcode" for="epgen_postcode" />
+                        <h:inputText id="epgen_postcode" value="#{joo2_contact_detailsController.selected.epgen_postcode}" title="epgen_postcode" required="false" requiredMessage="{FieldJoo2_contact_detailsepgen_postcodeis Required}"/>
+                        <h:outputLabel value="epgen_telephone" for="epgen_telephone" />
+                        <h:inputText id="epgen_telephone" value="#{joo2_contact_detailsController.selected.epgen_telephone}" title="epgen_telephone" required="false" requiredMessage="{FieldJoo2_contact_detailsepgen_telephoneis Required}"/>
+                        <h:outputLabel value="epgen_fax" for="epgen_fax" />
+                        <h:inputText id="epgen_fax" value="#{joo2_contact_detailsController.selected.epgen_fax}" title="epgen_fax" required="false" requiredMessage="{FieldJoo2_contact_detailsepgen_faxis Required}"/>
+                        <h:outputLabel value="epgen_misc" for="epgen_misc" />
+                        <h:inputText id="epgen_misc" value="#{joo2_contact_detailsController.selected.epgen_misc}" title="epgen_misc" required="false" requiredMessage="{FieldJoo2_contact_detailsepgen_miscis Required}"/>
+                        <h:outputLabel value="epgen_image" for="epgen_image" />
+                        <h:inputText id="epgen_image" value="#{joo2_contact_detailsController.selected.epgen_image}" title="epgen_image" required="false" requiredMessage="{FieldJoo2_contact_detailsepgen_imageis Required}"/>
+                        <h:outputLabel value="epgen_imagepos" for="epgen_imagepos" />
+                        <h:inputText id="epgen_imagepos" value="#{joo2_contact_detailsController.selected.epgen_imagepos}" title="epgen_imagepos" required="false" requiredMessage="{FieldJoo2_contact_detailsepgen_imageposis Required}"/>
+                        <h:outputLabel value="epgen_email_to" for="epgen_email_to" />
+                        <h:inputText id="epgen_email_to" value="#{joo2_contact_detailsController.selected.epgen_email_to}" title="epgen_email_to" required="false" requiredMessage="{FieldJoo2_contact_detailsepgen_email_tois Required}"/>
+                        <h:outputLabel value="epgen_default_con" for="epgen_default_con" />
+                        <h:inputText id="epgen_default_con" value="#{joo2_contact_detailsController.selected.epgen_default_con}" title="epgen_default_con" required="false" requiredMessage="{FieldJoo2_contact_detailsepgen_default_conis Required}"/>
+                        <h:outputLabel value="epgen_published" for="epgen_published" />
+                        <h:inputText id="epgen_published" value="#{joo2_contact_detailsController.selected.epgen_published}" title="epgen_published" required="false" requiredMessage="{FieldJoo2_contact_detailsepgen_publishedis Required}"/>
+                        <h:outputLabel value="epgen_checked_out" for="epgen_checked_out" />
+                        <h:inputText id="epgen_checked_out" value="#{joo2_contact_detailsController.selected.epgen_checked_out}" title="epgen_checked_out" required="false" requiredMessage="{FieldJoo2_contact_detailsepgen_checked_outis Required}"/>
+                        <h:outputLabel value="epgen_checked_out_time" for="epgen_checked_out_time" />
+                        <h:inputText id="epgen_checked_out_time" value="#{joo2_contact_detailsController.selected.epgen_checked_out_time}" title="epgen_checked_out_time" required="false" requiredMessage="{FieldJoo2_contact_detailsepgen_checked_out_timeis Required}"/>
+                        <h:outputLabel value="epgen_ordering" for="epgen_ordering" />
+                        <h:inputText id="epgen_ordering" value="#{joo2_contact_detailsController.selected.epgen_ordering}" title="epgen_ordering" required="false" requiredMessage="{FieldJoo2_contact_detailsepgen_orderingis Required}"/>
+                        <h:outputLabel value="epgen_params" for="epgen_params" />
+                        <h:inputText id="epgen_params" value="#{joo2_contact_detailsController.selected.epgen_params}" title="epgen_params" required="false" requiredMessage="{FieldJoo2_contact_detailsepgen_paramsis Required}"/>
+                        <h:outputLabel value="epgen_user_id" for="epgen_user_id" />
+                        <h:inputText id="epgen_user_id" value="#{joo2_contact_detailsController.selected.epgen_user_id}" title="epgen_user_id" required="false" requiredMessage="{FieldJoo2_contact_detailsepgen_user_idis Required}"/>
+                        <h:outputLabel value="epgen_catid" for="epgen_catid" />
+                        <h:inputText id="epgen_catid" value="#{joo2_contact_detailsController.selected.epgen_catid}" title="epgen_catid" required="false" requiredMessage="{FieldJoo2_contact_detailsepgen_catidis Required}"/>
+                        <h:outputLabel value="epgen_access" for="epgen_access" />
+                        <h:inputText id="epgen_access" value="#{joo2_contact_detailsController.selected.epgen_access}" title="epgen_access" required="false" requiredMessage="{FieldJoo2_contact_detailsepgen_accessis Required}"/>
+                        <h:outputLabel value="epgen_mobile" for="epgen_mobile" />
+                        <h:inputText id="epgen_mobile" value="#{joo2_contact_detailsController.selected.epgen_mobile}" title="epgen_mobile" required="false" requiredMessage="{FieldJoo2_contact_detailsepgen_mobileis Required}"/>
+                        <h:outputLabel value="epgen_webpage" for="epgen_webpage" />
+                        <h:inputText id="epgen_webpage" value="#{joo2_contact_detailsController.selected.epgen_webpage}" title="epgen_webpage" required="false" requiredMessage="{FieldJoo2_contact_detailsepgen_webpageis Required}"/>
+                        <h:outputLabel value="epgen_sortname1" for="epgen_sortname1" />
+                        <h:inputText id="epgen_sortname1" value="#{joo2_contact_detailsController.selected.epgen_sortname1}" title="epgen_sortname1" required="false" requiredMessage="{FieldJoo2_contact_detailsepgen_sortname1is Required}"/>
+                        <h:outputLabel value="epgen_sortname2" for="epgen_sortname2" />
+                        <h:inputText id="epgen_sortname2" value="#{joo2_contact_detailsController.selected.epgen_sortname2}" title="epgen_sortname2" required="false" requiredMessage="{FieldJoo2_contact_detailsepgen_sortname2is Required}"/>
+                        <h:outputLabel value="epgen_sortname3" for="epgen_sortname3" />
+                        <h:inputText id="epgen_sortname3" value="#{joo2_contact_detailsController.selected.epgen_sortname3}" title="epgen_sortname3" required="false" requiredMessage="{FieldJoo2_contact_detailsepgen_sortname3is Required}"/>
+                        <h:outputLabel value="epgen_language" for="epgen_language" />
+                        <h:inputText id="epgen_language" value="#{joo2_contact_detailsController.selected.epgen_language}" title="epgen_language" required="false" requiredMessage="{FieldJoo2_contact_detailsepgen_languageis Required}"/>
+                        <h:outputLabel value="epgen_created" for="epgen_created" />
+                        <h:inputText id="epgen_created" value="#{joo2_contact_detailsController.selected.epgen_created}" title="epgen_created" required="false" requiredMessage="{FieldJoo2_contact_detailsepgen_createdis Required}"/>
+                        <h:outputLabel value="epgen_created_by" for="epgen_created_by" />
+                        <h:inputText id="epgen_created_by" value="#{joo2_contact_detailsController.selected.epgen_created_by}" title="epgen_created_by" required="false" requiredMessage="{FieldJoo2_contact_detailsepgen_created_byis Required}"/>
+                        <h:outputLabel value="epgen_created_by_alias" for="epgen_created_by_alias" />
+                        <h:inputText id="epgen_created_by_alias" value="#{joo2_contact_detailsController.selected.epgen_created_by_alias}" title="epgen_created_by_alias" required="false" requiredMessage="{FieldJoo2_contact_detailsepgen_created_by_aliasis Required}"/>
+                        <h:outputLabel value="epgen_modified" for="epgen_modified" />
+                        <h:inputText id="epgen_modified" value="#{joo2_contact_detailsController.selected.epgen_modified}" title="epgen_modified" required="false" requiredMessage="{FieldJoo2_contact_detailsepgen_modifiedis Required}"/>
+                        <h:outputLabel value="epgen_modified_by" for="epgen_modified_by" />
+                        <h:inputText id="epgen_modified_by" value="#{joo2_contact_detailsController.selected.epgen_modified_by}" title="epgen_modified_by" required="false" requiredMessage="{FieldJoo2_contact_detailsepgen_modified_byis Required}"/>
+                        <h:outputLabel value="epgen_metakey" for="epgen_metakey" />
+                        <h:inputText id="epgen_metakey" value="#{joo2_contact_detailsController.selected.epgen_metakey}" title="epgen_metakey" required="false" requiredMessage="{FieldJoo2_contact_detailsepgen_metakeyis Required}"/>
+                        <h:outputLabel value="epgen_metadesc" for="epgen_metadesc" />
+                        <h:inputText id="epgen_metadesc" value="#{joo2_contact_detailsController.selected.epgen_metadesc}" title="epgen_metadesc" required="false" requiredMessage="{FieldJoo2_contact_detailsepgen_metadescis Required}"/>
+                        <h:outputLabel value="epgen_metadata" for="epgen_metadata" />
+                        <h:inputText id="epgen_metadata" value="#{joo2_contact_detailsController.selected.epgen_metadata}" title="epgen_metadata" required="false" requiredMessage="{FieldJoo2_contact_detailsepgen_metadatais Required}"/>
+                        <h:outputLabel value="epgen_featured" for="epgen_featured" />
+                        <h:inputText id="epgen_featured" value="#{joo2_contact_detailsController.selected.epgen_featured}" title="epgen_featured" required="false" requiredMessage="{FieldJoo2_contact_detailsepgen_featuredis Required}"/>
+                        <h:outputLabel value="epgen_xreference" for="epgen_xreference" />
+                        <h:inputText id="epgen_xreference" value="#{joo2_contact_detailsController.selected.epgen_xreference}" title="epgen_xreference" required="false" requiredMessage="{FieldJoo2_contact_detailsepgen_xreferenceis Required}"/>
+                        <h:outputLabel value="epgen_publish_up" for="epgen_publish_up" />
+                        <h:inputText id="epgen_publish_up" value="#{joo2_contact_detailsController.selected.epgen_publish_up}" title="epgen_publish_up" required="false" requiredMessage="{FieldJoo2_contact_detailsepgen_publish_upis Required}"/>
+                        <h:outputLabel value="epgen_publish_down" for="epgen_publish_down" />
+                        <h:inputText id="epgen_publish_down" value="#{joo2_contact_detailsController.selected.epgen_publish_down}" title="epgen_publish_down" required="false" requiredMessage="{FieldJoo2_contact_detailsepgen_publish_downis Required}"/>
+</h:panelGrid>
+                <h:commandLink  action="#{joo2_contact_detailsController.update}" value="Save"/>
+<br />
+                <br />
+                <h:link  outcome="View" value="View"/>
+<br />
+                <h:commandLink  action="#{joo2_contact_detailsController.prepareList}" value="List Joo2_contact_details" immediate="true"/>
+<br />
+                <br />
+                <h:link  outcome="/index" value="Return to  main" />
+</h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

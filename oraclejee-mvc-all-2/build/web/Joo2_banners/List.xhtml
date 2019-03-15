@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Joo2_banners"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:form styleClass="jsfcrud_list_form">
+                <h:panelGroup id="messagePanel" layout="block">
+                    <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+                </h:panelGroup>
+                <h:outputText escape="false" value="Empty}" rendered="#{joo2_bannersController.items.rowCount == 0}"/>
+                <h:panelGroup rendered="#{joo2_bannersController.items.rowCount > 0}">
+                    <h:outputText value="#{joo2_bannersController.pagination.pageFirstItem + 1}..#{joo2_bannersController.pagination.pageLastItem + 1}/#{joo2_bannersController.pagination.itemsCount}"/>&nbsp;
+                    <h:commandLink action="#{joo2_bannersController.previous}" value="{Previous} #{joo2_bannersController.pagination.pageSize}" rendered="#{joo2_bannersController.pagination.hasPreviousPage}"/>&nbsp;
+                    <h:commandLink action="#{joo2_bannersController.next}" value="{Next} #{joo2_bannersController.pagination.pageSize}" rendered="#{joo2_bannersController.pagination.hasNextPage}"/>&nbsp;
+                    <h:dataTable value="#{joo2_bannersController.items}" var="item" border="0" cellpadding="2" cellspacing="0" rowClasses="jsfcrud_odd_row,jsfcrud_even_row" rules="all" style="border:solid 1px">
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_id"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_id}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_cid"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_cid}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_type"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_type}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_name"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_name}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_alias"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_alias}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_imptotal"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_imptotal}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_impmade"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_impmade}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_clicks"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_clicks}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_clickurl"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_clickurl}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_state"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_state}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_catid"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_catid}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_description"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_description}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_custombannercode"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_custombannercode}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_sticky"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_sticky}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_ordering"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_ordering}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_metakey"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_metakey}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_params"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_params}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_own_prefix"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_own_prefix}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_metakey_prefix"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_metakey_prefix}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_purchase_type"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_purchase_type}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_track_clicks"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_track_clicks}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_track_impressions"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_track_impressions}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_checked_out"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_checked_out}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_checked_out_time"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_checked_out_time}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_publish_up"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_publish_up}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_publish_down"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_publish_down}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_reset"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_reset}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_created"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_created}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_language"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_language}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="&nbsp;"/>
+                            </f:facet>
+                            <h:commandLink action="#{joo2_bannersController.prepareView}" value="View"/>
+                            <h:outputText value=" "/>
+                            <h:commandLink action="#{joo2_bannersController.prepareEdit}" value="Edit"/>
+                            <h:outputText value=" "/>
+                            <h:commandLink action="#{joo2_bannersController.destroy}" value="Delete"/>
+                        </h:column>
+                    </h:dataTable>
+                </h:panelGroup>
+                <br />
+                <h:commandLink action="#{joo2_bannersController.prepareCreate}" value="Joo2_bannersCreate"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="Return"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+    </html>

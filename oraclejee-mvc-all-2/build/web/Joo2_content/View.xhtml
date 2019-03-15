@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Edit: Joo2_content"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                        <h:outputLabel value="epgen_id" for="epgen_id" />
+                        <h:inputText id="epgen_id" value="#{joo2_contentController.selected.epgen_id}" title="epgen_id" required="false" requiredMessage="{FieldJoo2_contentepgen_idis Required}"/>
+                        <h:outputLabel value="epgen_asset_id" for="epgen_asset_id" />
+                        <h:inputText id="epgen_asset_id" value="#{joo2_contentController.selected.epgen_asset_id}" title="epgen_asset_id" required="false" requiredMessage="{FieldJoo2_contentepgen_asset_idis Required}"/>
+                        <h:outputLabel value="epgen_title" for="epgen_title" />
+                        <h:inputText id="epgen_title" value="#{joo2_contentController.selected.epgen_title}" title="epgen_title" required="false" requiredMessage="{FieldJoo2_contentepgen_titleis Required}"/>
+                        <h:outputLabel value="epgen_alias" for="epgen_alias" />
+                        <h:inputText id="epgen_alias" value="#{joo2_contentController.selected.epgen_alias}" title="epgen_alias" required="false" requiredMessage="{FieldJoo2_contentepgen_aliasis Required}"/>
+                        <h:outputLabel value="epgen_title_alias" for="epgen_title_alias" />
+                        <h:inputText id="epgen_title_alias" value="#{joo2_contentController.selected.epgen_title_alias}" title="epgen_title_alias" required="false" requiredMessage="{FieldJoo2_contentepgen_title_aliasis Required}"/>
+                        <h:outputLabel value="epgen_introtext" for="epgen_introtext" />
+                        <h:inputText id="epgen_introtext" value="#{joo2_contentController.selected.epgen_introtext}" title="epgen_introtext" required="false" requiredMessage="{FieldJoo2_contentepgen_introtextis Required}"/>
+                        <h:outputLabel value="epgen_fulltext" for="epgen_fulltext" />
+                        <h:inputText id="epgen_fulltext" value="#{joo2_contentController.selected.epgen_fulltext}" title="epgen_fulltext" required="false" requiredMessage="{FieldJoo2_contentepgen_fulltextis Required}"/>
+                        <h:outputLabel value="epgen_state" for="epgen_state" />
+                        <h:inputText id="epgen_state" value="#{joo2_contentController.selected.epgen_state}" title="epgen_state" required="false" requiredMessage="{FieldJoo2_contentepgen_stateis Required}"/>
+                        <h:outputLabel value="epgen_sectionid" for="epgen_sectionid" />
+                        <h:inputText id="epgen_sectionid" value="#{joo2_contentController.selected.epgen_sectionid}" title="epgen_sectionid" required="false" requiredMessage="{FieldJoo2_contentepgen_sectionidis Required}"/>
+                        <h:outputLabel value="epgen_mask" for="epgen_mask" />
+                        <h:inputText id="epgen_mask" value="#{joo2_contentController.selected.epgen_mask}" title="epgen_mask" required="false" requiredMessage="{FieldJoo2_contentepgen_maskis Required}"/>
+                        <h:outputLabel value="epgen_catid" for="epgen_catid" />
+                        <h:inputText id="epgen_catid" value="#{joo2_contentController.selected.epgen_catid}" title="epgen_catid" required="false" requiredMessage="{FieldJoo2_contentepgen_catidis Required}"/>
+                        <h:outputLabel value="epgen_created" for="epgen_created" />
+                        <h:inputText id="epgen_created" value="#{joo2_contentController.selected.epgen_created}" title="epgen_created" required="false" requiredMessage="{FieldJoo2_contentepgen_createdis Required}"/>
+                        <h:outputLabel value="epgen_created_by" for="epgen_created_by" />
+                        <h:inputText id="epgen_created_by" value="#{joo2_contentController.selected.epgen_created_by}" title="epgen_created_by" required="false" requiredMessage="{FieldJoo2_contentepgen_created_byis Required}"/>
+                        <h:outputLabel value="epgen_created_by_alias" for="epgen_created_by_alias" />
+                        <h:inputText id="epgen_created_by_alias" value="#{joo2_contentController.selected.epgen_created_by_alias}" title="epgen_created_by_alias" required="false" requiredMessage="{FieldJoo2_contentepgen_created_by_aliasis Required}"/>
+                        <h:outputLabel value="epgen_modified" for="epgen_modified" />
+                        <h:inputText id="epgen_modified" value="#{joo2_contentController.selected.epgen_modified}" title="epgen_modified" required="false" requiredMessage="{FieldJoo2_contentepgen_modifiedis Required}"/>
+                        <h:outputLabel value="epgen_modified_by" for="epgen_modified_by" />
+                        <h:inputText id="epgen_modified_by" value="#{joo2_contentController.selected.epgen_modified_by}" title="epgen_modified_by" required="false" requiredMessage="{FieldJoo2_contentepgen_modified_byis Required}"/>
+                        <h:outputLabel value="epgen_checked_out" for="epgen_checked_out" />
+                        <h:inputText id="epgen_checked_out" value="#{joo2_contentController.selected.epgen_checked_out}" title="epgen_checked_out" required="false" requiredMessage="{FieldJoo2_contentepgen_checked_outis Required}"/>
+                        <h:outputLabel value="epgen_checked_out_time" for="epgen_checked_out_time" />
+                        <h:inputText id="epgen_checked_out_time" value="#{joo2_contentController.selected.epgen_checked_out_time}" title="epgen_checked_out_time" required="false" requiredMessage="{FieldJoo2_contentepgen_checked_out_timeis Required}"/>
+                        <h:outputLabel value="epgen_publish_up" for="epgen_publish_up" />
+                        <h:inputText id="epgen_publish_up" value="#{joo2_contentController.selected.epgen_publish_up}" title="epgen_publish_up" required="false" requiredMessage="{FieldJoo2_contentepgen_publish_upis Required}"/>
+                        <h:outputLabel value="epgen_publish_down" for="epgen_publish_down" />
+                        <h:inputText id="epgen_publish_down" value="#{joo2_contentController.selected.epgen_publish_down}" title="epgen_publish_down" required="false" requiredMessage="{FieldJoo2_contentepgen_publish_downis Required}"/>
+                        <h:outputLabel value="epgen_images" for="epgen_images" />
+                        <h:inputText id="epgen_images" value="#{joo2_contentController.selected.epgen_images}" title="epgen_images" required="false" requiredMessage="{FieldJoo2_contentepgen_imagesis Required}"/>
+                        <h:outputLabel value="epgen_urls" for="epgen_urls" />
+                        <h:inputText id="epgen_urls" value="#{joo2_contentController.selected.epgen_urls}" title="epgen_urls" required="false" requiredMessage="{FieldJoo2_contentepgen_urlsis Required}"/>
+                        <h:outputLabel value="epgen_attribs" for="epgen_attribs" />
+                        <h:inputText id="epgen_attribs" value="#{joo2_contentController.selected.epgen_attribs}" title="epgen_attribs" required="false" requiredMessage="{FieldJoo2_contentepgen_attribsis Required}"/>
+                        <h:outputLabel value="epgen_version" for="epgen_version" />
+                        <h:inputText id="epgen_version" value="#{joo2_contentController.selected.epgen_version}" title="epgen_version" required="false" requiredMessage="{FieldJoo2_contentepgen_versionis Required}"/>
+                        <h:outputLabel value="epgen_parentid" for="epgen_parentid" />
+                        <h:inputText id="epgen_parentid" value="#{joo2_contentController.selected.epgen_parentid}" title="epgen_parentid" required="false" requiredMessage="{FieldJoo2_contentepgen_parentidis Required}"/>
+                        <h:outputLabel value="epgen_ordering" for="epgen_ordering" />
+                        <h:inputText id="epgen_ordering" value="#{joo2_contentController.selected.epgen_ordering}" title="epgen_ordering" required="false" requiredMessage="{FieldJoo2_contentepgen_orderingis Required}"/>
+                        <h:outputLabel value="epgen_metakey" for="epgen_metakey" />
+                        <h:inputText id="epgen_metakey" value="#{joo2_contentController.selected.epgen_metakey}" title="epgen_metakey" required="false" requiredMessage="{FieldJoo2_contentepgen_metakeyis Required}"/>
+                        <h:outputLabel value="epgen_metadesc" for="epgen_metadesc" />
+                        <h:inputText id="epgen_metadesc" value="#{joo2_contentController.selected.epgen_metadesc}" title="epgen_metadesc" required="false" requiredMessage="{FieldJoo2_contentepgen_metadescis Required}"/>
+                        <h:outputLabel value="epgen_access" for="epgen_access" />
+                        <h:inputText id="epgen_access" value="#{joo2_contentController.selected.epgen_access}" title="epgen_access" required="false" requiredMessage="{FieldJoo2_contentepgen_accessis Required}"/>
+                        <h:outputLabel value="epgen_hits" for="epgen_hits" />
+                        <h:inputText id="epgen_hits" value="#{joo2_contentController.selected.epgen_hits}" title="epgen_hits" required="false" requiredMessage="{FieldJoo2_contentepgen_hitsis Required}"/>
+                        <h:outputLabel value="epgen_metadata" for="epgen_metadata" />
+                        <h:inputText id="epgen_metadata" value="#{joo2_contentController.selected.epgen_metadata}" title="epgen_metadata" required="false" requiredMessage="{FieldJoo2_contentepgen_metadatais Required}"/>
+                        <h:outputLabel value="epgen_featured" for="epgen_featured" />
+                        <h:inputText id="epgen_featured" value="#{joo2_contentController.selected.epgen_featured}" title="epgen_featured" required="false" requiredMessage="{FieldJoo2_contentepgen_featuredis Required}"/>
+                        <h:outputLabel value="epgen_language" for="epgen_language" />
+                        <h:inputText id="epgen_language" value="#{joo2_contentController.selected.epgen_language}" title="epgen_language" required="false" requiredMessage="{FieldJoo2_contentepgen_languageis Required}"/>
+                        <h:outputLabel value="epgen_xreference" for="epgen_xreference" />
+                        <h:inputText id="epgen_xreference" value="#{joo2_contentController.selected.epgen_xreference}" title="epgen_xreference" required="false" requiredMessage="{FieldJoo2_contentepgen_xreferenceis Required}"/>
+                        <h:outputLabel value="epgen_ep_href_main" for="epgen_ep_href_main" />
+                        <h:inputText id="epgen_ep_href_main" value="#{joo2_contentController.selected.epgen_ep_href_main}" title="epgen_ep_href_main" required="false" requiredMessage="{FieldJoo2_contentepgen_ep_href_mainis Required}"/>
+                        <h:outputLabel value="epgen_ep_image" for="epgen_ep_image" />
+                        <h:inputText id="epgen_ep_image" value="#{joo2_contentController.selected.epgen_ep_image}" title="epgen_ep_image" required="false" requiredMessage="{FieldJoo2_contentepgen_ep_imageis Required}"/>
+                        <h:outputLabel value="epgen_ep_intro_raw" for="epgen_ep_intro_raw" />
+                        <h:inputText id="epgen_ep_intro_raw" value="#{joo2_contentController.selected.epgen_ep_intro_raw}" title="epgen_ep_intro_raw" required="false" requiredMessage="{FieldJoo2_contentepgen_ep_intro_rawis Required}"/>
+                        <h:outputLabel value="epgen_ep_down_buttin" for="epgen_ep_down_buttin" />
+                        <h:inputText id="epgen_ep_down_buttin" value="#{joo2_contentController.selected.epgen_ep_down_buttin}" title="epgen_ep_down_buttin" required="false" requiredMessage="{FieldJoo2_contentepgen_ep_down_buttinis Required}"/>
+                        <h:outputLabel value="epgen_ep_down_button" for="epgen_ep_down_button" />
+                        <h:inputText id="epgen_ep_down_button" value="#{joo2_contentController.selected.epgen_ep_down_button}" title="epgen_ep_down_button" required="false" requiredMessage="{FieldJoo2_contentepgen_ep_down_buttonis Required}"/>
+                        <h:outputLabel value="epgen_ep_type" for="epgen_ep_type" />
+                        <h:inputText id="epgen_ep_type" value="#{joo2_contentController.selected.epgen_ep_type}" title="epgen_ep_type" required="false" requiredMessage="{FieldJoo2_contentepgen_ep_typeis Required}"/>
+                        <h:outputLabel value="epgen_ep_image_type" for="epgen_ep_image_type" />
+                        <h:inputText id="epgen_ep_image_type" value="#{joo2_contentController.selected.epgen_ep_image_type}" title="epgen_ep_image_type" required="false" requiredMessage="{FieldJoo2_contentepgen_ep_image_typeis Required}"/>
+                        <h:outputLabel value="epgen_ep_function" for="epgen_ep_function" />
+                        <h:inputText id="epgen_ep_function" value="#{joo2_contentController.selected.epgen_ep_function}" title="epgen_ep_function" required="false" requiredMessage="{FieldJoo2_contentepgen_ep_functionis Required}"/>
+                        <h:outputLabel value="epgen_ep_regeneration_state" for="epgen_ep_regeneration_state" />
+                        <h:inputText id="epgen_ep_regeneration_state" value="#{joo2_contentController.selected.epgen_ep_regeneration_state}" title="epgen_ep_regeneration_state" required="false" requiredMessage="{FieldJoo2_contentepgen_ep_regeneration_stateis Required}"/>
+                        <h:outputLabel value="epgen_ep_featured_position" for="epgen_ep_featured_position" />
+                        <h:inputText id="epgen_ep_featured_position" value="#{joo2_contentController.selected.epgen_ep_featured_position}" title="epgen_ep_featured_position" required="false" requiredMessage="{FieldJoo2_contentepgen_ep_featured_positionis Required}"/>
+                        <h:outputLabel value="epgen_ep_image_big" for="epgen_ep_image_big" />
+                        <h:inputText id="epgen_ep_image_big" value="#{joo2_contentController.selected.epgen_ep_image_big}" title="epgen_ep_image_big" required="false" requiredMessage="{FieldJoo2_contentepgen_ep_image_bigis Required}"/>
+                        <h:outputLabel value="epgen_ep_image_org" for="epgen_ep_image_org" />
+                        <h:inputText id="epgen_ep_image_org" value="#{joo2_contentController.selected.epgen_ep_image_org}" title="epgen_ep_image_org" required="false" requiredMessage="{FieldJoo2_contentepgen_ep_image_orgis Required}"/>
+                        <h:outputLabel value="epgen_ep_referenced_catid" for="epgen_ep_referenced_catid" />
+                        <h:inputText id="epgen_ep_referenced_catid" value="#{joo2_contentController.selected.epgen_ep_referenced_catid}" title="epgen_ep_referenced_catid" required="false" requiredMessage="{FieldJoo2_contentepgen_ep_referenced_catidis Required}"/>
+                        <h:outputLabel value="epgen_ep_href_org" for="epgen_ep_href_org" />
+                        <h:inputText id="epgen_ep_href_org" value="#{joo2_contentController.selected.epgen_ep_href_org}" title="epgen_ep_href_org" required="false" requiredMessage="{FieldJoo2_contentepgen_ep_href_orgis Required}"/>
+                        <h:outputLabel value="epgen_ep_referenced_menuid" for="epgen_ep_referenced_menuid" />
+                        <h:inputText id="epgen_ep_referenced_menuid" value="#{joo2_contentController.selected.epgen_ep_referenced_menuid}" title="epgen_ep_referenced_menuid" required="false" requiredMessage="{FieldJoo2_contentepgen_ep_referenced_menuidis Required}"/>
+                        <h:outputLabel value="epgen_ep_unpublished" for="epgen_ep_unpublished" />
+                        <h:inputText id="epgen_ep_unpublished" value="#{joo2_contentController.selected.epgen_ep_unpublished}" title="epgen_ep_unpublished" required="false" requiredMessage="{FieldJoo2_contentepgen_ep_unpublishedis Required}"/>
+                        <h:outputLabel value="epgen_ep_theme" for="epgen_ep_theme" />
+                        <h:inputText id="epgen_ep_theme" value="#{joo2_contentController.selected.epgen_ep_theme}" title="epgen_ep_theme" required="false" requiredMessage="{FieldJoo2_contentepgen_ep_themeis Required}"/>
+                        <h:outputLabel value="epgen_ep_menuid" for="epgen_ep_menuid" />
+                        <h:inputText id="epgen_ep_menuid" value="#{joo2_contentController.selected.epgen_ep_menuid}" title="epgen_ep_menuid" required="false" requiredMessage="{FieldJoo2_contentepgen_ep_menuidis Required}"/>
+                        <h:outputLabel value="epgen_ep_href_all" for="epgen_ep_href_all" />
+                        <h:inputText id="epgen_ep_href_all" value="#{joo2_contentController.selected.epgen_ep_href_all}" title="epgen_ep_href_all" required="false" requiredMessage="{FieldJoo2_contentepgen_ep_href_allis Required}"/>
+                        <h:outputLabel value="epgen_ep_href_text" for="epgen_ep_href_text" />
+                        <h:inputText id="epgen_ep_href_text" value="#{joo2_contentController.selected.epgen_ep_href_text}" title="epgen_ep_href_text" required="false" requiredMessage="{FieldJoo2_contentepgen_ep_href_textis Required}"/>
+                        <h:outputLabel value="epgen_ep_href_title" for="epgen_ep_href_title" />
+                        <h:inputText id="epgen_ep_href_title" value="#{joo2_contentController.selected.epgen_ep_href_title}" title="epgen_ep_href_title" required="false" requiredMessage="{FieldJoo2_contentepgen_ep_href_titleis Required}"/>
+                        <h:outputLabel value="epgen_ep_href_img" for="epgen_ep_href_img" />
+                        <h:inputText id="epgen_ep_href_img" value="#{joo2_contentController.selected.epgen_ep_href_img}" title="epgen_ep_href_img" required="false" requiredMessage="{FieldJoo2_contentepgen_ep_href_imgis Required}"/>
+                        <h:outputLabel value="epgen_ep_is_three_summary" for="epgen_ep_is_three_summary" />
+                        <h:inputText id="epgen_ep_is_three_summary" value="#{joo2_contentController.selected.epgen_ep_is_three_summary}" title="epgen_ep_is_three_summary" required="false" requiredMessage="{FieldJoo2_contentepgen_ep_is_three_summaryis Required}"/>
+                        <h:outputLabel value="epgen_ep_ref_to_outside_cat_id" for="epgen_ep_ref_to_outside_cat_id" />
+                        <h:inputText id="epgen_ep_ref_to_outside_cat_id" value="#{joo2_contentController.selected.epgen_ep_ref_to_outside_cat_id}" title="epgen_ep_ref_to_outside_cat_id" required="false" requiredMessage="{FieldJoo2_contentepgen_ep_ref_to_outside_cat_idis Required}"/>
+                        <h:outputLabel value="epgen_ep_import_from_dir" for="epgen_ep_import_from_dir" />
+                        <h:inputText id="epgen_ep_import_from_dir" value="#{joo2_contentController.selected.epgen_ep_import_from_dir}" title="epgen_ep_import_from_dir" required="false" requiredMessage="{FieldJoo2_contentepgen_ep_import_from_diris Required}"/>
+                        <h:outputLabel value="epgen_ep_import_from_file" for="epgen_ep_import_from_file" />
+                        <h:inputText id="epgen_ep_import_from_file" value="#{joo2_contentController.selected.epgen_ep_import_from_file}" title="epgen_ep_import_from_file" required="false" requiredMessage="{FieldJoo2_contentepgen_ep_import_from_fileis Required}"/>
+                        <h:outputLabel value="epgen_ep_import_from_file_short" for="epgen_ep_import_from_file_short" />
+                        <h:inputText id="epgen_ep_import_from_file_short" value="#{joo2_contentController.selected.epgen_ep_import_from_file_short}" title="epgen_ep_import_from_file_short" required="false" requiredMessage="{FieldJoo2_contentepgen_ep_import_from_file_shortis Required}"/>
+                        <h:outputLabel value="epgen_ep_leading_imported" for="epgen_ep_leading_imported" />
+                        <h:inputText id="epgen_ep_leading_imported" value="#{joo2_contentController.selected.epgen_ep_leading_imported}" title="epgen_ep_leading_imported" required="false" requiredMessage="{FieldJoo2_contentepgen_ep_leading_importedis Required}"/>
+</h:panelGrid>
+                <h:commandLink  action="#{joo2_contentController.update}" value="Save"/>
+<br />
+                <br />
+                <h:link  outcome="View" value="View"/>
+<br />
+                <h:commandLink  action="#{joo2_contentController.prepareList}" value="List Joo2_content" immediate="true"/>
+<br />
+                <br />
+                <h:link  outcome="/index" value="Return to  main" />
+</h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

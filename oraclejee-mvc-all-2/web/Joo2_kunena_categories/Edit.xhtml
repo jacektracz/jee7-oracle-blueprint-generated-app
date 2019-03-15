@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Edit: Joo2_kunena_categories"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                        <h:outputLabel value="epgen_id" for="epgen_id" />
+                        <h:inputText id="epgen_id" value="#{joo2_kunena_categoriesController.selected.epgen_id}" title="epgen_id" required="false" requiredMessage="{FieldJoo2_kunena_categoriesepgen_idis Required}"/>
+                        <h:outputLabel value="epgen_parent" for="epgen_parent" />
+                        <h:inputText id="epgen_parent" value="#{joo2_kunena_categoriesController.selected.epgen_parent}" title="epgen_parent" required="false" requiredMessage="{FieldJoo2_kunena_categoriesepgen_parentis Required}"/>
+                        <h:outputLabel value="epgen_name" for="epgen_name" />
+                        <h:inputText id="epgen_name" value="#{joo2_kunena_categoriesController.selected.epgen_name}" title="epgen_name" required="false" requiredMessage="{FieldJoo2_kunena_categoriesepgen_nameis Required}"/>
+                        <h:outputLabel value="epgen_cat_emoticon" for="epgen_cat_emoticon" />
+                        <h:inputText id="epgen_cat_emoticon" value="#{joo2_kunena_categoriesController.selected.epgen_cat_emoticon}" title="epgen_cat_emoticon" required="false" requiredMessage="{FieldJoo2_kunena_categoriesepgen_cat_emoticonis Required}"/>
+                        <h:outputLabel value="epgen_locked" for="epgen_locked" />
+                        <h:inputText id="epgen_locked" value="#{joo2_kunena_categoriesController.selected.epgen_locked}" title="epgen_locked" required="false" requiredMessage="{FieldJoo2_kunena_categoriesepgen_lockedis Required}"/>
+                        <h:outputLabel value="epgen_alert_admin" for="epgen_alert_admin" />
+                        <h:inputText id="epgen_alert_admin" value="#{joo2_kunena_categoriesController.selected.epgen_alert_admin}" title="epgen_alert_admin" required="false" requiredMessage="{FieldJoo2_kunena_categoriesepgen_alert_adminis Required}"/>
+                        <h:outputLabel value="epgen_moderated" for="epgen_moderated" />
+                        <h:inputText id="epgen_moderated" value="#{joo2_kunena_categoriesController.selected.epgen_moderated}" title="epgen_moderated" required="false" requiredMessage="{FieldJoo2_kunena_categoriesepgen_moderatedis Required}"/>
+                        <h:outputLabel value="epgen_moderators" for="epgen_moderators" />
+                        <h:inputText id="epgen_moderators" value="#{joo2_kunena_categoriesController.selected.epgen_moderators}" title="epgen_moderators" required="false" requiredMessage="{FieldJoo2_kunena_categoriesepgen_moderatorsis Required}"/>
+                        <h:outputLabel value="epgen_accesstype" for="epgen_accesstype" />
+                        <h:inputText id="epgen_accesstype" value="#{joo2_kunena_categoriesController.selected.epgen_accesstype}" title="epgen_accesstype" required="false" requiredMessage="{FieldJoo2_kunena_categoriesepgen_accesstypeis Required}"/>
+                        <h:outputLabel value="epgen_access" for="epgen_access" />
+                        <h:inputText id="epgen_access" value="#{joo2_kunena_categoriesController.selected.epgen_access}" title="epgen_access" required="false" requiredMessage="{FieldJoo2_kunena_categoriesepgen_accessis Required}"/>
+                        <h:outputLabel value="epgen_pub_access" for="epgen_pub_access" />
+                        <h:inputText id="epgen_pub_access" value="#{joo2_kunena_categoriesController.selected.epgen_pub_access}" title="epgen_pub_access" required="false" requiredMessage="{FieldJoo2_kunena_categoriesepgen_pub_accessis Required}"/>
+                        <h:outputLabel value="epgen_pub_recurse" for="epgen_pub_recurse" />
+                        <h:inputText id="epgen_pub_recurse" value="#{joo2_kunena_categoriesController.selected.epgen_pub_recurse}" title="epgen_pub_recurse" required="false" requiredMessage="{FieldJoo2_kunena_categoriesepgen_pub_recurseis Required}"/>
+                        <h:outputLabel value="epgen_admin_access" for="epgen_admin_access" />
+                        <h:inputText id="epgen_admin_access" value="#{joo2_kunena_categoriesController.selected.epgen_admin_access}" title="epgen_admin_access" required="false" requiredMessage="{FieldJoo2_kunena_categoriesepgen_admin_accessis Required}"/>
+                        <h:outputLabel value="epgen_admin_recurse" for="epgen_admin_recurse" />
+                        <h:inputText id="epgen_admin_recurse" value="#{joo2_kunena_categoriesController.selected.epgen_admin_recurse}" title="epgen_admin_recurse" required="false" requiredMessage="{FieldJoo2_kunena_categoriesepgen_admin_recurseis Required}"/>
+                        <h:outputLabel value="epgen_ordering" for="epgen_ordering" />
+                        <h:inputText id="epgen_ordering" value="#{joo2_kunena_categoriesController.selected.epgen_ordering}" title="epgen_ordering" required="false" requiredMessage="{FieldJoo2_kunena_categoriesepgen_orderingis Required}"/>
+                        <h:outputLabel value="epgen_future2" for="epgen_future2" />
+                        <h:inputText id="epgen_future2" value="#{joo2_kunena_categoriesController.selected.epgen_future2}" title="epgen_future2" required="false" requiredMessage="{FieldJoo2_kunena_categoriesepgen_future2is Required}"/>
+                        <h:outputLabel value="epgen_published" for="epgen_published" />
+                        <h:inputText id="epgen_published" value="#{joo2_kunena_categoriesController.selected.epgen_published}" title="epgen_published" required="false" requiredMessage="{FieldJoo2_kunena_categoriesepgen_publishedis Required}"/>
+                        <h:outputLabel value="epgen_checked_out" for="epgen_checked_out" />
+                        <h:inputText id="epgen_checked_out" value="#{joo2_kunena_categoriesController.selected.epgen_checked_out}" title="epgen_checked_out" required="false" requiredMessage="{FieldJoo2_kunena_categoriesepgen_checked_outis Required}"/>
+                        <h:outputLabel value="epgen_checked_out_time" for="epgen_checked_out_time" />
+                        <h:inputText id="epgen_checked_out_time" value="#{joo2_kunena_categoriesController.selected.epgen_checked_out_time}" title="epgen_checked_out_time" required="false" requiredMessage="{FieldJoo2_kunena_categoriesepgen_checked_out_timeis Required}"/>
+                        <h:outputLabel value="epgen_review" for="epgen_review" />
+                        <h:inputText id="epgen_review" value="#{joo2_kunena_categoriesController.selected.epgen_review}" title="epgen_review" required="false" requiredMessage="{FieldJoo2_kunena_categoriesepgen_reviewis Required}"/>
+                        <h:outputLabel value="epgen_allow_anonymous" for="epgen_allow_anonymous" />
+                        <h:inputText id="epgen_allow_anonymous" value="#{joo2_kunena_categoriesController.selected.epgen_allow_anonymous}" title="epgen_allow_anonymous" required="false" requiredMessage="{FieldJoo2_kunena_categoriesepgen_allow_anonymousis Required}"/>
+                        <h:outputLabel value="epgen_post_anonymous" for="epgen_post_anonymous" />
+                        <h:inputText id="epgen_post_anonymous" value="#{joo2_kunena_categoriesController.selected.epgen_post_anonymous}" title="epgen_post_anonymous" required="false" requiredMessage="{FieldJoo2_kunena_categoriesepgen_post_anonymousis Required}"/>
+                        <h:outputLabel value="epgen_hits" for="epgen_hits" />
+                        <h:inputText id="epgen_hits" value="#{joo2_kunena_categoriesController.selected.epgen_hits}" title="epgen_hits" required="false" requiredMessage="{FieldJoo2_kunena_categoriesepgen_hitsis Required}"/>
+                        <h:outputLabel value="epgen_description" for="epgen_description" />
+                        <h:inputText id="epgen_description" value="#{joo2_kunena_categoriesController.selected.epgen_description}" title="epgen_description" required="false" requiredMessage="{FieldJoo2_kunena_categoriesepgen_descriptionis Required}"/>
+                        <h:outputLabel value="epgen_headerdesc" for="epgen_headerdesc" />
+                        <h:inputText id="epgen_headerdesc" value="#{joo2_kunena_categoriesController.selected.epgen_headerdesc}" title="epgen_headerdesc" required="false" requiredMessage="{FieldJoo2_kunena_categoriesepgen_headerdescis Required}"/>
+                        <h:outputLabel value="epgen_class_sfx" for="epgen_class_sfx" />
+                        <h:inputText id="epgen_class_sfx" value="#{joo2_kunena_categoriesController.selected.epgen_class_sfx}" title="epgen_class_sfx" required="false" requiredMessage="{FieldJoo2_kunena_categoriesepgen_class_sfxis Required}"/>
+                        <h:outputLabel value="epgen_allow_polls" for="epgen_allow_polls" />
+                        <h:inputText id="epgen_allow_polls" value="#{joo2_kunena_categoriesController.selected.epgen_allow_polls}" title="epgen_allow_polls" required="false" requiredMessage="{FieldJoo2_kunena_categoriesepgen_allow_pollsis Required}"/>
+                        <h:outputLabel value="epgen_id_last_msg" for="epgen_id_last_msg" />
+                        <h:inputText id="epgen_id_last_msg" value="#{joo2_kunena_categoriesController.selected.epgen_id_last_msg}" title="epgen_id_last_msg" required="false" requiredMessage="{FieldJoo2_kunena_categoriesepgen_id_last_msgis Required}"/>
+                        <h:outputLabel value="epgen_numTopics" for="epgen_numTopics" />
+                        <h:inputText id="epgen_numTopics" value="#{joo2_kunena_categoriesController.selected.epgen_numTopics}" title="epgen_numTopics" required="false" requiredMessage="{FieldJoo2_kunena_categoriesepgen_numTopicsis Required}"/>
+                        <h:outputLabel value="epgen_numPosts" for="epgen_numPosts" />
+                        <h:inputText id="epgen_numPosts" value="#{joo2_kunena_categoriesController.selected.epgen_numPosts}" title="epgen_numPosts" required="false" requiredMessage="{FieldJoo2_kunena_categoriesepgen_numPostsis Required}"/>
+                        <h:outputLabel value="epgen_time_last_msg" for="epgen_time_last_msg" />
+                        <h:inputText id="epgen_time_last_msg" value="#{joo2_kunena_categoriesController.selected.epgen_time_last_msg}" title="epgen_time_last_msg" required="false" requiredMessage="{FieldJoo2_kunena_categoriesepgen_time_last_msgis Required}"/>
+</h:panelGrid>
+                <h:commandLink  action="#{joo2_kunena_categoriesController.update}" value="Save"/>
+<br />
+                <br />
+                <h:link  outcome="View" value="View"/>
+<br />
+                <h:commandLink  action="#{joo2_kunena_categoriesController.prepareList}" value="List Joo2_kunena_categories" immediate="true"/>
+<br />
+                <br />
+                <h:link  outcome="/index" value="Return to  main" />
+</h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

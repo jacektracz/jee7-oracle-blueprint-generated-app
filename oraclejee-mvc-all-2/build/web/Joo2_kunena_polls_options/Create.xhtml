@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Create:Joo2_kunena_polls_options"></h:outputText>
+</ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+<h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+<h:panelGrid columns="2">
+                        <h:outputLabel  value="epgen_id" for="epgen_id" />
+                        <h:inputText id="epgen_id" value="#{joo2_kunena_polls_optionsController.selected.epgen_id}" title="epgen_id" required="false" requiredMessage="Field[0]Joo2_kunena_polls_options.epgen_id is Required"/>
+                        <h:outputLabel  value="epgen_pollid" for="epgen_pollid" />
+                        <h:inputText id="epgen_pollid" value="#{joo2_kunena_polls_optionsController.selected.epgen_pollid}" title="epgen_pollid" required="false" requiredMessage="Field[1]Joo2_kunena_polls_options.epgen_pollid is Required"/>
+                        <h:outputLabel  value="epgen_text" for="epgen_text" />
+                        <h:inputText id="epgen_text" value="#{joo2_kunena_polls_optionsController.selected.epgen_text}" title="epgen_text" required="false" requiredMessage="Field[2]Joo2_kunena_polls_options.epgen_text is Required"/>
+                        <h:outputLabel  value="epgen_votes" for="epgen_votes" />
+                        <h:inputText id="epgen_votes" value="#{joo2_kunena_polls_optionsController.selected.epgen_votes}" title="epgen_votes" required="false" requiredMessage="Field[3]Joo2_kunena_polls_options.epgen_votes is Required"/>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{joo2_kunena_polls_optionsController.create}" value="Save" />
+<br />
+                <br />
+                <h:commandLink  action="#{joo2_kunena_polls_optionsController.prepareList}" value=" list" immediate="true"/>
+<br />
+                <br />
+                <h:link outcome="/index" value="Main page"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

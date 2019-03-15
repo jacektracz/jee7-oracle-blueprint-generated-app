@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Edit: Joo2_virtuemart_customs"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                        <h:outputLabel value="epgen_virtuemart_custom_id" for="epgen_virtuemart_custom_id" />
+                        <h:inputText id="epgen_virtuemart_custom_id" value="#{joo2_virtuemart_customsController.selected.epgen_virtuemart_custom_id}" title="epgen_virtuemart_custom_id" required="false" requiredMessage="{FieldJoo2_virtuemart_customsepgen_virtuemart_custom_idis Required}"/>
+                        <h:outputLabel value="epgen_custom_parent_id" for="epgen_custom_parent_id" />
+                        <h:inputText id="epgen_custom_parent_id" value="#{joo2_virtuemart_customsController.selected.epgen_custom_parent_id}" title="epgen_custom_parent_id" required="false" requiredMessage="{FieldJoo2_virtuemart_customsepgen_custom_parent_idis Required}"/>
+                        <h:outputLabel value="epgen_admin_only" for="epgen_admin_only" />
+                        <h:inputText id="epgen_admin_only" value="#{joo2_virtuemart_customsController.selected.epgen_admin_only}" title="epgen_admin_only" required="false" requiredMessage="{FieldJoo2_virtuemart_customsepgen_admin_onlyis Required}"/>
+                        <h:outputLabel value="epgen_custom_title" for="epgen_custom_title" />
+                        <h:inputText id="epgen_custom_title" value="#{joo2_virtuemart_customsController.selected.epgen_custom_title}" title="epgen_custom_title" required="false" requiredMessage="{FieldJoo2_virtuemart_customsepgen_custom_titleis Required}"/>
+                        <h:outputLabel value="epgen_custom_tip" for="epgen_custom_tip" />
+                        <h:inputText id="epgen_custom_tip" value="#{joo2_virtuemart_customsController.selected.epgen_custom_tip}" title="epgen_custom_tip" required="false" requiredMessage="{FieldJoo2_virtuemart_customsepgen_custom_tipis Required}"/>
+                        <h:outputLabel value="epgen_custom_value" for="epgen_custom_value" />
+                        <h:inputText id="epgen_custom_value" value="#{joo2_virtuemart_customsController.selected.epgen_custom_value}" title="epgen_custom_value" required="false" requiredMessage="{FieldJoo2_virtuemart_customsepgen_custom_valueis Required}"/>
+                        <h:outputLabel value="epgen_custom_field_desc" for="epgen_custom_field_desc" />
+                        <h:inputText id="epgen_custom_field_desc" value="#{joo2_virtuemart_customsController.selected.epgen_custom_field_desc}" title="epgen_custom_field_desc" required="false" requiredMessage="{FieldJoo2_virtuemart_customsepgen_custom_field_descis Required}"/>
+                        <h:outputLabel value="epgen_field_type" for="epgen_field_type" />
+                        <h:inputText id="epgen_field_type" value="#{joo2_virtuemart_customsController.selected.epgen_field_type}" title="epgen_field_type" required="false" requiredMessage="{FieldJoo2_virtuemart_customsepgen_field_typeis Required}"/>
+                        <h:outputLabel value="epgen_is_list" for="epgen_is_list" />
+                        <h:inputText id="epgen_is_list" value="#{joo2_virtuemart_customsController.selected.epgen_is_list}" title="epgen_is_list" required="false" requiredMessage="{FieldJoo2_virtuemart_customsepgen_is_listis Required}"/>
+                        <h:outputLabel value="epgen_is_hidden" for="epgen_is_hidden" />
+                        <h:inputText id="epgen_is_hidden" value="#{joo2_virtuemart_customsController.selected.epgen_is_hidden}" title="epgen_is_hidden" required="false" requiredMessage="{FieldJoo2_virtuemart_customsepgen_is_hiddenis Required}"/>
+                        <h:outputLabel value="epgen_is_cart_attribute" for="epgen_is_cart_attribute" />
+                        <h:inputText id="epgen_is_cart_attribute" value="#{joo2_virtuemart_customsController.selected.epgen_is_cart_attribute}" title="epgen_is_cart_attribute" required="false" requiredMessage="{FieldJoo2_virtuemart_customsepgen_is_cart_attributeis Required}"/>
+                        <h:outputLabel value="epgen_published" for="epgen_published" />
+                        <h:inputText id="epgen_published" value="#{joo2_virtuemart_customsController.selected.epgen_published}" title="epgen_published" required="false" requiredMessage="{FieldJoo2_virtuemart_customsepgen_publishedis Required}"/>
+                        <h:outputLabel value="epgen_created_on" for="epgen_created_on" />
+                        <h:inputText id="epgen_created_on" value="#{joo2_virtuemart_customsController.selected.epgen_created_on}" title="epgen_created_on" required="false" requiredMessage="{FieldJoo2_virtuemart_customsepgen_created_onis Required}"/>
+                        <h:outputLabel value="epgen_created_by" for="epgen_created_by" />
+                        <h:inputText id="epgen_created_by" value="#{joo2_virtuemart_customsController.selected.epgen_created_by}" title="epgen_created_by" required="false" requiredMessage="{FieldJoo2_virtuemart_customsepgen_created_byis Required}"/>
+                        <h:outputLabel value="epgen_modified_on" for="epgen_modified_on" />
+                        <h:inputText id="epgen_modified_on" value="#{joo2_virtuemart_customsController.selected.epgen_modified_on}" title="epgen_modified_on" required="false" requiredMessage="{FieldJoo2_virtuemart_customsepgen_modified_onis Required}"/>
+                        <h:outputLabel value="epgen_modified_by" for="epgen_modified_by" />
+                        <h:inputText id="epgen_modified_by" value="#{joo2_virtuemart_customsController.selected.epgen_modified_by}" title="epgen_modified_by" required="false" requiredMessage="{FieldJoo2_virtuemart_customsepgen_modified_byis Required}"/>
+                        <h:outputLabel value="epgen_locked_on" for="epgen_locked_on" />
+                        <h:inputText id="epgen_locked_on" value="#{joo2_virtuemart_customsController.selected.epgen_locked_on}" title="epgen_locked_on" required="false" requiredMessage="{FieldJoo2_virtuemart_customsepgen_locked_onis Required}"/>
+                        <h:outputLabel value="epgen_locked_by" for="epgen_locked_by" />
+                        <h:inputText id="epgen_locked_by" value="#{joo2_virtuemart_customsController.selected.epgen_locked_by}" title="epgen_locked_by" required="false" requiredMessage="{FieldJoo2_virtuemart_customsepgen_locked_byis Required}"/>
+</h:panelGrid>
+                <h:commandLink  action="#{joo2_virtuemart_customsController.update}" value="Save"/>
+<br />
+                <br />
+                <h:link  outcome="View" value="View"/>
+<br />
+                <h:commandLink  action="#{joo2_virtuemart_customsController.prepareList}" value="List Joo2_virtuemart_customs" immediate="true"/>
+<br />
+                <br />
+                <h:link  outcome="/index" value="Return to  main" />
+</h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

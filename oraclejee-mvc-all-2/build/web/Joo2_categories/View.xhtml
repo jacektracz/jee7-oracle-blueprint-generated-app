@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Edit: Joo2_categories"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                        <h:outputLabel value="epgen_id" for="epgen_id" />
+                        <h:inputText id="epgen_id" value="#{joo2_categoriesController.selected.epgen_id}" title="epgen_id" required="false" requiredMessage="{FieldJoo2_categoriesepgen_idis Required}"/>
+                        <h:outputLabel value="epgen_asset_id" for="epgen_asset_id" />
+                        <h:inputText id="epgen_asset_id" value="#{joo2_categoriesController.selected.epgen_asset_id}" title="epgen_asset_id" required="false" requiredMessage="{FieldJoo2_categoriesepgen_asset_idis Required}"/>
+                        <h:outputLabel value="epgen_parent_id" for="epgen_parent_id" />
+                        <h:inputText id="epgen_parent_id" value="#{joo2_categoriesController.selected.epgen_parent_id}" title="epgen_parent_id" required="false" requiredMessage="{FieldJoo2_categoriesepgen_parent_idis Required}"/>
+                        <h:outputLabel value="epgen_lft" for="epgen_lft" />
+                        <h:inputText id="epgen_lft" value="#{joo2_categoriesController.selected.epgen_lft}" title="epgen_lft" required="false" requiredMessage="{FieldJoo2_categoriesepgen_lftis Required}"/>
+                        <h:outputLabel value="epgen_rgt" for="epgen_rgt" />
+                        <h:inputText id="epgen_rgt" value="#{joo2_categoriesController.selected.epgen_rgt}" title="epgen_rgt" required="false" requiredMessage="{FieldJoo2_categoriesepgen_rgtis Required}"/>
+                        <h:outputLabel value="epgen_level" for="epgen_level" />
+                        <h:inputText id="epgen_level" value="#{joo2_categoriesController.selected.epgen_level}" title="epgen_level" required="false" requiredMessage="{FieldJoo2_categoriesepgen_levelis Required}"/>
+                        <h:outputLabel value="epgen_path" for="epgen_path" />
+                        <h:inputText id="epgen_path" value="#{joo2_categoriesController.selected.epgen_path}" title="epgen_path" required="false" requiredMessage="{FieldJoo2_categoriesepgen_pathis Required}"/>
+                        <h:outputLabel value="epgen_extension" for="epgen_extension" />
+                        <h:inputText id="epgen_extension" value="#{joo2_categoriesController.selected.epgen_extension}" title="epgen_extension" required="false" requiredMessage="{FieldJoo2_categoriesepgen_extensionis Required}"/>
+                        <h:outputLabel value="epgen_title" for="epgen_title" />
+                        <h:inputText id="epgen_title" value="#{joo2_categoriesController.selected.epgen_title}" title="epgen_title" required="false" requiredMessage="{FieldJoo2_categoriesepgen_titleis Required}"/>
+                        <h:outputLabel value="epgen_alias" for="epgen_alias" />
+                        <h:inputText id="epgen_alias" value="#{joo2_categoriesController.selected.epgen_alias}" title="epgen_alias" required="false" requiredMessage="{FieldJoo2_categoriesepgen_aliasis Required}"/>
+                        <h:outputLabel value="epgen_note" for="epgen_note" />
+                        <h:inputText id="epgen_note" value="#{joo2_categoriesController.selected.epgen_note}" title="epgen_note" required="false" requiredMessage="{FieldJoo2_categoriesepgen_noteis Required}"/>
+                        <h:outputLabel value="epgen_description" for="epgen_description" />
+                        <h:inputText id="epgen_description" value="#{joo2_categoriesController.selected.epgen_description}" title="epgen_description" required="false" requiredMessage="{FieldJoo2_categoriesepgen_descriptionis Required}"/>
+                        <h:outputLabel value="epgen_published" for="epgen_published" />
+                        <h:inputText id="epgen_published" value="#{joo2_categoriesController.selected.epgen_published}" title="epgen_published" required="false" requiredMessage="{FieldJoo2_categoriesepgen_publishedis Required}"/>
+                        <h:outputLabel value="epgen_checked_out" for="epgen_checked_out" />
+                        <h:inputText id="epgen_checked_out" value="#{joo2_categoriesController.selected.epgen_checked_out}" title="epgen_checked_out" required="false" requiredMessage="{FieldJoo2_categoriesepgen_checked_outis Required}"/>
+                        <h:outputLabel value="epgen_checked_out_time" for="epgen_checked_out_time" />
+                        <h:inputText id="epgen_checked_out_time" value="#{joo2_categoriesController.selected.epgen_checked_out_time}" title="epgen_checked_out_time" required="false" requiredMessage="{FieldJoo2_categoriesepgen_checked_out_timeis Required}"/>
+                        <h:outputLabel value="epgen_access" for="epgen_access" />
+                        <h:inputText id="epgen_access" value="#{joo2_categoriesController.selected.epgen_access}" title="epgen_access" required="false" requiredMessage="{FieldJoo2_categoriesepgen_accessis Required}"/>
+                        <h:outputLabel value="epgen_params" for="epgen_params" />
+                        <h:inputText id="epgen_params" value="#{joo2_categoriesController.selected.epgen_params}" title="epgen_params" required="false" requiredMessage="{FieldJoo2_categoriesepgen_paramsis Required}"/>
+                        <h:outputLabel value="epgen_metadesc" for="epgen_metadesc" />
+                        <h:inputText id="epgen_metadesc" value="#{joo2_categoriesController.selected.epgen_metadesc}" title="epgen_metadesc" required="false" requiredMessage="{FieldJoo2_categoriesepgen_metadescis Required}"/>
+                        <h:outputLabel value="epgen_metakey" for="epgen_metakey" />
+                        <h:inputText id="epgen_metakey" value="#{joo2_categoriesController.selected.epgen_metakey}" title="epgen_metakey" required="false" requiredMessage="{FieldJoo2_categoriesepgen_metakeyis Required}"/>
+                        <h:outputLabel value="epgen_metadata" for="epgen_metadata" />
+                        <h:inputText id="epgen_metadata" value="#{joo2_categoriesController.selected.epgen_metadata}" title="epgen_metadata" required="false" requiredMessage="{FieldJoo2_categoriesepgen_metadatais Required}"/>
+                        <h:outputLabel value="epgen_created_user_id" for="epgen_created_user_id" />
+                        <h:inputText id="epgen_created_user_id" value="#{joo2_categoriesController.selected.epgen_created_user_id}" title="epgen_created_user_id" required="false" requiredMessage="{FieldJoo2_categoriesepgen_created_user_idis Required}"/>
+                        <h:outputLabel value="epgen_created_time" for="epgen_created_time" />
+                        <h:inputText id="epgen_created_time" value="#{joo2_categoriesController.selected.epgen_created_time}" title="epgen_created_time" required="false" requiredMessage="{FieldJoo2_categoriesepgen_created_timeis Required}"/>
+                        <h:outputLabel value="epgen_modified_user_id" for="epgen_modified_user_id" />
+                        <h:inputText id="epgen_modified_user_id" value="#{joo2_categoriesController.selected.epgen_modified_user_id}" title="epgen_modified_user_id" required="false" requiredMessage="{FieldJoo2_categoriesepgen_modified_user_idis Required}"/>
+                        <h:outputLabel value="epgen_modified_time" for="epgen_modified_time" />
+                        <h:inputText id="epgen_modified_time" value="#{joo2_categoriesController.selected.epgen_modified_time}" title="epgen_modified_time" required="false" requiredMessage="{FieldJoo2_categoriesepgen_modified_timeis Required}"/>
+                        <h:outputLabel value="epgen_hits" for="epgen_hits" />
+                        <h:inputText id="epgen_hits" value="#{joo2_categoriesController.selected.epgen_hits}" title="epgen_hits" required="false" requiredMessage="{FieldJoo2_categoriesepgen_hitsis Required}"/>
+                        <h:outputLabel value="epgen_language" for="epgen_language" />
+                        <h:inputText id="epgen_language" value="#{joo2_categoriesController.selected.epgen_language}" title="epgen_language" required="false" requiredMessage="{FieldJoo2_categoriesepgen_languageis Required}"/>
+                        <h:outputLabel value="epgen_ep_menuid" for="epgen_ep_menuid" />
+                        <h:inputText id="epgen_ep_menuid" value="#{joo2_categoriesController.selected.epgen_ep_menuid}" title="epgen_ep_menuid" required="false" requiredMessage="{FieldJoo2_categoriesepgen_ep_menuidis Required}"/>
+                        <h:outputLabel value="epgen_ep_menu_path" for="epgen_ep_menu_path" />
+                        <h:inputText id="epgen_ep_menu_path" value="#{joo2_categoriesController.selected.epgen_ep_menu_path}" title="epgen_ep_menu_path" required="false" requiredMessage="{FieldJoo2_categoriesepgen_ep_menu_pathis Required}"/>
+                        <h:outputLabel value="epgen_ep_copy_cat_id" for="epgen_ep_copy_cat_id" />
+                        <h:inputText id="epgen_ep_copy_cat_id" value="#{joo2_categoriesController.selected.epgen_ep_copy_cat_id}" title="epgen_ep_copy_cat_id" required="false" requiredMessage="{FieldJoo2_categoriesepgen_ep_copy_cat_idis Required}"/>
+                        <h:outputLabel value="epgen_ep_redirected_to_cat_id" for="epgen_ep_redirected_to_cat_id" />
+                        <h:inputText id="epgen_ep_redirected_to_cat_id" value="#{joo2_categoriesController.selected.epgen_ep_redirected_to_cat_id}" title="epgen_ep_redirected_to_cat_id" required="false" requiredMessage="{FieldJoo2_categoriesepgen_ep_redirected_to_cat_idis Required}"/>
+                        <h:outputLabel value="epgen_ep_referenced_count" for="epgen_ep_referenced_count" />
+                        <h:inputText id="epgen_ep_referenced_count" value="#{joo2_categoriesController.selected.epgen_ep_referenced_count}" title="epgen_ep_referenced_count" required="false" requiredMessage="{FieldJoo2_categoriesepgen_ep_referenced_countis Required}"/>
+                        <h:outputLabel value="epgen_ep_referenced_parentcat_count" for="epgen_ep_referenced_parentcat_count" />
+                        <h:inputText id="epgen_ep_referenced_parentcat_count" value="#{joo2_categoriesController.selected.epgen_ep_referenced_parentcat_count}" title="epgen_ep_referenced_parentcat_count" required="false" requiredMessage="{FieldJoo2_categoriesepgen_ep_referenced_parentcat_countis Required}"/>
+                        <h:outputLabel value="epgen_ep_referenced_parent_contentid" for="epgen_ep_referenced_parent_contentid" />
+                        <h:inputText id="epgen_ep_referenced_parent_contentid" value="#{joo2_categoriesController.selected.epgen_ep_referenced_parent_contentid}" title="epgen_ep_referenced_parent_contentid" required="false" requiredMessage="{FieldJoo2_categoriesepgen_ep_referenced_parent_contentidis Required}"/>
+                        <h:outputLabel value="epgen_ep_ordering" for="epgen_ep_ordering" />
+                        <h:inputText id="epgen_ep_ordering" value="#{joo2_categoriesController.selected.epgen_ep_ordering}" title="epgen_ep_ordering" required="false" requiredMessage="{FieldJoo2_categoriesepgen_ep_orderingis Required}"/>
+                        <h:outputLabel value="epgen_ep_import_from_dir" for="epgen_ep_import_from_dir" />
+                        <h:inputText id="epgen_ep_import_from_dir" value="#{joo2_categoriesController.selected.epgen_ep_import_from_dir}" title="epgen_ep_import_from_dir" required="false" requiredMessage="{FieldJoo2_categoriesepgen_ep_import_from_diris Required}"/>
+                        <h:outputLabel value="epgen_ep_import_from_file" for="epgen_ep_import_from_file" />
+                        <h:inputText id="epgen_ep_import_from_file" value="#{joo2_categoriesController.selected.epgen_ep_import_from_file}" title="epgen_ep_import_from_file" required="false" requiredMessage="{FieldJoo2_categoriesepgen_ep_import_from_fileis Required}"/>
+                        <h:outputLabel value="epgen_ept_lft" for="epgen_ept_lft" />
+                        <h:inputText id="epgen_ept_lft" value="#{joo2_categoriesController.selected.epgen_ept_lft}" title="epgen_ept_lft" required="false" requiredMessage="{FieldJoo2_categoriesepgen_ept_lftis Required}"/>
+                        <h:outputLabel value="epgen_ept_rgt" for="epgen_ept_rgt" />
+                        <h:inputText id="epgen_ept_rgt" value="#{joo2_categoriesController.selected.epgen_ept_rgt}" title="epgen_ept_rgt" required="false" requiredMessage="{FieldJoo2_categoriesepgen_ept_rgtis Required}"/>
+                        <h:outputLabel value="epgen_ept_count" for="epgen_ept_count" />
+                        <h:inputText id="epgen_ept_count" value="#{joo2_categoriesController.selected.epgen_ept_count}" title="epgen_ept_count" required="false" requiredMessage="{FieldJoo2_categoriesepgen_ept_countis Required}"/>
+                        <h:outputLabel value="epgen_ep_lft" for="epgen_ep_lft" />
+                        <h:inputText id="epgen_ep_lft" value="#{joo2_categoriesController.selected.epgen_ep_lft}" title="epgen_ep_lft" required="false" requiredMessage="{FieldJoo2_categoriesepgen_ep_lftis Required}"/>
+                        <h:outputLabel value="epgen_ep_rgt" for="epgen_ep_rgt" />
+                        <h:inputText id="epgen_ep_rgt" value="#{joo2_categoriesController.selected.epgen_ep_rgt}" title="epgen_ep_rgt" required="false" requiredMessage="{FieldJoo2_categoriesepgen_ep_rgtis Required}"/>
+                        <h:outputLabel value="epgen_ep_count" for="epgen_ep_count" />
+                        <h:inputText id="epgen_ep_count" value="#{joo2_categoriesController.selected.epgen_ep_count}" title="epgen_ep_count" required="false" requiredMessage="{FieldJoo2_categoriesepgen_ep_countis Required}"/>
+</h:panelGrid>
+                <h:commandLink  action="#{joo2_categoriesController.update}" value="Save"/>
+<br />
+                <br />
+                <h:link  outcome="View" value="View"/>
+<br />
+                <h:commandLink  action="#{joo2_categoriesController.prepareList}" value="List Joo2_categories" immediate="true"/>
+<br />
+                <br />
+                <h:link  outcome="/index" value="Return to  main" />
+</h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

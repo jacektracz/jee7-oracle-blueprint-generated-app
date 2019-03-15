@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Edit: Joo2_updates"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                        <h:outputLabel value="epgen_update_id" for="epgen_update_id" />
+                        <h:inputText id="epgen_update_id" value="#{joo2_updatesController.selected.epgen_update_id}" title="epgen_update_id" required="false" requiredMessage="{FieldJoo2_updatesepgen_update_idis Required}"/>
+                        <h:outputLabel value="epgen_update_site_id" for="epgen_update_site_id" />
+                        <h:inputText id="epgen_update_site_id" value="#{joo2_updatesController.selected.epgen_update_site_id}" title="epgen_update_site_id" required="false" requiredMessage="{FieldJoo2_updatesepgen_update_site_idis Required}"/>
+                        <h:outputLabel value="epgen_extension_id" for="epgen_extension_id" />
+                        <h:inputText id="epgen_extension_id" value="#{joo2_updatesController.selected.epgen_extension_id}" title="epgen_extension_id" required="false" requiredMessage="{FieldJoo2_updatesepgen_extension_idis Required}"/>
+                        <h:outputLabel value="epgen_categoryid" for="epgen_categoryid" />
+                        <h:inputText id="epgen_categoryid" value="#{joo2_updatesController.selected.epgen_categoryid}" title="epgen_categoryid" required="false" requiredMessage="{FieldJoo2_updatesepgen_categoryidis Required}"/>
+                        <h:outputLabel value="epgen_name" for="epgen_name" />
+                        <h:inputText id="epgen_name" value="#{joo2_updatesController.selected.epgen_name}" title="epgen_name" required="false" requiredMessage="{FieldJoo2_updatesepgen_nameis Required}"/>
+                        <h:outputLabel value="epgen_description" for="epgen_description" />
+                        <h:inputText id="epgen_description" value="#{joo2_updatesController.selected.epgen_description}" title="epgen_description" required="false" requiredMessage="{FieldJoo2_updatesepgen_descriptionis Required}"/>
+                        <h:outputLabel value="epgen_element" for="epgen_element" />
+                        <h:inputText id="epgen_element" value="#{joo2_updatesController.selected.epgen_element}" title="epgen_element" required="false" requiredMessage="{FieldJoo2_updatesepgen_elementis Required}"/>
+                        <h:outputLabel value="epgen_type" for="epgen_type" />
+                        <h:inputText id="epgen_type" value="#{joo2_updatesController.selected.epgen_type}" title="epgen_type" required="false" requiredMessage="{FieldJoo2_updatesepgen_typeis Required}"/>
+                        <h:outputLabel value="epgen_folder" for="epgen_folder" />
+                        <h:inputText id="epgen_folder" value="#{joo2_updatesController.selected.epgen_folder}" title="epgen_folder" required="false" requiredMessage="{FieldJoo2_updatesepgen_folderis Required}"/>
+                        <h:outputLabel value="epgen_client_id" for="epgen_client_id" />
+                        <h:inputText id="epgen_client_id" value="#{joo2_updatesController.selected.epgen_client_id}" title="epgen_client_id" required="false" requiredMessage="{FieldJoo2_updatesepgen_client_idis Required}"/>
+                        <h:outputLabel value="epgen_version" for="epgen_version" />
+                        <h:inputText id="epgen_version" value="#{joo2_updatesController.selected.epgen_version}" title="epgen_version" required="false" requiredMessage="{FieldJoo2_updatesepgen_versionis Required}"/>
+                        <h:outputLabel value="epgen_data" for="epgen_data" />
+                        <h:inputText id="epgen_data" value="#{joo2_updatesController.selected.epgen_data}" title="epgen_data" required="false" requiredMessage="{FieldJoo2_updatesepgen_datais Required}"/>
+                        <h:outputLabel value="epgen_detailsurl" for="epgen_detailsurl" />
+                        <h:inputText id="epgen_detailsurl" value="#{joo2_updatesController.selected.epgen_detailsurl}" title="epgen_detailsurl" required="false" requiredMessage="{FieldJoo2_updatesepgen_detailsurlis Required}"/>
+</h:panelGrid>
+                <h:commandLink  action="#{joo2_updatesController.update}" value="Save"/>
+<br />
+                <br />
+                <h:link  outcome="View" value="View"/>
+<br />
+                <h:commandLink  action="#{joo2_updatesController.prepareList}" value="List Joo2_updates" immediate="true"/>
+<br />
+                <br />
+                <h:link  outcome="/index" value="Return to  main" />
+</h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

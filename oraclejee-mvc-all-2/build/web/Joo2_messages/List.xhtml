@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Joo2_messages"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:form styleClass="jsfcrud_list_form">
+                <h:panelGroup id="messagePanel" layout="block">
+                    <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+                </h:panelGroup>
+                <h:outputText escape="false" value="Empty}" rendered="#{joo2_messagesController.items.rowCount == 0}"/>
+                <h:panelGroup rendered="#{joo2_messagesController.items.rowCount > 0}">
+                    <h:outputText value="#{joo2_messagesController.pagination.pageFirstItem + 1}..#{joo2_messagesController.pagination.pageLastItem + 1}/#{joo2_messagesController.pagination.itemsCount}"/>&nbsp;
+                    <h:commandLink action="#{joo2_messagesController.previous}" value="{Previous} #{joo2_messagesController.pagination.pageSize}" rendered="#{joo2_messagesController.pagination.hasPreviousPage}"/>&nbsp;
+                    <h:commandLink action="#{joo2_messagesController.next}" value="{Next} #{joo2_messagesController.pagination.pageSize}" rendered="#{joo2_messagesController.pagination.hasNextPage}"/>&nbsp;
+                    <h:dataTable value="#{joo2_messagesController.items}" var="item" border="0" cellpadding="2" cellspacing="0" rowClasses="jsfcrud_odd_row,jsfcrud_even_row" rules="all" style="border:solid 1px">
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_message_id"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_message_id}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_user_id_from"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_user_id_from}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_user_id_to"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_user_id_to}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_folder_id"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_folder_id}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_date_time"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_date_time}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_state"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_state}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_priority"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_priority}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_subject"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_subject}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value=" epgen_message"/>
+                            </f:facet>
+                            <h:outputText value="#{item.epgen_message}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="&nbsp;"/>
+                            </f:facet>
+                            <h:commandLink action="#{joo2_messagesController.prepareView}" value="View"/>
+                            <h:outputText value=" "/>
+                            <h:commandLink action="#{joo2_messagesController.prepareEdit}" value="Edit"/>
+                            <h:outputText value=" "/>
+                            <h:commandLink action="#{joo2_messagesController.destroy}" value="Delete"/>
+                        </h:column>
+                    </h:dataTable>
+                </h:panelGroup>
+                <br />
+                <h:commandLink action="#{joo2_messagesController.prepareCreate}" value="Joo2_messagesCreate"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="Return"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+    </html>
